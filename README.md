@@ -1,6 +1,6 @@
-# Ekip Explore
+# L'Equipe Explore
 
-https://joel-mercier.github.io/ekip/
+https://joel-mercier.github.io/lequipe/
 
 ## Développement
 
