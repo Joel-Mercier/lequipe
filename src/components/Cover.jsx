@@ -1,19 +1,22 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useRef } from 'react';
+import { useMouseEvents } from 'beautiful-react-hooks';
 import { useSpring, animated, interpolate } from 'react-spring';
 import { Parallax } from 'react-scroll-parallax';
 import illuminati from '../assets/illuminati.png';
 
 const Cover = () => {
+  const ref = useRef();
   const [{ st, xy }, set] = useSpring(() => ({ st: 0, xy: [0, 0] }))
-  const interpBg = xy.interpolate((x, y) => `perspective(400px) rotateY(${x / 60}deg) rotateX(${-y / 60}deg) translate3d(0, 0, 0)`)
+  const { onMouseMove } = useMouseEvents(ref);
+  const interpBg = xy.interpolate((x, y) => `perspective(500px) rotateY(${x / 60}deg) rotateX(${-y / 60}deg) translate3d(0, 0, 0)`)
   const interpIris = interpolate([st, xy], (o, xy) => `translate(${xy[0] / 30},${xy[1] / 30 + -10 + o / 8})`)
-  const onMove = useCallback(({ clientX: x, clientY: y }) => {
+  onMouseMove(({ clientX: x, clientY: y }) => {
     set({ xy: [x - window.innerWidth / 2, y - window.innerHeight / 2] })
   }, [set])
-  const onScroll = useCallback(e => set({ st: e.target.scrollTop / 30 }), [])
+  const onScroll = useCallback(e => set({ st: e.target.scrollTop / 30 }), [set])
 
   return (
-    <div className="cover-section" onMouseMove={onMove} onScroll={onScroll}>
+    <div className="cover-section" ref={ref} onScroll={onScroll}>
       <div className="container">
         <div className="row">
           <div className="col">
