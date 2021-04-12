@@ -1,5 +1,8 @@
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
+import FloatingImages from '../components/FloatingImages';
+import HitAnimation from '../components/HitAnimation';
+import Spacer from '../components/Spacer';
 import introImg from '../assets/chapter-1-intro.jpeg';
 
 const ChapterOne = () => {
@@ -20,6 +23,17 @@ const ChapterOne = () => {
           </div>
         </div>
       </div>
+      <Spacer size="medium" />
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <FloatingImages />
+          </div>
+        </div>
+      </div>
+      <Spacer size="medium" />
+      <HitAnimation />
+      <Spacer size="large" />
     </div>
   )
 };

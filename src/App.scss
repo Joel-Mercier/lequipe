@@ -188,3 +188,46 @@
 .chapter-one {
   margin-top: 200px;
 }
+
+.floating-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+
+  .floating-images__image {
+    margin: 0 12px;
+    will-change: transform;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.spacer {
+  &.spacer--is-small {
+    margin: 40px 0;
+  }
+  &.spacer--is-medium {
+    margin: 80px 0;
+  }
+  &.spacer--is-large {
+    margin: 160px 0;
+  }
+}
+
+.hit-animation {
+  .hit-animation__bat {
+    transform-origin: top right;
+    transform: scaleX(-1) rotate(240deg);
+    will-change: transform;
+  }
+  .hit-animation__ball {
+    transform: translateY(75%);
+    will-change: transform;
+  }
+}
