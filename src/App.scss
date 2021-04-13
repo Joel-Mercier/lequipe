@@ -185,6 +185,11 @@
   height: auto;
 }
 
+.light-shadow {
+  box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
+    0 10px 10px -10px rgba(50, 50, 73, 0.3);
+}
+
 .chapter-one {
   margin-top: 200px;
 }
@@ -229,5 +234,33 @@
   .hit-animation__ball {
     transform: translateY(75%);
     will-change: transform;
+  }
+}
+
+.quote-stack {
+  .quote-stack__card-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    will-change: transform;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .quote-stack__card {
+      background-color: white;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 45vh;
+      max-width: 800px;
+      height: 85vh;
+      max-height: 570px;
+      cursor: grab;
+      will-change: transform;
+      border-radius: 10px;
+      box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
+        0 10px 10px -10px rgba(50, 50, 73, 0.3);
+    }
   }
 }

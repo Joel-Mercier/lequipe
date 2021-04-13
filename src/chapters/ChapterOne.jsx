@@ -3,6 +3,7 @@ import { Parallax } from 'react-scroll-parallax';
 import FloatingImages from '../components/FloatingImages';
 import HitAnimation from '../components/HitAnimation';
 import Spacer from '../components/Spacer';
+import QuoteStack from '../components/QuoteStack';
 import introImg from '../assets/chapter-1-intro.jpeg';
 
 const ChapterOne = () => {
@@ -18,7 +19,7 @@ const ChapterOne = () => {
           </div>
           <div className="col-12 col-md-6">
             <Parallax className="custom-class" y={["200px", "-100px"]} tagOuter="figure">
-              <img src={introImg} alt="Intro" className="img-fluid" />
+              <img src={introImg} alt="Intro" className="img-fluid light-shadow" />
             </Parallax>
           </div>
         </div>
@@ -33,6 +34,8 @@ const ChapterOne = () => {
       </div>
       <Spacer size="medium" />
       <HitAnimation />
+      <Spacer size="large" />
+      <QuoteStack />
       <Spacer size="large" />
     </div>
   )

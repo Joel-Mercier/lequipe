@@ -9,6 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f3ebe7;
+  user-select: none;
 
   &.menu-is-open {
     overflow: hidden;

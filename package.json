@@ -19,6 +19,7 @@
     "react-scroll-parallax": "^2.3.5",
     "react-scroll-percentage": "^4.2.0",
     "react-spring": "^9.1.0",
+    "react-use-gesture": "^9.1.3",
     "web-vitals": "^0.2.4",
     "workbox-background-sync": "^5.1.3",
     "workbox-broadcast-update": "^5.1.3",
