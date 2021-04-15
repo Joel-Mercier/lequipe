@@ -4,6 +4,7 @@ import FloatingImages from '../components/FloatingImages';
 import HitAnimation from '../components/HitAnimation';
 import Spacer from '../components/Spacer';
 import QuoteStack from '../components/QuoteStack';
+import Carousel from '../components/Carousel';
 import introImg from '../assets/chapter-1-intro.jpeg';
 
 const ChapterOne = () => {
@@ -36,6 +37,8 @@ const ChapterOne = () => {
       <HitAnimation />
       <Spacer size="large" />
       <QuoteStack />
+      <Spacer size="large" />
+      <Carousel />
       <Spacer size="large" />
     </div>
   )

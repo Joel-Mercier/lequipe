@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSpring, animated, config } from 'react-spring';
 import { useScrollPercentage } from 'react-scroll-percentage';
-import bat from '../assets/bat.png';
-import ball from '../assets/ball.png';
+import bat from '../assets/bat-test.png';
+import ball from '../assets/ball-test.png';
 
 const HitAnimation = () => {
   const [ref, percentage] = useScrollPercentage({
