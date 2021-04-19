@@ -2,13 +2,14 @@ import React, { useRef } from 'react';
 import { useSprings, animated } from 'react-spring';
 import { useDrag } from 'react-use-gesture';
 import { clamp } from '../utils/clamp';
+import Carousel1 from '../assets/carousel-1.jpeg';
+import Carousel2 from '../assets/carousel-2.jpeg';
+import Carousel3 from '../assets/carousel-3.jpeg';
 
 const pages = [
-  'https://images.pexels.com/photos/62689/pexels-photo-62689.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-  'https://images.pexels.com/photos/296878/pexels-photo-296878.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-  'https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-  'https://images.pexels.com/photos/351265/pexels-photo-351265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-  'https://images.pexels.com/photos/924675/pexels-photo-924675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+  Carousel1,
+  Carousel2,
+  Carousel3,
 ]
 
 const Carousel = () => {
@@ -19,7 +20,8 @@ const Carousel = () => {
     display: 'block'
   }))
   const bind = useDrag(({ active, movement: [mx], direction: [xDir], distance, cancel }) => {
-    if (active && distance > window.innerWidth / 2)
+    console.log(index.current)
+    if (active && distance > window.innerWidth / 3)
       cancel((index.current = clamp(index.current + (xDir > 0 ? -1 : 1), 0, pages.length - 1)))
     set((i) => {
       if (i < index.current - 1 || i > index.current + 1) return { display: 'none' }

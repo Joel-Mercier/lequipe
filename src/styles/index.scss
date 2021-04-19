@@ -10,7 +10,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #f3ebe7;
   user-select: none;
-
+  overflow-x: hidden;
+  overflow-y: scroll;
   &.menu-is-open {
     overflow: hidden;
   }

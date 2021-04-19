@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import classNames from 'classnames';
 import { ReactComponent as CloseIcon } from '../assets/close.svg';
+import { ReactComponent as Wheel } from '../assets/wheel.svg';
 
 const Menu = ({ show, close }) => {
 
@@ -13,6 +14,9 @@ const Menu = ({ show, close }) => {
   }, [show])
   return (
     <div className={classNames("menu", {"menu--is-open": show})}>
+      <div className="menu__bg">
+        <Wheel />
+      </div>
       <div className="menu__header">
         <div></div>
         <button className="menu__header-button" onClick={close}>

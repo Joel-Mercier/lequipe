@@ -5,6 +5,7 @@ import HitAnimation from '../components/HitAnimation';
 import Spacer from '../components/Spacer';
 import QuoteStack from '../components/QuoteStack';
 import Carousel from '../components/Carousel';
+import SkewSection from '../components/SkewSection';
 import introImg from '../assets/chapter-1-intro.jpeg';
 
 const ChapterOne = () => {
@@ -39,6 +40,16 @@ const ChapterOne = () => {
       <QuoteStack />
       <Spacer size="large" />
       <Carousel />
+      <Spacer size="large" />
+      <SkewSection>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente dolor commodi molestiae ab ipsam vero! Maiores a perspiciatis, sit voluptatibus nihil, quasi esse eaque cumque possimus, reprehenderit sed eveniet optio?</p>
+            </div>
+          </div>
+        </div>
+      </SkewSection>
       <Spacer size="large" />
     </div>
   )

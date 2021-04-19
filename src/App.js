@@ -2,7 +2,7 @@ import React, { useState, useLayoutEffect, useMemo } from 'react';
 import { useTimeout, useWindowScroll, useThrottledFn, useWindowResize } from 'beautiful-react-hooks';
 import { useController } from 'react-scroll-parallax';
 import 'bootstrap/dist/css/bootstrap-grid.css';
-import './App.scss';
+import './styles/App.scss';
 import SplashScreen from './components/SplashScreen';
 import BackToTop from './components/BackToTop';
 import Cover from './components/Cover';

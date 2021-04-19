@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 .splashscreen {
   position: fixed;
@@ -8,7 +9,7 @@
   left: 0;
   width: 100%;
   background: #101010;
-  transition: transform 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: transform 0.6s $easing;
   transform: translateZ(0);
   body.is-ready & {
     transform: translateX(-100%);
@@ -41,9 +42,18 @@
   }
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .cover-section {
   height: 100vh;
-  background-image: url(./assets/cover-bg.jpeg);
+  background-image: url(./../assets/cover-bg.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,7 +62,6 @@
   align-items: center;
   justify-content: center;
   color: #ffffff;
-
   .cover-section__title {
     font-size: 60px;
   }
@@ -67,10 +76,10 @@
   align-items: center;
   justify-content: space-between;
   z-index: 10;
-  margin: 5px;
+  margin: 12px;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: opacity 0.3s $easing;
   transition-delay: 0.6s;
   body.is-ready & {
     opacity: 1;
@@ -83,6 +92,11 @@
     display: flex;
     align-items: center;
     .header__menu-button {
+      background-color: rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s $easing;
+      &:hover {
+        background-color: #000000;
+      }
       svg {
         width: 28px;
         height: 28px;
@@ -102,17 +116,26 @@
   z-index: 30;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: opacity 0.6s $easing;
   &.menu--is-open {
     opacity: 1;
     visibility: visible;
+  }
+  .menu__bg {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    right: 10%;
+    opacity: 0.35;
+    will-change: transform;
+    animation: rotate 14s linear infinite;
   }
   .menu__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 30px;
-    margin: 5px;
+    margin: 12px;
     .menu__header-button {
       svg {
         width: 28px;
@@ -138,7 +161,7 @@
     background: linear-gradient(to left, transparent 50%, $green 50%) right;
     background-size: 200% 100%;
     background-position-y: left;
-    transition: background-position-x 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+    transition: background-position-x 0.3s $easing;
   }
 }
 
@@ -156,8 +179,7 @@
   align-items: center;
   justify-content: center;
   opacity: 0.6;
-  transition: opacity 0.3s cubic-bezier(0.39, 0.575, 0.565, 1),
-    visibility 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: opacity 0.3s $easing, visibility 0.3s $easing;
   &:hover {
     opacity: 1;
     cursor: pointer;
@@ -172,7 +194,7 @@
   position: absolute;
   border-radius: 50%;
   transform: scale(0);
-  animation: ripple 600ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation: ripple 600ms $easing;
   background-color: $green;
 }
 
@@ -202,7 +224,6 @@
   align-items: center;
   justify-content: center;
   padding: 20px 0;
-
   .floating-images__image {
     margin: 0 12px;
     will-change: transform;
@@ -252,7 +273,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     .quote-stack__card {
       background-color: #ffffff;
       background-size: cover;
@@ -276,7 +296,6 @@
   overflow: hidden;
   width: 100vw;
   height: 100vh;
-
   .carousel__slide {
     position: absolute;
     width: 100%;
@@ -293,5 +312,28 @@
       box-shadow: 0 62.5px 125px -25px rgba(50, 50, 73, 0.5),
         0 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
     }
+  }
+}
+
+.skew-section {
+  width: 100%;
+  position: relative;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    bottom: 0;
+    transform-origin: left bottom;
+    transform: skewY(3deg);
+    background: #f5d36e;
+  }
+  .skew-section__inner {
+    height: auto;
+    display: block;
+    overflow: hidden;
+    padding: 200px 50px;
   }
 }

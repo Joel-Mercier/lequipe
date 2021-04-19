@@ -1,0 +1,26 @@
+@mixin for-sm-up
+  @media (min-width: 320px) { @content }
+@mixin for-md-up
+  @media (min-width: 600px) { @content }
+@mixin for-lg-up
+  @media (min-width: 840px) { @content }
+@mixin for-xl-up
+  @media (min-width: 1280px) { @content }
+@mixin for-xxl-up
+  @media (min-width: 1400px) { @content }
+@mixin for-xxxl-up
+  @media (min-width: 1920px) { @content }
+@mixin for-sm-down
+  @media (max-width: 319px) { @content }
+@mixin for-md-down
+  @media (max-width: 599px) { @content }
+@mixin for-lg-down
+  @media (max-width: 839px) { @content }
+@mixin for-xl-down
+  @media (max-width: 1279px) { @content }
+@mixin for-xxl-down
+  @media (max-width: 1399px) { @content }
+@mixin for-xxxl-down
+  @media (max-width: 1919px) { @content }
+@mixin between-xl-and-lg
+  @media (max-width: 1279px) and (min-width: 839px) { @content }
