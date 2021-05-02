@@ -9,6 +9,7 @@ import Cover from './components/Cover';
 import Header from './components/Header';
 import ChapterOne from './chapters/ChapterOne';
 import Progress from './components/Progress';
+import Footer from './components/Footer';
 import { clamp } from './utils/clamp';
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
       <Header />
       <Cover />
       <ChapterOne />
+      <Footer />
       <Progress progress={scrollPercentage} />
       <BackToTop offset={window.innerHeight} />
     </div>

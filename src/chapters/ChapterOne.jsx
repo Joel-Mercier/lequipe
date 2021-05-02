@@ -8,6 +8,8 @@ import Carousel from '../components/Carousel';
 import SkewSection from '../components/SkewSection';
 import introImg1 from '../assets/intro-1.png'
 import introImg2 from '../assets/intro-2.png';
+import introImg3 from '../assets/intro-3.png';
+import introBg from '../assets/intro-bg-1.png';
 
 const ChapterOne = () => {
   return (
@@ -66,6 +68,14 @@ const ChapterOne = () => {
           </div>
         </div>
       </div>
+      <Spacer size="medium" />
+        <div className="cover-section" style={{height: '970px', backgroundImage: `url(${introBg})`}}>
+          <div className="content-container">
+            <Parallax className="custom-class" y={["200px", "-200px"]} tagOuter="figure">
+              <img src={introImg3} className="img-fluid" alt="Intro" />
+            </Parallax>
+          </div>
+        </div>
       <Spacer size="medium" />
       <div className="container">
         <div className="row">

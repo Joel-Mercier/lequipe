@@ -354,3 +354,17 @@
     padding: 200px 50px;
   }
 }
+
+.footer {
+  margin: 50px 0;
+  .footer__logo {
+    height: 30px;
+  }
+  .footer__section-title {
+    font-size: 22px;
+    color: $text-color;
+  }
+  p {
+    margin: 0;
+  }
+}
