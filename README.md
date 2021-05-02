@@ -2,9 +2,9 @@
 
 https://joel-mercier.github.io/lequipe/
 
-## Développement
+## Development
 
-### Dépendances
+### Dependencies
 
 Node (v15.5.1)
 

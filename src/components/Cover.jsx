@@ -21,10 +21,9 @@ const Cover = () => {
             <div className="d-flex flex-column align-items-center justify-content-center">
               <animated.div style={{transform: interpBg}}>
                 <animated.div style={{transform: interpTitle}}>
-                  <h1 className="cover-section__title">Lorem ipsum dolor sit amet</h1>
+                  <h1 className="cover-section__title">En roue libre</h1>
                 </animated.div>
               </animated.div>
-              <p>Lorem ipsum dolor sit amet</p>
             </div>
           </div>
         </div>

@@ -53,7 +53,7 @@
 
 .cover-section {
   height: 100vh;
-  background-image: url(./../assets/cover-bg.jpeg);
+  background-image: url(./../assets/cover-bg.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,7 +63,19 @@
   justify-content: center;
   color: #ffffff;
   .cover-section__title {
-    font-size: 60px;
+    font-size: 144px;
+    text-transform: uppercase;
+    color: $green;
+    font-weight: bold;
+    text-shadow: 4px 4px 0px $light-bg;
+  }
+  .cover-section__quote {
+    font-size: 64px;
+    color: $green;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
+    margin: 0;
   }
 }
 
@@ -169,7 +181,7 @@
   visibility: hidden;
   opacity: 0;
   position: fixed;
-  right: 5px;
+  right: 10px;
   bottom: 20px;
   width: 49px;
   height: 49px;
@@ -178,15 +190,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.6;
+  opacity: 0;
   transition: opacity 0.3s $easing, visibility 0.3s $easing;
-  &:hover {
-    opacity: 1;
-    cursor: pointer;
-  }
   &.is-visible {
     visibility: visible;
-    opacity: 1;
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
   }
 }
 
@@ -203,6 +215,11 @@
     transform: scale(4);
     opacity: 0;
   }
+}
+
+.content-container {
+  max-width: 870px;
+  margin: 0 auto;
 }
 
 .img-fluid {
