@@ -68,6 +68,7 @@
     color: $green;
     font-weight: bold;
     text-shadow: 4px 4px 0px $light-bg;
+    text-align: center;
   }
   .cover-section__quote {
     font-size: 64px;
@@ -232,10 +233,42 @@
     0 10px 10px -10px rgba(50, 50, 73, 0.3);
 }
 
-.chapter-one {
+.intro {
   margin-top: 200px;
 }
 
+.chapter-title {
+  position: relative;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .chapter-title__inner-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    will-change: transform;
+    animation: rotate 60s linear infinite;
+  }
+  .chapter-title__title {
+    font-size: 124px;
+    text-transform: uppercase;
+    color: $green-dark;
+    font-weight: bold;
+    text-shadow: 4px 4px 0px $light-bg;
+    text-align: center;
+    margin: 0;
+  }
+}
 .floating-images {
   display: flex;
   align-items: center;
@@ -267,6 +300,7 @@
 }
 
 .hit-animation {
+  overflow: hidden;
   .hit-animation__bat {
     transform-origin: top right;
     transform: scaleX(-1) rotate(240deg);
@@ -363,6 +397,7 @@
   .footer__section-title {
     font-size: 22px;
     color: $text-color;
+    margin: 22px 0 16px 0;
   }
   p {
     margin: 0;

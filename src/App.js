@@ -7,6 +7,7 @@ import SplashScreen from './components/SplashScreen';
 import BackToTop from './components/BackToTop';
 import Cover from './components/Cover';
 import Header from './components/Header';
+import Intro from './chapters/Intro';
 import ChapterOne from './chapters/ChapterOne';
 import Progress from './components/Progress';
 import Footer from './components/Footer';
@@ -48,6 +49,7 @@ function App() {
       <SplashScreen />
       <Header />
       <Cover />
+      <Intro />
       <ChapterOne />
       <Footer />
       <Progress progress={scrollPercentage} />
