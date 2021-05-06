@@ -51,15 +51,15 @@ const Intro = () => {
       <Spacer size="medium" />
       <div className="container">
         <div className="row">
-          <div className="col-12 col-md-6 d-flex align-items-center">
-            <p>
-              « Le hardcourt bike polo c’est une variante du polo à cheval, qui se pratique avec des vélos et des maillets diriger une petite balle dans les buts adverses. Cette discipline est très récente et descend directement du bike polo sur gazon. »
-            </p>
-          </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 pr-lg-5">
             <Parallax className="custom-class" y={["200px", "-100px"]} tagOuter="figure">
               <img src={introImg2} alt="Intro" className="img-fluid" />
             </Parallax>
+          </div>
+          <div className="col-12 col-md-6 d-flex align-items-center">
+            <p className="ml-lg-5">
+              « Le hardcourt bike polo c’est une variante du polo à cheval, qui se pratique avec des vélos et des maillets diriger une petite balle dans les buts adverses. Cette discipline est très récente et descend directement du bike polo sur gazon. »
+            </p>
           </div>
         </div>
       </div>

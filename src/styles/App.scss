@@ -67,7 +67,7 @@
     text-transform: uppercase;
     color: $green;
     font-weight: bold;
-    text-shadow: 4px 4px 0px $light-bg;
+    text-shadow: 4px 4px 0px $intro-bg;
     text-align: center;
   }
   .cover-section__quote {
@@ -234,7 +234,14 @@
 }
 
 .intro {
-  margin-top: 200px;
+  background-color: $intro-bg;
+  padding-top: 200px;
+}
+
+.chapter-one {
+  h2 {
+    color: $text-color;
+  }
 }
 
 .chapter-title {
@@ -264,7 +271,7 @@
     text-transform: uppercase;
     color: $green-dark;
     font-weight: bold;
-    text-shadow: 4px 4px 0px $light-bg;
+    text-shadow: 4px 4px 0px $intro-bg;
     text-align: center;
     margin: 0;
   }
@@ -390,7 +397,7 @@
 }
 
 .footer {
-  margin: 50px 0;
+  margin: 100px 0;
   .footer__logo {
     height: 30px;
   }
@@ -398,8 +405,5 @@
     font-size: 22px;
     color: $text-color;
     margin: 22px 0 16px 0;
-  }
-  p {
-    margin: 0;
   }
 }
