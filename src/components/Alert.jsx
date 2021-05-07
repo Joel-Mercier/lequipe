@@ -4,7 +4,7 @@ import { ReactComponent as Bullhorn } from '../assets/bullhorn.svg';
 
 const Alert = ({ open, content, cta, onClick }) => {
   return (
-    <div className={classNames("alert", {"alert--is-open": !open})}>
+    <div className={classNames("alert", {"alert--is-open": open})}>
       <div className="container">
         <div className="row">
           <div className="col-12">
