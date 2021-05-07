@@ -1,7 +1,6 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import LazyLoad from 'react-lazyload';
-import { StateContext } from '../App'
 import Spacer from '../components/Spacer';
 import introImg1 from '../assets/intro-1.png'
 import introImg2 from '../assets/intro-2.png';
@@ -9,8 +8,6 @@ import introImg3 from '../assets/intro-3.png';
 import introBg from '../assets/intro-bg-1.png';
 
 const Intro = () => {
-  const { serviceWorkerInitialized } = useContext(StateContext);
-  console.log(serviceWorkerInitialized)
   return (
     <div className="intro">
       <div className="container">

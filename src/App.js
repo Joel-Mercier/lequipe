@@ -81,7 +81,7 @@ const App = () => {
     }
   }, [serviceWorker]);
 
-  console.log('v4', serviceWorkerUpdated)
+  console.log('v5', serviceWorkerUpdated)
 
   return (
     <div className="app">
