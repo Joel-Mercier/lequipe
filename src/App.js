@@ -12,6 +12,7 @@ import Intro from './chapters/Intro';
 import ChapterOne from './chapters/ChapterOne';
 import Progress from './components/Progress';
 import Footer from './components/Footer';
+import Alert from './components/Alert';
 import { clamp } from './utils/clamp';
 
 export const StateContext = React.createContext({
@@ -19,10 +20,6 @@ export const StateContext = React.createContext({
   serviceWorkerUpdated: false,
   serviceWorker: null,
 });
-
-
-
-
 
 const App = () => {
   const [scrollY, setScrollY] = useState(window.scrollY);
@@ -95,11 +92,14 @@ const App = () => {
         <Intro />
         <ChapterOne />
         <Footer />
+        <Alert
+          open={serviceWorkerUpdated}
+          content="Une version plus récente de cette page est disponible"
+          cta="Mettre à jour"
+          onClick={handleUpdateServiceWorkerClick}
+        />
         <Progress progress={scrollPercentage} />
         <BackToTop offset={window.innerHeight} />
-        {serviceWorkerUpdated &&
-          <div></div>
-        }
       </StateContext.Provider>
     </div>
   );

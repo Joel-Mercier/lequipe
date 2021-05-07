@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>arrow-from-top</title>
-    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Précommandes" transform="translate(-1851.000000, -2885.000000)" fill="#FFFFFF" fill-rule="nonzero">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1851.000000, -2885.000000)" fill="#FFFFFF" fill-rule="nonzero">
             <g id="arrow-from-top" transform="translate(1860.000000, 2894.000000) scale(1, -1) translate(-1860.000000, -2894.000000) translate(1851.000000, 2885.000000)">
-                <rect id="Rectangle" x="7.71428571" y="0" width="2.57142857" height="18" rx="1"></rect>
+                <rect x="7.71428571" y="0" width="2.57142857" height="18" rx="1"></rect>
                 <path d="M2.19485157,17.6234221 C1.69274892,18.1255248 0.878679656,18.1255248 0.376576997,17.6234221 C-0.125525661,17.1213194 -0.125525661,16.3072501 0.376576997,15.8051475 L8.09086269,8.09086175 C8.57760711,7.60411745 9.36136106,7.58708739 9.86878877,8.0522295 L17.5830745,15.1236581 C18.1065132,15.6034769 18.1418741,16.4167777 17.6620553,16.9402164 C17.1822365,17.4636551 16.3689357,17.499016 15.8454969,17.0191972 L9.03866876,10.7796048 L2.19485157,17.6234221 Z" id="Path-94" transform="translate(9.000004, 12.857141) scale(-1, 1) rotate(-180.000000) translate(-9.000004, -12.857141) "></path>
             </g>
         </g>
