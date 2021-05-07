@@ -1,4 +1,5 @@
-import React, { useState, useLayoutEffect, useMemo } from 'react';
+import React, { useState, useEffect, useLayoutEffect, useMemo, useCallback } from 'react';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import { useTimeout, useWindowScroll, useThrottledFn, useWindowResize } from 'beautiful-react-hooks';
 import { useController } from 'react-scroll-parallax';
 import 'bootstrap/dist/css/bootstrap-grid.css';
@@ -13,9 +14,35 @@ import Progress from './components/Progress';
 import Footer from './components/Footer';
 import { clamp } from './utils/clamp';
 
-function App() {
+export const StateContext = React.createContext({
+  serviceWorkerInitialized: false,
+  serviceWorkerUpdated: false,
+  serviceWorker: null,
+});
+
+
+
+
+
+const App = () => {
   const [scrollY, setScrollY] = useState(window.scrollY);
   const [documentHeight, setDocumentHeight] = useState(document.body.scrollHeight);
+  const [serviceWorkerInitialized, setServiceWorkerInitialized] = useState(false);
+  const [serviceWorkerUpdated, setServiceWorkerUpdated] = useState(false);
+  const [serviceWorker, setServiceWorker] = useState(null);
+
+  // If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://cra.link/PWA
+  useEffect(() => {
+    serviceWorkerRegistration.register({
+      onSuccess: () => setServiceWorkerInitialized(true),
+      onUpdate: (registration) => {
+        setServiceWorker(registration)
+        setServiceWorkerUpdated(true)
+      },
+    });
+  }, [])
 
   useTimeout(() => {
     document.body.classList.add('is-ready');
@@ -34,6 +61,7 @@ function App() {
   useLayoutEffect(() => {
     setDocumentHeight(document.body.scrollHeight)
   }, [])
+
   useLayoutEffect(() => {
     const handler = () => parallaxController.update();
     window.addEventListener('load', handler);
@@ -44,18 +72,37 @@ function App() {
     return clamp(Math.round((scrollY / (documentHeight - window.innerHeight)) * 100), 0, 100);
   }, [documentHeight, scrollY])
 
+  const handleUpdateServiceWorkerClick = useCallback(() => {
+    const registrationWaiting = serviceWorker.waiting;
+    if (registrationWaiting) {
+      registrationWaiting.postMessage({ type: 'SKIP_WAITING' });
+      registrationWaiting.addEventListener('statechange', e => {
+        if (e.target.state === 'activated') {
+          window.location.reload();
+        }
+      });
+    }
+  }, [serviceWorker]);
+
+  console.log(serviceWorkerInitialized, serviceWorkerUpdated)
+
   return (
     <div className="app">
-      <SplashScreen />
-      <Header />
-      <Cover />
-      <Intro />
-      <ChapterOne />
-      <Footer />
-      <Progress progress={scrollPercentage} />
-      <BackToTop offset={window.innerHeight} />
+      <StateContext.Provider value={{ serviceWorkerInitialized, serviceWorkerUpdated }}>
+        <SplashScreen />
+        <Header />
+        <Cover />
+        <Intro />
+        <ChapterOne />
+        <Footer />
+        <Progress progress={scrollPercentage} />
+        <BackToTop offset={window.innerHeight} />
+        {serviceWorkerUpdated &&
+          <div></div>
+        }
+      </StateContext.Provider>
     </div>
   );
-}
+};
 
 export default App;

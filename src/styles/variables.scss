@@ -1,8 +1,12 @@
 $green: #8ca89b;
 $green-dark: #495951;
+$beige: #ebdbd0;
 $intro-bg: #f3ebe7;
 $light-bg: #ececec;
 $text-color: #1e1f1e;
+
+$green-dark-filter: invert(32%) sepia(20%) saturate(274%) hue-rotate(97deg)
+  brightness(99%) contrast(95%);
 
 $heading-font: Jost, Rubik, -apple-system, BlinkMacSystemFont, "Segoe UI",
   "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",

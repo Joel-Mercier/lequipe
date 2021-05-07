@@ -228,6 +228,10 @@
   height: auto;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .light-shadow {
   box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
     0 10px 10px -10px rgba(50, 50, 73, 0.3);
@@ -241,6 +245,12 @@
 .chapter-one {
   h2 {
     color: $text-color;
+  }
+  .cover-section {
+    h2 {
+      text-align: center;
+      color: $beige;
+    }
   }
 }
 

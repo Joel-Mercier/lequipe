@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Parallax } from 'react-scroll-parallax';
+import LazyLoad from 'react-lazyload';
+import { StateContext } from '../App'
 import Spacer from '../components/Spacer';
 import introImg1 from '../assets/intro-1.png'
 import introImg2 from '../assets/intro-2.png';
@@ -7,6 +9,8 @@ import introImg3 from '../assets/intro-3.png';
 import introBg from '../assets/intro-bg-1.png';
 
 const Intro = () => {
+  const { serviceWorkerInitialized } = useContext(StateContext);
+  console.log(serviceWorkerInitialized)
   return (
     <div className="intro">
       <div className="container">
@@ -29,7 +33,7 @@ const Intro = () => {
       <Spacer size="small" />
       <div className="cover-section" style={{height: '1200px', backgroundImage: `url(${introImg1})`}}>
         <div className="content-container">
-          <Parallax className="custom-class" y={["200px", "-200px"]} tagOuter="figure">
+          <Parallax y={["200px", "-200px"]} tagOuter="figure">
             <blockquote className="cover-section__quote">
               « Cette discipline est très récente et descend directement du bike polo sur gazon. »
             </blockquote>
@@ -52,8 +56,10 @@ const Intro = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6 pr-lg-5">
-            <Parallax className="custom-class" y={["200px", "-100px"]} tagOuter="figure">
-              <img src={introImg2} alt="Intro" className="img-fluid" />
+            <Parallax y={["200px", "-100px"]} tagOuter="figure">
+              <LazyLoad once offset={500}>
+                <img src={introImg2} alt="Intro" className="img-fluid" />
+              </LazyLoad>
             </Parallax>
           </div>
           <div className="col-12 col-md-6 d-flex align-items-center">
@@ -66,8 +72,10 @@ const Intro = () => {
       <Spacer size="medium" />
         <div className="cover-section" style={{height: '970px', backgroundImage: `url(${introBg})`}}>
           <div className="content-container">
-            <Parallax className="custom-class" y={["200px", "-200px"]} tagOuter="figure">
-              <img src={introImg3} className="img-fluid" alt="Intro" />
+            <Parallax y={["200px", "-200px"]} tagOuter="figure">
+              <LazyLoad once offset={500}>
+                <img src={introImg3} className="img-fluid" alt="Intro" />
+              </LazyLoad>
             </Parallax>
           </div>
         </div>
