@@ -14,7 +14,7 @@ const Cover = () => {
   const onScroll = useCallback(e => set({ st: e.target.scrollTop / 30 }), [set])
 
   return (
-    <div className="cover-section" ref={ref} onScroll={onScroll}>
+    <div className="cover-section cover-section--is-title" ref={ref} onScroll={onScroll}>
       <div className="container">
         <div className="row">
           <div className="col">

@@ -62,21 +62,23 @@
   align-items: center;
   justify-content: center;
   color: #ffffff;
+  &.cover-section--is-title {
+    background-color: $intro-bg;
+  }
   .cover-section__title {
-    font-size: 144px;
+    font-size: 64px;
     text-transform: uppercase;
     color: $green;
     font-weight: bold;
     text-shadow: 4px 4px 0px $intro-bg;
-    text-align: center;
   }
   .cover-section__quote {
-    font-size: 64px;
+    font-size: 30px;
     color: $green;
     font-style: italic;
     font-weight: bold;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.45);
-    margin: 0;
+    margin: 0 10%;
   }
 }
 
@@ -99,7 +101,7 @@
     visibility: visible;
   }
   .header__logo {
-    height: 30px;
+    height: 20px;
   }
   .header__menu {
     display: flex;
@@ -228,6 +230,14 @@
   height: auto;
 }
 
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
 .text-center {
   text-align: center;
 }
@@ -324,6 +334,11 @@
 .intro {
   background-color: $intro-bg;
   padding-top: 200px;
+
+  .parallax-item--first {
+    top: -100px;
+    left: -150px;
+  }
 }
 
 .chapter-one {
@@ -338,6 +353,29 @@
   }
 }
 
+.chapter-two {
+  h2 {
+    color: $green-dark;
+  }
+  .chapter-title {
+    background-color: $intro-bg;
+    .chapter-title__title {
+      color: $green;
+      text-shadow: 4px 4px 0px #ffffff;
+    }
+  }
+}
+
+.chapter-three {
+  .chapter-title {
+    background-color: $intro-bg;
+    .chapter-title__title {
+      color: $green;
+      text-shadow: 4px 4px 0px $green-light;
+    }
+  }
+}
+
 .chapter-title {
   position: relative;
   height: 100vh;
@@ -348,6 +386,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   .chapter-title__inner-bg {
     position: absolute;
     top: 0;
@@ -361,7 +400,7 @@
     animation: rotate 60s linear infinite;
   }
   .chapter-title__title {
-    font-size: 124px;
+    font-size: 34px;
     text-transform: uppercase;
     color: $green-dark;
     font-weight: bold;
@@ -370,6 +409,7 @@
     margin: 0;
   }
 }
+
 .floating-images {
   display: flex;
   align-items: center;
@@ -426,7 +466,7 @@
     align-items: center;
     justify-content: center;
     .quote-stack__card {
-      background-color: #ffffff;
+      background-color: $green;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
@@ -439,6 +479,25 @@
       border-radius: 10px;
       box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
         0 10px 10px -10px rgba(50, 50, 73, 0.3);
+      color: #ffffff;
+      padding: 12px;
+      .quote-stack__card-inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 5px solid #ffffff;
+        padding: 12px;
+      }
+      .quote-stack__card-title {
+        font-size: 30px;
+        border-bottom: 5px solid #ffffff;
+      }
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -504,12 +563,13 @@
 
 .alert {
   position: fixed;
-  bottom: $progress-bottom-offset;
+  bottom: 0;
   left: 0;
   right: 0;
   will-change: transform;
   transform: translateY(100%);
   padding: 12px 0;
+  padding-bottom: 22px;
   background-color: $intro-bg;
   border-top: 1px solid darken($intro-bg, 8);
   transition: transform 0.3s $easing;
@@ -534,6 +594,61 @@
     }
     .btn {
       margin-left: 10px;
+    }
+  }
+}
+
+@include for-sm-up {
+  .header {
+    .header__logo {
+      height: 30px;
+    }
+  }
+  .cover-section {
+    .cover-section__quote {
+      font-size: 34px;
+    }
+  }
+  .chapter-title {
+    .chapter-title__title {
+      font-size: 64px;
+    }
+  }
+}
+
+@include for-md-up {
+}
+
+@include for-lg-up {
+  .cover-section {
+    .cover-section__title {
+      font-size: 104px;
+    }
+    .cover-section__quote {
+      font-size: 44px;
+      margin: 0;
+    }
+  }
+
+  .chapter-title {
+    .chapter-title__title {
+      font-size: 124px;
+    }
+  }
+}
+
+@include for-xl-up {
+  .cover-section {
+    .cover-section__title {
+      font-size: 144px;
+    }
+    .cover-section__quote {
+      font-size: 64px;
+    }
+  }
+  .chapter-title {
+    .chapter-title__title {
+      font-size: 124px;
     }
   }
 }

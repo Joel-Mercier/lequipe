@@ -10,6 +10,8 @@ import Cover from './components/Cover';
 import Header from './components/Header';
 import Intro from './chapters/Intro';
 import ChapterOne from './chapters/ChapterOne';
+import ChapterTwo from './chapters/ChapterTwo';
+import ChapterThree from './chapters/ChapterThree';
 import Progress from './components/Progress';
 import Footer from './components/Footer';
 import Alert from './components/Alert';
@@ -81,25 +83,25 @@ const App = () => {
     }
   }, [serviceWorker]);
 
-  console.log('v5', serviceWorkerUpdated)
-
   return (
     <div className="app">
       <StateContext.Provider value={{ serviceWorkerInitialized, serviceWorkerUpdated }}>
         <SplashScreen />
-        <Header />
-        <Cover />
-        <Intro />
-        <ChapterOne />
-        <Footer />
+        <Header/>
+        <Cover/>
+        <Intro/>
+        <ChapterOne/>
+        <ChapterTwo/>
+        <ChapterThree/>
+        <Footer/>
         <Alert
           open={serviceWorkerUpdated}
           content="Une version plus récente de cette page est disponible"
           cta="Mettre à jour"
           onClick={handleUpdateServiceWorkerClick}
         />
-        <Progress progress={scrollPercentage} />
-        <BackToTop offset={window.innerHeight} />
+        <Progress progress={scrollPercentage}/>
+        <BackToTop offset={window.innerHeight}/>
       </StateContext.Provider>
     </div>
   );

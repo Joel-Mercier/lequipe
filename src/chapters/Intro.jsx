@@ -6,6 +6,7 @@ import introImg1 from '../assets/intro-1.png'
 import introImg2 from '../assets/intro-2.png';
 import introImg3 from '../assets/intro-3.png';
 import introBg from '../assets/intro-bg-1.png';
+import introCircle1 from '../assets/intro-circle-1.png';
 
 const Intro = () => {
   return (
@@ -14,14 +15,14 @@ const Intro = () => {
         <div className="row">
           <div className="col-12">
             <div className="content-container">
-              <h2>“3, 2, 1 … POLO !!</h2>
+              <h2>“3, 2, 1 … POLO !”</h2>
               <Spacer size="medium" />
               <p>
-                Au pied du Parlement européen, dans le quartier du Wacken, une petite troupe rompt le silence de ce dimanche matin. À califourchon sur leurs vélos, six cyclistes s’élancent pour récupérer la balle qui trône au centre du terrain. Dans un joyeux bordel, avec force de cris et d’invectives, les joueurs tentent de pousser la balle jusque dans la cage adverse, située à l’autre bout du terrain. 
+                Au pied du Parlement européen strasbourgeois, dans le quartier du Wacken, une petite troupe rompt le silence de ce dimanche matin. À califourchon sur leurs vélos, six cyclistes s’élancent. Avec force de cris et d’invectives, les joueurs tentent de récupérer la balle qui trône au centre du terrain et de la pousser jusque dans la cage adverse, située à l’autre extrémité.
               </p>
               <Spacer size="medium" />
               <p>
-                Aux bords, de la bière, du café et des croissants passent de mains en mains. Ça vanne, ça rigole, ça picole… L’ambiance est bonne enfant, caractéristique d’un match de hardcourt bike polo. Pourtant, certains de ces joueurs sont parmi les meilleurs du monde, mais peu importe, ils sont là pour le plaisir. Car si la discipline encore récente tend à s’institutionnaliser, elle crie toujours autant son désir de liberté. ”
+                Au bord, bière, café et croissants passent de mains en mains. Ça vanne, ça rigole, ça picole… L’ambiance est bon enfant. Pourtant, ces cyclistes sont parmi les meilleurs joueurs de bike polo du monde. Peu importe, ils sont ici pour le plaisir. Car si la discipline, encore récente, tend à s’institutionnaliser, elle crie toujours autant son désir de liberté.
               </p>
             </div>
           </div>
@@ -32,36 +33,49 @@ const Intro = () => {
         <div className="content-container">
           <Parallax y={["200px", "-200px"]} tagOuter="figure">
             <blockquote className="cover-section__quote">
-              « Cette discipline est très récente et descend directement du bike polo sur gazon. »
+              « Cette discipline très récente  descend directement du bike polosur gazon. »
             </blockquote>
           </Parallax>
-        </div>
-      </div>
-      <Spacer size="small" />
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="content-container">
-              <p>
-                « Le hardcourt bike polo c’est une variante du polo à cheval, qui se pratique avec des vélos et des maillets diriger une petite balle dans les buts adverses. Cette discipline est très récente et descend directement du bike polo sur gazon. »
-              </p>
-            </div>
-          </div>
         </div>
       </div>
       <Spacer size="medium" />
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6 pr-lg-5">
+            <p className="mr-lg-5">
+              Alternatif et sans crottins, le hardcourt bike-polo -polo à bicyclette sur terrain dur- est une variante du polo à cheval. Il se joue sur terrain dur, par équipe de trois, les fesses posées sur une selle… de vélo. Cette jeune discipline descend directement du polo-vélo qui se pratique  sur gazon.
+            </p>
+          </div>
+          <div className="col-12 col-md-6 d-flex align-items-center">
+            <Parallax y={["200px", "-200px"]} tagOuter="figure">
+              <blockquote>
+                « On prenait des bâtons de ski sur lesquels on mettait des caps de tuyaux »
+              </blockquote>
+            </Parallax>
+          </div>
+        </div>
+      </div>
+      <Spacer size="medium" />
+      <div className="container">
+        <div className="row">
+          <div className="col-12 col-md-6 pr-lg-5 d-flex align-items-center position-relative">
+            <Parallax className="position-absolute parallax-item--first" y={["100px", "-100px"]} tagOuter="figure">
+              <LazyLoad once offset={500}>
+                <img src={introCircle1} alt="" className="img-fluid" />
+              </LazyLoad>
+            </Parallax>
             <Parallax y={["200px", "-100px"]} tagOuter="figure">
               <LazyLoad once offset={500}>
                 <img src={introImg2} alt="Intro" className="img-fluid" />
               </LazyLoad>
             </Parallax>
           </div>
-          <div className="col-12 col-md-6 d-flex align-items-center">
+          <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
             <p className="ml-lg-5">
-              « Le hardcourt bike polo c’est une variante du polo à cheval, qui se pratique avec des vélos et des maillets diriger une petite balle dans les buts adverses. Cette discipline est très récente et descend directement du bike polo sur gazon. »
+              Dans la fin des années 2000,  premières équipes naissent dans les agglomérations de Paris, Lyon, Grenoble, et Toulouse.
+            </p>
+            <p className="ml-lg-5">
+              La machine est alors lancée, alimentée d’un carburant particulier : le caractère alternatif d’un sport naissant
             </p>
           </div>
         </div>

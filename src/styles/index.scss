@@ -1,6 +1,7 @@
 @import-normalize;
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Rubik:wght@400;700&display=swap");
 @import "variables";
+@import "mixins";
 
 body {
   position: relative;
@@ -63,7 +64,7 @@ h2 {
 
 blockquote {
   font-family: $heading-font;
-  font-size: 64px;
+  font-size: 30px;
   font-weight: bold;
   font-style: italic;
   color: $green-dark;
@@ -72,4 +73,22 @@ blockquote {
 
 figure {
   margin: 0;
+}
+
+@include for-sm-up {
+  blockquote {
+    font-size: 34px;
+  }
+}
+
+@include for-md-up {
+}
+
+@include for-lg-up {
+  blockquote {
+    font-size: 64px;
+  }
+}
+
+@include for-xl-up {
 }
