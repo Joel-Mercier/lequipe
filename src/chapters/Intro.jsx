@@ -2,7 +2,8 @@ import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import LazyLoad from 'react-lazyload';
 import Spacer from '../components/Spacer';
-import introImg1 from '../assets/intro-1.png'
+import Timeline from '../components/Timeline';
+import introImg1 from '../assets/intro-1.png';
 import introImg2 from '../assets/intro-2.png';
 import introImg3 from '../assets/intro-3.png';
 import introBg from '../assets/intro-bg-1.png';
@@ -47,15 +48,19 @@ const Intro = () => {
             </p>
           </div>
           <div className="col-12 col-md-6 d-flex align-items-center">
-            <Parallax y={["200px", "-200px"]} tagOuter="figure">
+            {/* <Parallax y={["200px", "-200px"]} tagOuter="figure">
               <blockquote>
                 « On prenait des bâtons de ski sur lesquels on mettait des caps de tuyaux »
               </blockquote>
-            </Parallax>
+            </Parallax> */}
           </div>
         </div>
       </div>
-      <Spacer size="medium" />
+      <Spacer size="medium"/>
+      <Timeline/>
+      <Spacer size="large"/>
+      <Spacer size="large"/>
+
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6 pr-lg-5 d-flex align-items-center position-relative">

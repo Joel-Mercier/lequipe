@@ -13,14 +13,13 @@ const pages = [
 ]
 
 const Carousel = () => {
-  const index = useRef(0);
+  const index = useRef(1);
   const [props, set] = useSprings(pages.length, (i) => ({
     x: i * window.innerWidth,
     scale: 1,
     display: 'block'
   }))
   const bind = useDrag(({ active, movement: [mx], direction: [xDir], distance, cancel }) => {
-    console.log(index.current)
     if (active && distance > window.innerWidth / 3)
       cancel((index.current = clamp(index.current + (xDir > 0 ? -1 : 1), 0, pages.length - 1)))
     set((i) => {
@@ -30,6 +29,7 @@ const Carousel = () => {
       return { x, scale, display: 'block' }
     })
   });
+
   return (
     <div className="carousel">
       {props.map(({ x, display, scale }, i) => (
