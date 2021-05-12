@@ -3,6 +3,7 @@ import { Parallax } from 'react-scroll-parallax';
 import LazyLoad from 'react-lazyload';
 import ChapterTitle from '../components/ChapterTitle';
 import Spacer from '../components/Spacer';
+import Interview from '../components/Interview';
 import ChapterOneTitleBg1 from '../assets/chapter-1-title-bg-1.png';
 import ChapterOneTitleBg2 from '../assets/chapter-1-title-bg-2.png';
 import introImg2 from '../assets/intro-2.png';
@@ -86,8 +87,15 @@ const ChapterOne = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h2>Focus Morgan ?</h2>
+            <h2>Le vélo de Morgan,<br/>champion du monde en titre</h2>
           </div>
+        </div>
+      </div>
+      <Spacer size="medium" />
+      <Interview />
+      <Spacer size="medium" />
+      <div className="container">
+        <div className="row">
           <div className="col-12 col-md-6">
             <p>
               Hauteurs de pédales plus courtes, protections de disque et roue libre, Morgan nous fait faire le tour de sa bête de concours.

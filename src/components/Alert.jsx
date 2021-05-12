@@ -14,8 +14,7 @@ const Alert = ({ open, content, cta, onClick }) => {
               </div>
               <p>{content}</p>
               {cta && onClick &&
-                <a
-                  href="#"
+                <button
                   className="btn transparent"
                   onClick={(e) => {
                     e.preventDefault();
@@ -27,7 +26,7 @@ const Alert = ({ open, content, cta, onClick }) => {
                     <span className="base"/>
                     <span className="text">{cta}</span>
                   </p>
-                </a>
+                </button>
               }
             </div>
           </div>

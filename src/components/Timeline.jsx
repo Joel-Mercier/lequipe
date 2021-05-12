@@ -1,7 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import classNames from 'classnames';
 import timelineBg from '../assets/timeline-bg.jpeg';
-import timelineBgTop from '../assets/timeline-bg-top.png';
 import Carousel3 from '../assets/carousel-3.jpeg';
 
 const Timeline = () => {

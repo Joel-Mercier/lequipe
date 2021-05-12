@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLayoutEffect, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useLayoutEffect, useMemo, useCallback, Suspense } from 'react';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import { useTimeout, useWindowScroll, useThrottledFn, useWindowResize } from 'beautiful-react-hooks';
 import { useController } from 'react-scroll-parallax';
@@ -17,10 +17,14 @@ import Footer from './components/Footer';
 import Alert from './components/Alert';
 import { clamp } from './utils/clamp';
 
+const AudioPlayer = React.lazy(() => import('./components/AudioPlayer/AudioPlayer'));
+
 export const StateContext = React.createContext({
   serviceWorkerInitialized: false,
   serviceWorkerUpdated: false,
   serviceWorker: null,
+  audioPlaying: false,
+  audioSrc: null,
 });
 
 const App = () => {
@@ -29,6 +33,8 @@ const App = () => {
   const [serviceWorkerInitialized, setServiceWorkerInitialized] = useState(false);
   const [serviceWorkerUpdated, setServiceWorkerUpdated] = useState(false);
   const [serviceWorker, setServiceWorker] = useState(null);
+  const [audioPlaying, setAudioPlaying] = useState(false);
+  const [audioSrc, setAudioSrc] = useState(null);
 
   // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
@@ -85,7 +91,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <StateContext.Provider value={{ serviceWorkerInitialized, serviceWorkerUpdated }}>
+      <StateContext.Provider value={{ serviceWorkerInitialized, serviceWorkerUpdated, audioSrc, audioPlaying, setAudioSrc, setAudioPlaying }}>
         <SplashScreen />
         <Header/>
         <Cover/>
@@ -94,6 +100,15 @@ const App = () => {
         <ChapterTwo/>
         <ChapterThree/>
         <Footer/>
+        {audioSrc &&
+          <Suspense
+            fallback={<div></div>}
+          >
+            <AudioPlayer
+              open={audioSrc}
+            />
+          </Suspense>
+        }
         <Alert
           open={serviceWorkerUpdated}
           content="Une version plus récente de cette page est disponible"

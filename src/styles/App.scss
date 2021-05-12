@@ -319,7 +319,8 @@
       top: 0;
     }
   }
-  &:hover {
+  &:hover,
+  &.btn--is-active {
     color: $text-color;
     & span.bg {
       width: 110%;
@@ -523,6 +524,42 @@
     text-shadow: 4px 4px 0px $intro-bg;
     text-align: center;
     margin: 0;
+  }
+}
+
+.interview {
+  position: relative;
+  background-image: url(./../assets/interview-bg.png);
+  height: 1296px;
+
+  .btn {
+    position: absolute;
+    &.polo {
+      top: 20%;
+      left: 10%;
+    }
+    &.freins {
+      top: 15%;
+      right: 20%;
+    }
+    &.pedale {
+      top: 55%;
+    }
+    &.pignon {
+      left: 20%;
+      bottom: 45%;
+    }
+    &.protecDisque {
+      right: 20%;
+      bottom: 35%;
+    }
+    &.protecValve {
+      bottom: 25%;
+      left: 10%;
+    }
+    &.roue {
+      right: 10%;
+    }
   }
 }
 
@@ -748,6 +785,94 @@
           bottom: -25px;
           right: -50px;
           transform: translateX(0);
+        }
+      }
+    }
+  }
+}
+
+.audio-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  will-change: transform;
+  transform: translateY(100%);
+  padding: 12px 0;
+  padding-bottom: 22px;
+  background-color: $intro-bg;
+  border-top: 1px solid darken($intro-bg, 8);
+  transition: transform 0.3s $easing;
+  z-index: 2;
+  &.audio-player--is-open {
+    transform: translateY(0);
+  }
+  .audio-player__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .audio-player__icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+    .audio-player__close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 34px;
+    }
+    .audio-player__content-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 600px;
+      & > p {
+        text-align: center;
+        margin: 0;
+        margin-right: 10px;
+      }
+    }
+    .audio-player__button {
+      width: 68px;
+      background-color: transparent;
+      border: none;
+
+      svg path:last-child {
+        fill: $green;
+      }
+    }
+    .audio-player__bar {
+      user-select: none;
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      .audio-player__bar__time {
+        color: $text-color;
+        font-size: 16px;
+      }
+
+      .audio-player__bar__progress {
+        flex: 1;
+        border-radius: 5px;
+        margin: 0 20px;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        background-color: #ffffff;
+
+        .audio-player__bar__progress__knob {
+          position: relative;
+          height: 16px;
+          width: 16px;
+          border: 1.5px solid white;
+          border-radius: 50%;
+          background-color: $green;
         }
       }
     }
