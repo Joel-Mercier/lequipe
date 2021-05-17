@@ -99,6 +99,7 @@
   body.is-ready & {
     opacity: 1;
     visibility: visible;
+    pointer-events: none;
   }
   .header__logo {
     height: 20px;
@@ -106,6 +107,7 @@
   .header__menu {
     display: flex;
     align-items: center;
+    pointer-events: auto;
     .header__menu-button {
       background-color: rgba(0, 0, 0, 0.3);
       transition: background-color 0.3s $easing;
@@ -527,11 +529,113 @@
   }
 }
 
+.player-focus {
+  height: 1183px;
+  background-image: url(../assets/player-focus-bg.png);
+  justify-content: flex-start;
+  .player-focus__nav {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 160px;
+    max-width: 80%;
+    justify-content: space-between;
+    .player-focus__nav-item {
+      font-family: $heading-font;
+      color: $green-dark;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 64px;
+      opacity: 0.5;
+      cursor: pointer;
+      transition: opacity 0.3s $easing;
+      &:hover {
+        opacity: 1;
+      }
+      &.player-focus__nav-item--is-active {
+        opacity: 1;
+      }
+    }
+  }
+  .player-focus__infos-container {
+    position: relative;
+    .player-focus__infos {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      list-style-type: none;
+      font-size: 24px;
+      font-weight: bold;
+      padding-left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s $easing;
+      &.player-focus__infos--is-active {
+        opacity: 1;
+        visibility: visible;
+      }
+      li {
+        margin-bottom: 22px;
+      }
+    }
+  }
+  .player-focus__description-container {
+    position: relative;
+    .player-focus__description {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s $easing;
+      &.player-focus__description--is-active {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .player-focus__animation-container {
+    position: relative;
+    min-height: 450px;
+    background-image: url(../assets/player-focus-bg-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    .player-focus__animation {
+      position: absolute;
+      top: 0;
+      right: 70px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s $easing;
+      &.player-focus__animation--is-active {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .player-focus__picture-container {
+    position: relative;
+    .player-focus__picture {
+      position: absolute;
+      top: 300px;
+      right: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s $easing;
+      &.player-focus__picture--is-active {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
 .interview {
   position: relative;
   background-image: url(./../assets/interview-bg.png);
   height: 1296px;
-
   .btn {
     position: absolute;
     &.polo {

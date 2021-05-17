@@ -3,6 +3,7 @@ import { Parallax } from 'react-scroll-parallax';
 import LazyLoad from 'react-lazyload';
 import ChapterTitle from '../components/ChapterTitle';
 import Spacer from '../components/Spacer';
+import PlayerFocus from '../components/PlayerFocus';
 import Interview from '../components/Interview';
 import ChapterOneTitleBg1 from '../assets/chapter-1-title-bg-1.png';
 import ChapterOneTitleBg2 from '../assets/chapter-1-title-bg-2.png';
@@ -32,6 +33,13 @@ const ChapterOne = () => {
               Au même moment, à Toulouse ou à Paris, des scènes similaires apparaissent place de l’Europe ou esplanade du palais de Tokyo. Les néophytes français du Bike Polo investissent des lieux publics pour tester le sport. 
             </p>
           </div>
+        </div>
+      </div>
+      <Spacer size="medium" />
+      <PlayerFocus/>
+      <Spacer size="medium" />
+      <div className="container">
+        <div className="row">
           <div className="col-12 col-md-6">
             <Spacer size="medium" />
             <p>
