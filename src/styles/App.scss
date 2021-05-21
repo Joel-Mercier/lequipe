@@ -535,16 +535,18 @@
   justify-content: flex-start;
   .player-focus__nav {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 100px;
     margin-bottom: 160px;
-    max-width: 80%;
+    max-width: 100%;
     justify-content: space-between;
     .player-focus__nav-item {
       font-family: $heading-font;
       color: $green-dark;
       font-style: italic;
       font-weight: bold;
-      font-size: 64px;
+      font-size: 32px;
       opacity: 0.5;
       cursor: pointer;
       transition: opacity 0.3s $easing;
@@ -622,11 +624,14 @@
       top: 300px;
       right: 0;
       opacity: 0;
+      left: 100%;
       visibility: hidden;
-      transition: opacity 0.3s $easing;
+      transition: opacity 0.3s $easing, left 0.3s $easing;
+      transition-delay: 0s, 0.3s;
       &.player-focus__picture--is-active {
         opacity: 1;
         visibility: visible;
+        left: 0;
       }
     }
   }
@@ -855,46 +860,6 @@
   }
 }
 
-@include for-sm-up {
-  .header {
-    .header__logo {
-      height: 30px;
-    }
-  }
-  .cover-section {
-    .cover-section__quote {
-      font-size: 34px;
-    }
-  }
-  .chapter-title {
-    .chapter-title__title {
-      font-size: 64px;
-    }
-  }
-}
-
-@include for-md-up {
-  .timeline {
-    .timeline__nav {
-      overflow: hidden;
-      .timeline__nav-item {
-        margin: 12px 0;
-        transform-origin: left;
-      }
-    }
-    .timeline__content {
-      margin-right: 25px;
-      .timeline__content-inner {
-        .timeline__content-year {
-          bottom: -25px;
-          right: -50px;
-          transform: translateX(0);
-        }
-      }
-    }
-  }
-}
-
 .audio-player {
   position: fixed;
   bottom: 0;
@@ -983,6 +948,53 @@
   }
 }
 
+@include for-sm-up {
+  .header {
+    .header__logo {
+      height: 30px;
+    }
+  }
+  .cover-section {
+    .cover-section__quote {
+      font-size: 34px;
+    }
+  }
+  .chapter-title {
+    .chapter-title__title {
+      font-size: 64px;
+    }
+  }
+}
+
+@include for-md-up {
+  .timeline {
+    .timeline__nav {
+      overflow: hidden;
+      .timeline__nav-item {
+        margin: 12px 0;
+        transform-origin: left;
+      }
+    }
+    .timeline__content {
+      margin-right: 25px;
+      .timeline__content-inner {
+        .timeline__content-year {
+          bottom: -25px;
+          right: -50px;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+  .player-focus {
+    .player-focus__nav {
+      flex-direction: row;
+      align-items: flex-start;
+      max-width: 80%;
+    }
+  }
+}
+
 @include for-lg-up {
   .cover-section {
     .cover-section__title {
@@ -997,6 +1009,14 @@
   .chapter-title {
     .chapter-title__title {
       font-size: 124px;
+    }
+  }
+
+  .player-focus {
+    .player-focus__nav {
+      .player-focus__nav-item {
+        font-size: 64px;
+      }
     }
   }
 }

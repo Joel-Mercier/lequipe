@@ -76,9 +76,11 @@ const PlayerFocus = () => {
             </div>
             <div className="player-focus__picture-container">
               {players.map((player, index) => (
-                <LazyLoad once key={index}>
-                  <img src={player.portrait} className={classNames("player-focus__picture img-fluid", {"player-focus__picture--is-active": active === index})} alt={player.name} />
-                </LazyLoad>
+                <div className={classNames("player-focus__picture", {"player-focus__picture--is-active": active === index})} key={index}>
+                  <LazyLoad once key={index}>
+                    <img src={player.portrait} className={classNames("img-fluid")} alt={player.name} />
+                  </LazyLoad>
+                </div>
               ))}
             </div>
           </div>
