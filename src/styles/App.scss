@@ -52,7 +52,7 @@
 }
 
 .cover-section {
-  height: 100vh;
+  height: 1200px;
   background-image: url(./../assets/cover-bg.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -64,6 +64,22 @@
   color: #ffffff;
   &.cover-section--is-title {
     background-color: $intro-bg;
+  }
+  &.cover-section--is-intro {
+    position: relative;
+    height: 970px;
+    background-image: url(../assets/intro-bg-1.png);
+    .cover-section__inner-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: -370px;
+      background-image: url(../assets/intro-bg-2.png);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
   .cover-section__title {
     font-size: 64px;
@@ -347,7 +363,7 @@
 
 .chapter-one {
   h2 {
-    color: $text-color;
+    color: $green-dark;
   }
   .cover-section {
     h2 {
@@ -424,7 +440,6 @@
   .timeline__nav {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
     height: 100%;
     overflow: scroll;
     .timeline__nav-item {
@@ -471,8 +486,9 @@
       }
       .timeline__content-title {
         text-align: center;
-        font-weight: normal;
+        font-weight: bold;
         font-size: 24px;
+        color: #ffffff;
       }
       .timeline__content-year {
         position: absolute;
@@ -497,7 +513,7 @@
 
 .chapter-title {
   position: relative;
-  height: 100vh;
+  height: 1080px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -537,8 +553,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
-    margin-bottom: 160px;
+    margin-top: 50px;
+    margin-bottom: 120px;
     max-width: 100%;
     justify-content: space-between;
     .player-focus__nav-item {
@@ -566,7 +582,7 @@
       right: 0;
       left: 0;
       list-style-type: none;
-      font-size: 24px;
+      font-size: 18px;
       font-weight: bold;
       padding-left: 0;
       opacity: 0;
@@ -607,7 +623,7 @@
     .player-focus__animation {
       position: absolute;
       top: 0;
-      right: 70px;
+      right: 0;
       opacity: 0;
       visibility: hidden;
       transition: opacity 0.3s $easing;
@@ -970,6 +986,7 @@
   .timeline {
     .timeline__nav {
       overflow: hidden;
+      justify-content: center;
       .timeline__nav-item {
         margin: 12px 0;
         transform-origin: left;
@@ -991,10 +1008,37 @@
       flex-direction: row;
       align-items: flex-start;
       max-width: 80%;
+      margin-top: 100px;
+      margin-bottom: 160px;
     }
   }
 }
 
+.page-decoration {
+  position: absolute;
+  &.page-decoration--is-right {
+    right: 0;
+  }
+  &.page-decoration--is-left {
+    left: 0;
+  }
+}
+
+.iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+  }
+}
 @include for-lg-up {
   .cover-section {
     .cover-section__title {
@@ -1016,6 +1060,16 @@
     .player-focus__nav {
       .player-focus__nav-item {
         font-size: 64px;
+      }
+    }
+    .player-focus__infos-container {
+      .player-focus__infos {
+        font-size: 24px;
+      }
+    }
+    .player-focus__animation-container {
+      .player-focus__animation {
+        right: 70px;
       }
     }
   }

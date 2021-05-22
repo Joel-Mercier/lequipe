@@ -74,7 +74,8 @@ const App = () => {
   }, [parallaxController]);
 
   const scrollPercentage = useMemo(() => {
-    return clamp(Math.round((scrollY / (documentHeight - window.innerHeight)) * 100), 0, 100);
+    const titleCover = document.querySelector('.cover-section--is-title');
+    return clamp(Math.round((scrollY / (documentHeight - titleCover?.scrollHeight || 1200)) * 100), 0, 100);
   }, [documentHeight, scrollY])
 
   const handleUpdateServiceWorkerClick = useCallback(() => {
@@ -88,7 +89,6 @@ const App = () => {
       });
     }
   }, [serviceWorker]);
-
   return (
     <div className="app">
       <StateContext.Provider value={{ serviceWorkerInitialized, serviceWorkerUpdated, audioSrc, audioPlaying, setAudioSrc, setAudioPlaying }}>

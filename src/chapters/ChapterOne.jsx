@@ -5,10 +5,12 @@ import ChapterTitle from '../components/ChapterTitle';
 import Spacer from '../components/Spacer';
 import PlayerFocus from '../components/PlayerFocus';
 import Interview from '../components/Interview';
+import Iframe from '../components/Iframe';
 import ChapterOneTitleBg1 from '../assets/chapter-1-title-bg-1.png';
 import ChapterOneTitleBg2 from '../assets/chapter-1-title-bg-2.png';
 import introImg2 from '../assets/intro-2.png';
 import chapterOneBg2 from '../assets/chapter-1-bg-2.png';
+import chapterOneBg3 from '../assets/chapter-1-bg-3.png';
 
 const ChapterOne = () => {
   return (
@@ -18,20 +20,26 @@ const ChapterOne = () => {
         mainBackground={ChapterOneTitleBg1}
         secondaryBackground={ChapterOneTitleBg2}
       />
-      <Spacer size="medium"/>
+      <Spacer size="large"/>
+      <Parallax className="page-decoration page-decoration--is-right" y={["300px", "-300px"]} tagOuter="figure">
+        <LazyLoad once offset={500}>
+          <img src={chapterOneBg3} alt="chapter one background"/>
+        </LazyLoad>
+      </Parallax>
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6 pr-lg-5">
-
-          </div>
-          <div className="col-12 col-md-6 pl-lg-5">
+            <h3>Décembre 2008, Lyon.</h3>
             <p>
-              2008. Des Lyonnais, membres d’un atelier de réparation de vélos se retrouvent le soir, au sein de l’ancienne usine Renault du troisième arrondissement de la ville. L’endroit est réhabilité en un centre artistique. Sur leurs engins à deux roues, équipés de maillets artisanaux, ils imitent des gestes vus sur Internet. 
+              Décembre 2008, Lyon. Voilà dix ans que l’immense usine Renault du troisième arrondissement de la ville a été cédée par l’industriel français. Depuis sa fermeture, le site s’est reconverti en un espace culturel alternatif, la Friche RVI, où s’installe un atelier de réparation de vélos. 
             </p>
             <Spacer size="medium" />
             <p>
-              Au même moment, à Toulouse ou à Paris, des scènes similaires apparaissent place de l’Europe ou esplanade du palais de Tokyo. Les néophytes français du Bike Polo investissent des lieux publics pour tester le sport. 
+              Le soir, après le travail, ses membres s’y retrouvent pour s’initier au Hardcourt Bike Polo. Sur leurs deux roues, équipés de maillets artisanaux, les jeunes lyonnais imitent des gestes vus sur Internet. Les vélos voltigent, dérapent et s’entrechoquent. À Toulouse comme à Paris, des scènes similaires prennent place et des néophytes investissent les lieux publics pour s’adonner à la pratique. Quelques années plus tard, une poignée d’entre eux deviendront des champions internationaux.
             </p>
+          </div>
+          <div className="col-12 col-md-6 pl-lg-5 justify-content-center">
+            <Iframe src="https://www.dailymotion.com/embed/video/x6iuck6" title="Vidéo chapitre 1" containerClass="mt-5"/>
           </div>
         </div>
       </div>
@@ -40,26 +48,12 @@ const ChapterOne = () => {
       <Spacer size="medium" />
       <div className="container">
         <div className="row">
-          <div className="col-12 col-md-6">
-            <Spacer size="medium" />
-            <p>
-              2008 rime aussi avec la fin de l’âge d’or du fixie, cette mentalité qui prône un retour aux origines du vélo. La bicyclette est dépouillée, elle n’a plus de roue libre à l’arrière, et généralement ni freins, ni vitesses. Puristes des deux roues, les premiers joueurs de bike polo ne jurent que par ça. 
-            </p>
-            <Spacer size="medium" />
-            <p>
-              <q>“J’étais un très grand défenseur du pignon fixe. J’ai dit que jamais je ne passerais en roue libre”</q>, se souvient Morgan, membre de l’association Lyon Bike polo et triple champion du monde de la discipline.
-            </p>
-            <Spacer size="medium" />
-            <p>
-              À la manière du fixie, le hardcourt bike polo attire les fans purs et durs de vélo. <q>“J’ai toujours été passionné de vélo”</q>, admet Paul. Après avoir découvert la pratique sur Internet, il est devenu l’un des pionniers de ce sport alors quasi-inexistant en Europe. <q>“Le fait de me dire que je faisais un sport qui n’existait pas, pratiqué par 50 personnes, m’a séduit.”</q>
-              <br/>
-              Si avec le temps, le pignon fixe a disparu des tournois de bike polo, certains pionniers, eux, demeurent. Parmi eux : Morgan, Paul et Élodie.
-            </p>
-          </div>
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 order-last order-md-first">
             <Parallax y={["200px", "-200px"]} tagOuter="figure">
               <blockquote>
-                « On prenait des bâtons de ski sur lesquels on mettait des caps de tuyaux »
+                « Au début, nos vélos, c’était un peu Frankenstein »
+                <br/>
+                - Elodie Martini
               </blockquote>
             </Parallax>
             <Parallax y={["200px", "-200px"]} tagOuter="figure">
@@ -67,6 +61,23 @@ const ChapterOne = () => {
                 <img src={introImg2} alt="Chapitre 1" className="img-fluid" />
               </LazyLoad>
             </Parallax>
+          </div>
+          <div className="col-12 col-md-6 order-first order-md-last">
+            <Spacer size="medium" />
+            <h3>
+              Du pignon fixe à la roue libre
+            </h3>
+            <p>
+              Rapidement, les joueurs comprennent que leur vélo n’est pas adapté au bike-polo. Les guidons de course et les garde-boues gênent les mouvements saccadés et brusques du sport. À force de casse et de bricolage, les joueurs inventent de nouvelles montures plus adaptées. “Au début, c'était un peu Frankenstein. On a fait des tests et on a fini par développer de bons vélos”, se souvient Elodie Martini, strasbourgeoise vice-championne du monde.
+            </p>
+            <Spacer size="medium" />
+            <p>
+              Dès lors, les pionniers ne jurent que par le pignon fixe.  “J’étais un très grand défenseur du fixie”, se souvient Morgan Hidalgo, triple champion du monde et membre de l’association Lyon Bike Polo. 
+            </p>
+            <Spacer size="medium" />
+            <p>
+              Pour lui, le pignon fixe fait perdre de l’énergie et de la concentration sur la gestion du pédalage. Cela empêcherait de conserver son entière attention sur le terrain et la balle. “J’ai souvent dit que je ne passerais jamais en roue libre [...] Disons le, j’ai menti ! », s’amuse le coursier. 
+            </p>
           </div>
         </div>
       </div>
@@ -95,11 +106,10 @@ const ChapterOne = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h2>Le vélo de Morgan,<br/>champion du monde en titre</h2>
+            <h2 className="mb-0">Le vélo de Morgan,<br/>champion du monde en titre</h2>
           </div>
         </div>
       </div>
-      <Spacer size="medium" />
       <Interview />
       <Spacer size="medium" />
       <div className="container">

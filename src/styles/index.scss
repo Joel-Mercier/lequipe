@@ -62,6 +62,11 @@ h2 {
   color: $green;
 }
 
+h3 {
+  font-size: 34px;
+  color: $green-dark;
+}
+
 blockquote {
   font-family: $heading-font;
   font-size: 30px;
@@ -73,6 +78,20 @@ blockquote {
 
 figure {
   margin: 0;
+}
+
+figcaption {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+
+  &::before {
+    content: "// ";
+  }
+  &::after {
+    content: " //";
+  }
 }
 
 @include for-sm-up {
