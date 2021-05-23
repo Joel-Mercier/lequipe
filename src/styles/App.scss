@@ -545,6 +545,20 @@
   }
 }
 
+.decorated-content {
+  position: relative;
+  color: #ffffff;
+  .decorated-content__content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 42px 22px 0 22px;
+  }
+}
+
 .player-focus {
   height: 1183px;
   background-image: url(../assets/player-focus-bg.png);
@@ -770,6 +784,7 @@
       .quote-stack__card-title {
         font-size: 30px;
         border-bottom: 5px solid #ffffff;
+        color: #ffffff;
       }
       p {
         font-size: 18px;

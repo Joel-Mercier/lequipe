@@ -30,9 +30,9 @@ const ChapterThree = () => {
       <Spacer size="medium"/>
       {/* <HitAnimation/> */}
       <Spacer size="large"/>
-      <Carousel/>
+      {/* <Carousel/> */}
       <Spacer size="large"/>
-      <SkewSection>
+      {/* <SkewSection>
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -40,7 +40,7 @@ const ChapterThree = () => {
             </div>
           </div>
         </div>
-      </SkewSection>
+      </SkewSection> */}
     </div>
   );
 };

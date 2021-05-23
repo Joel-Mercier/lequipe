@@ -8,9 +8,17 @@ import Interview from '../components/Interview';
 import Iframe from '../components/Iframe';
 import ChapterOneTitleBg1 from '../assets/chapter-1-title-bg-1.png';
 import ChapterOneTitleBg2 from '../assets/chapter-1-title-bg-2.png';
-import introImg2 from '../assets/intro-2.png';
 import chapterOneBg2 from '../assets/chapter-1-bg-2.png';
 import chapterOneBg3 from '../assets/chapter-1-bg-3.png';
+import chapterOneBg4 from '../assets/chapter-1-bg-4.png';
+import chapterOneBg5 from '../assets/chapter-1-bg-5.png';
+import chapterOneCircle1 from '../assets/intro-circle-1.png';
+import chapterOneImg1 from '../assets/chapter-1-img-1.png';
+import chapterOneImg2 from '../assets/chapter-1-img-2.png';
+import chapterOneImg3 from '../assets/chapter-1-img-3.png';
+import chapterOneImg4 from '../assets/chapter-1-img-4.png';
+import chapterOneImg5 from '../assets/chapter-1-img-5.png';
+import chapterOneImg6 from '../assets/chapter-1-img-6.png';
 
 const ChapterOne = () => {
   return (
@@ -57,9 +65,16 @@ const ChapterOne = () => {
               </blockquote>
             </Parallax>
             <Parallax y={["200px", "-200px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={introImg2} alt="Chapitre 1" className="img-fluid" />
-              </LazyLoad>
+              <div className="decorated-content" style={{height: "437px"}}>
+                <LazyLoad once offset={500}>
+                  <img src={chapterOneBg4} alt="Chapitre 1" className="img-fluid" />
+                </LazyLoad>
+                <div className="decorated-content__content">
+                  <p>
+                    <strong>Pignon Fixe vs Roue Libre :</strong> Un pignon fixe reste solidaire d’une roue en mouvement. Celle-ci s’arrête avec le pédalier. Sur un vélo dit à “roue libre”, comme sur un vélo de ville ou un VTT, un mécanisme désolidarise le pignon de la roue. Ceci permet au cycliste l’arrêt du pédalage, alors que la roue, elle, continue de tourner.
+                  </p>
+                </div>
+              </div>
             </Parallax>
           </div>
           <div className="col-12 col-md-6 order-first order-md-last">
@@ -85,24 +100,30 @@ const ChapterOne = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6">
-            <Parallax y={["200px", "-200px"]} tagOuter="figure">
-              <blockquote>« Au début, c’était Frankenstein »</blockquote>
+            <Parallax className="position-absolute parallax-item--first" y={["100px", "-100px"]} tagOuter="figure">
+              <LazyLoad once offset={500}>
+                <img src={chapterOneCircle1} alt="" className="img-fluid" />
+              </LazyLoad>
+            </Parallax>
+            <Parallax y={["200px", "-100px"]} tagOuter="figure">
+              <LazyLoad once offset={500}>
+                <img src={chapterOneImg1} alt="Chapitre 1" className="img-fluid" />
+              </LazyLoad>
+              <figcaption>Morgan Hidalgo est un des meilleurs joueurs du monde de Hardcourt BikePolo. Ce lyonnais recouvert de tatouages a gagné les derniers championnats du monde avec son équipe les Mongrels.</figcaption>
             </Parallax>
           </div>
           <div className="col-12 col-md-6">
-            <p>
-              Les cyclistes jouent au départ avec leurs vélos de ville. Guidons de course, cocottes, gardes-boues… rien de très pratique pour les mouvements saccadés et brusques du bike polo.
-            </p>
-            <Spacer size="medium" />
-            <p>
-              À force de bricolage, ils s’inventent de nouvelles montures plus adaptées :
-              <br/>
-              <q>“Au début, c'était Frankenstein. On a fait des tests et c’est comme ça qu’on a développé des bons vélos de bike polo”</q>, se souvient Elodie.
-            </p>
+            <Parallax y={["200px", "-200px"]} tagOuter="figure">
+              <blockquote>
+                « J’ai dit que je ne passerais jamais en roue libre... »
+                <br/>
+                - Morgan Hidalgo
+              </blockquote>
+            </Parallax>
           </div>
         </div>
       </div>
-      <Spacer size="medium" />
+      <Spacer size="large" />
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -115,45 +136,57 @@ const ChapterOne = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6">
-            <p>
-              Hauteurs de pédales plus courtes, protections de disque et roue libre, Morgan nous fait faire le tour de sa bête de concours.
-            </p>
+            <Parallax y={["200px", "-200px"]} tagOuter="figure">
+              <blockquote>
+                « On fait tout nous-même. »
+                <br/>
+                - Gabriel, MarseilleBikePolo
+              </blockquote>
+            </Parallax>
           </div>
           <div className="col-12 col-md-6">
-
+            <p>
+              Outre les seuls vélos, les joueurs suivent également cette logique de bricolage pour le reste du matériel. Les premiers maillets sont fabriqués à partir de bâtons de ski d’occasion et des tubes de canalisations parfois récupérés sur des chantiers la nuit. Aujourd’hui encore, de nombreux joueurs fabriquent et personnalisent leur matériel de jeu.
+            </p>
           </div>
         </div>
+      </div>
+      <Spacer size="medium"/>
+      <div className="page-decoration page-decoration--is-right">
+        <LazyLoad once offset={500}>
+          <img src={chapterOneBg5} alt="chapter one background"/>
+        </LazyLoad>
       </div>
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6">
-
-          </div>
-          <div className="col-12 col-md-6">
+            <h3>Récup et autoréparation</h3>
             <p>
-              Sans matériel, les premiers joueurs se sont découverts des talents de bricoleurs. Les maillets sont fabriqués à partir de bâtons de ski “achetés chez Emmaüs” et les têtes sont découpées dans des tubes de canalisations, raconte Paul. Certains joueurs s’introduisent sur les chantiers la nuit pour récupérer la matière première. La réutilisation est partout, jusqu’aux filets des cages, parfois fixés avec des vieilles chambres à air. 
-            </p>
-          </div>
-          <div className="col-12 col-md-6">
-            <Spacer size="medium" />
-            <p>
-              Créé début 2020, l’association de Marseille en est encore à ce stade balbutiant.  Elle n’a pas encore les moyens de se procurer du matériel : « Tout ce qu'on possède, on le fait nous-même avec les moyens du bord. » explique Gabriel, cofondateur du club phocéen. Ils squattent un terrain de roller. Jour de pluie la veille, l’équipe racle l’eau sur le terrain avant de poser deux pierres et deux gourdes pour faire les buts. “On nous a enlevé les planches de plexiglass qu’on utilisait.”
+              « Tout ce qu'on fait, on le fait nous-même avec les moyens du bord » affirme Gabriel Bercolano, cofondateur de l’association Marseille Bike Polo, un club lancé au début de l’année 2020. Cette débrouille se retrouve jusqu’aux filets des cages, fixés avec de vieilles chambres à air. Introuvables lors de l’entraînement suivi en avril dernier, les poloïstes s’arrangent : pierres et gourdes font office de buts ce jour-là. Encore à un stade embryonnaire, une partie du matériel du club est issu du don d’un joueur lyonnais de passage.
             </p>
             <Spacer size="medium" />
             <p>
-              Au niveau des vélos, la débrouille est également de mise. Enrico, joueur de l'équipe de Marseille, se charge de la réparation des engins de l’équipe : “Si une pièce se casse, on ne va pas de suite voir dans un magasin, on cherche à le réparer nous-même”. Originaire d'Italie, il a monté avec un ami son atelier d’auto-réparation de vélo, partenaire de Marseille Bike Polo. 
+              Autre membre du club phocéen, Enrico est tantôt joueur, tantôt mécano. Il se charge parfois de la réparation des engins de ses partenaires. “Si une pièce se casse, on ne se rend pas de suite dans un magasin, explique le jeune marseillais, on cherche d’abord à réparer par nous-même”. Il a récemment lancé un atelier d’auto-réparation de vélo engagé Plan B, partenaire de Marseille Bike Polo.   
             </p>
           </div>
           <div className="col-12 col-md-6">
-            <Spacer size="medium"/>
             <Parallax y={["200px", "-200px"]} tagOuter="figure">
-              <blockquote className="text-center">« Deux pierres et deux gourdes pour un but »</blockquote>
-            </Parallax>
-            <Spacer size="medium"/>
-            <Parallax x={["-100px", "100px"]} y={["200px", "-200px"]} tagOuter="figure">
               <LazyLoad once offset={500}>
-                <img src={introImg2} alt="Chapitre 1" className="img-fluid" />
+                <img src={chapterOneImg2} alt="Chapitre 1" className="img-fluid" />
               </LazyLoad>
+              <figcaption>A Marseille, les joueurs squattent un terrain de roller. Parfois la situation oblige quelques improvisations pour le matériel : ici des pierres et des gourdes pour situer les buts.</figcaption>
+            </Parallax>
+            <Parallax y={["200px", "-200px"]} tagOuter="figure">
+              <LazyLoad once offset={500}>
+                <img src={chapterOneImg3} alt="Chapitre 1" className="img-fluid" />
+              </LazyLoad>
+              <figcaption>Le logo de Marseille Bike Polo est fait par un membre graphiste. Gabriel le fondateur du club, l’a ensuite sérigraphié lui même sur des Tshirts pour son équipe.</figcaption>
+            </Parallax>
+            <Parallax y={["200px", "-200px"]} tagOuter="figure">
+              <LazyLoad once offset={500}>
+                <img src={chapterOneImg4} alt="Chapitre 1" className="img-fluid" />
+              </LazyLoad>
+              <figcaption>Gabriel (à droite) et Enrico (à gauche), deux membres fondateurs de Marseille Bike Polo se reposent en attendant le prochain match.</figcaption>
             </Parallax>
           </div>
         </div>
@@ -166,67 +199,52 @@ const ChapterOne = () => {
           </Parallax>
         </div>
       </div>
+      <Spacer size="large"/>
       <div className="container">
         <div className="row">
-          <div className="col-12 col-md-6">
-            <p>
-              Chacun fait avec ses moyens, loin de ceux d’un club comme Lyon qui peut avoir du vrai bon matériel grâce au sponsoring. A tel point que la plupart des joueurs sont aujourd’hui autodidacte et gèrent leur matériel eux-même. C’est aussi le cas d’Elodie à Strasbourg, qui a beaucoup évolué dans sa pratique, tant dans son jeu que dans son matériel.
-            </p>
-            <Spacer size="medium"/>
-            <p>
-              Isdem diebus Apollinaris Domitiani gener, paulo ante agens palatii Caesaris curam, ad Mesopotamiam missus a socero per militares numeros immodice scrutabatur, an quaedam altiora meditantis iam Galli secreta susceperint scripta, qui conpertis Antiochiae gestis per minorem Armeniam lapsus Constantinopolim petit exindeque per protectores retractus artissime tenebatur.
-            </p>
-          </div>
-          <div className="col-12 col-md-6">
-            <Spacer size="medium"/>
-            <Parallax y={["200px", "-200px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={introImg2} alt="Chapitre 1" className="img-fluid" />
-              </LazyLoad>
-            </Parallax>
-          </div>
-        </div>
-      </div>
-      <Spacer size="medium"/>
-      <div className="container">
-        <div className="row">
-          <div className="col-12 col-md-6">
-            <Parallax y={["200px", "-200px"]} tagOuter="figure">
-              <blockquote className="text-center">« Citation Elodie tirée de la vidéo »</blockquote>
-            </Parallax>
-          </div>
-        </div>
-      </div>
-      <Spacer size="medium"/>
-      <div className="container">
-        <div className="row">
-          <div className="col-12 col-md-6">
-
-          </div>
-          <div className="col-12 col-md-6">
-            <p>
-              Isdem diebus Apollinaris Domitiani gener, paulo ante agens palatii Caesaris curam, ad Mesopotamiam missus a socero per militares numeros immodice scrutabatur, an quaedam altiora meditantis iam Galli secreta susceperint scripta, qui conpertis Antiochiae gestis per minorem Armeniam lapsus Constantinopolim petit exindeque per protectores retractus artissime tenebatur.
-            </p>
-          </div>
-        </div>
-      </div>
-      <Spacer size="medium"/>
-      <div className="container">
-        <div className="row">
-          <div className="col-12 col-md-6">
-            <p>
-              Isdem diebus Apollinaris Domitiani gener, paulo ante agens palatii Caesaris curam, ad Mesopotamiam missus a socero per militares numeros immodice scrutabatur, an quaedam altiora meditantis iam Galli secreta susceperint scripta, qui conpertis Antiochiae gestis per minorem Armeniam lapsus Constantinopolim petit exindeque per protectores retractus artissime tenebatur.
-            </p>
-          </div>
           <div className="col-12 col-md-6">
             <Parallax y={["200px", "-200px"]} tagOuter="figure">
               <LazyLoad once offset={500}>
-                <img src={introImg2} alt="Chapitre 1" className="img-fluid" />
+                <img src={chapterOneImg5} alt="Chapitre 1" className="img-fluid" />
               </LazyLoad>
+              <figcaption>À Strasbourg, le terrain de basket est transformé en terrain de Bike Polo grâce au bricolage des membres du club. Des planches de bois achetées et retapées font office de délimitation.</figcaption>
+            </Parallax>
+          </div>
+          <div className="col-12 col-md-6">
+            <Parallax y={["200px", "-200px"]} tagOuter="figure">
+              <blockquote>
+                « On a fait des tournois à même les parkings ou une place goudronnée »
+                <br/>
+                - Quentin, LyonBikePolo
+              </blockquote>
             </Parallax>
           </div>
         </div>
       </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-12 col-md-6">
+            <Parallax y={["200px", "-200px"]} tagOuter="figure">
+              <LazyLoad once offset={500}>
+                <img src={chapterOneImg6} alt="Chapitre 1" className="img-fluid" />
+              </LazyLoad>
+              <figcaption>Paul Vergnaud, double champion du monde, montre des trophés qu’il a remporté, fabriqués par des joueurs. A gauche, une affiche des championnats de France, également réalisée par un joueur.</figcaption>
+            </Parallax>
+          </div>
+          <div className="col-12 col-md-6">
+           <p>
+            Les tournois sont, eux aussi, mis en place avec les moyens du bord. Lorsque des
+            compétitions internationales sont prévues, les clubs participants s’arrangent
+            entre eux pour l’organisation.
+          </p>
+          <Spacer size="medium"/>
+          <p>
+            Certains de ces rendez-vous compétitifs se font “à même les parkings ou sur une place vide goudronnée” détaille Quentin Bouchard, de Lyon Bike Polo. Des flyers aux trophées, beaucoup d’éléments du hardcourt bike polo sont le fruit de la créativité de ses joueurs et de ses joueuses.
+           </p>
+          </div>
+        </div>
+      </div>
+      <Spacer size="large"/>
     </div>
   );
 };
