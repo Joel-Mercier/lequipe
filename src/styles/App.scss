@@ -370,6 +370,13 @@
       text-align: center;
       color: $beige;
     }
+    .decorated-content {
+      color: $text-color;
+    }
+  }
+  .parallax-item--first {
+    top: 0;
+    left: -150px;
   }
 }
 

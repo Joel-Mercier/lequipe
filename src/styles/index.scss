@@ -74,6 +74,9 @@ blockquote {
   font-style: italic;
   color: $green-dark;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  cite {
+    font-size: 24px;
+  }
 }
 
 figure {
@@ -97,6 +100,9 @@ figcaption {
 @include for-sm-up {
   blockquote {
     font-size: 34px;
+    cite {
+      font-size: 26px;
+    }
   }
 }
 
@@ -106,6 +112,9 @@ figcaption {
 @include for-lg-up {
   blockquote {
     font-size: 64px;
+    cite {
+      font-size: 44px;
+    }
   }
 }
 
