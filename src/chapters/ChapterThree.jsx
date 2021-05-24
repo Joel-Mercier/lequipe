@@ -14,7 +14,7 @@ const ChapterThree = () => {
   return (
     <div className="chapter-three">
       <ChapterTitle
-        title="Des terrains inconnus"
+        title="Entre deux selles"
         mainBackground={ChapterThreeTitleBg1}
         secondaryBackground={ChapterThreeTitleBg2}
       />

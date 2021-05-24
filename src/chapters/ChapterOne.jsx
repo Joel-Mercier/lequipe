@@ -50,7 +50,7 @@ const ChapterOne = () => {
             </p>
           </div>
           <div className="col-12 col-md-6 justify-content-center">
-            <Iframe src="https://www.dailymotion.com/embed/video/x6iuck6" title="Vidéo chapitre 1" containerClass="mt-5"/>
+            <Iframe src="https://www.dailymotion.com/embed/video/x81gh3o" title="Vidéo chapitre 1" containerClass="mt-5"/>
           </div>
         </div>
       </div>
@@ -108,7 +108,7 @@ const ChapterOne = () => {
                 <img src={chapterOneCircle1} alt="" className="img-fluid" />
               </LazyLoad>
             </Parallax>
-            <Parallax y={["200px", "-100px"]} tagOuter="figure">
+            <Parallax y={["200px", "-200px"]} tagOuter="figure">
               <LazyLoad once offset={500}>
                 <img src={chapterOneImg1} alt="Chapitre 1" className="img-fluid" />
               </LazyLoad>
