@@ -29,7 +29,7 @@ const Intro = () => {
         </div>
       </div>
       <Spacer size="small" />
-      <div className="cover-section" style={{height: '1200px', backgroundImage: `url(${introImg1})`}}>
+      <div className="cover-section cover-section--intro-first">
         <div className="content-container">
           <Parallax y={["200px", "-200px"]} tagOuter="figure">
             <blockquote className="cover-section__quote">

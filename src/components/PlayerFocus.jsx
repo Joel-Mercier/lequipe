@@ -6,7 +6,7 @@ import playerFocusMorgan from '../assets/player-focus-morgan.png';
 import playerFocusElodieGif from '../assets/player-focus-elodie.gif';
 import playerFocusElodie from '../assets/player-focus-elodie.png';
 import playerFocusPaulGif from '../assets/player-focus-paul.gif';
-import playerFocusPaul from '../assets/player-focus-paul.png';
+import playerFocusPaul from '../assets/player-focus-paul-2.png';
 
 const players = [
   {

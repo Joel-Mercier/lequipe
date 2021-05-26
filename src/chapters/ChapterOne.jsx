@@ -34,7 +34,7 @@ const ChapterOne = () => {
       <Spacer size="large"/>
       <Parallax className="page-decoration page-decoration--is-right" y={["300px", "-300px"]} tagOuter="figure">
         <LazyLoad once offset={500}>
-          <img src={chapterOneBg3} alt="chapter one background"/>
+          <img src={chapterOneBg3} alt="chapter one background" className="img-fluid"/>
         </LazyLoad>
       </Parallax>
       <div className="container">
@@ -157,7 +157,7 @@ const ChapterOne = () => {
       <Spacer size="medium"/>
       <div className="page-decoration page-decoration--is-right">
         <LazyLoad once offset={500}>
-          <img src={chapterOneBg5} alt="chapter one background"/>
+          <img src={chapterOneBg5} alt="chapter one background" className="img-fluid"/>
         </LazyLoad>
       </div>
       <div className="container">

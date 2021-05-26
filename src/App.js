@@ -8,6 +8,7 @@ import SplashScreen from './components/SplashScreen';
 import BackToTop from './components/BackToTop';
 import Cover from './components/Cover';
 import Header from './components/Header';
+import IntroVideo from './components/IntroVideo';
 import Intro from './chapters/Intro';
 import ChapterOne from './chapters/ChapterOne';
 import ChapterTwo from './chapters/ChapterTwo';
@@ -95,6 +96,7 @@ const App = () => {
         <SplashScreen />
         <Header/>
         <Cover/>
+        <IntroVideo/>
         <Intro/>
         <ChapterOne/>
         <ChapterTwo/>

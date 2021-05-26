@@ -51,6 +51,11 @@
   }
 }
 
+.intro-video {
+  height: 100vh;
+  background-color: #000000;
+}
+
 .cover-section {
   height: 1200px;
   background-image: url(./../assets/cover-bg.png);
@@ -74,7 +79,7 @@
       top: 0;
       left: 0;
       right: 0;
-      bottom: -370px;
+      bottom: -321px;
       background-image: url(../assets/intro-bg-2.png);
       background-position: bottom;
       background-repeat: no-repeat;
@@ -358,10 +363,15 @@
 .intro {
   background-color: $intro-bg;
   padding-top: 200px;
-
   .parallax-item--first {
     top: -100px;
     left: -150px;
+  }
+  .cover-section {
+    &.cover-section--intro-first {
+      height: 600px;
+      background-image: url(../assets/intro-1.png);
+    }
   }
 }
 
@@ -401,11 +411,20 @@
       background-image: url(../assets/chapter-2-bg-2.png);
       color: $text-color;
     }
+    &.cover-section--chapter-2-second {
+      height: 1322px;
+      background-image: url(../assets/chapter-2-bg-6.png);
+      color: $text-color;
+    }
   }
   .decorated-content {
     color: $text-color;
   }
   .parallax-item--first {
+    right: 0px;
+    z-index: 1;
+  }
+  .parallax-item--second {
     top: -50px;
     left: -150px;
   }
@@ -414,6 +433,7 @@
 .chapter-three {
   .chapter-title {
     background-color: $intro-bg;
+    margin-top: -32px;
     .chapter-title__title {
       color: $green;
       text-shadow: 4px 4px 0px $green-light;
@@ -461,6 +481,15 @@
   }
   .container {
     z-index: 1;
+  }
+  .timeline__bg-inner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s $easing;
+    &.timeline__bg-inner--is-active {
+      opacity: 1;
+      visibility: visible;
+    }
   }
   .timeline__nav {
     display: flex;
@@ -698,7 +727,8 @@
   background-image: url(./../assets/interview-bg.png);
   height: 1296px;
   .btn {
-    position: absolute;
+    position: static;
+    margin-bottom: 1rem;
     &.polo {
       top: 20%;
       left: 10%;
@@ -870,7 +900,8 @@
 }
 
 .footer {
-  margin: 100px 0;
+  padding: 100px 0;
+  background-color: $intro-bg;
   .footer__logo {
     height: 30px;
   }
@@ -1006,6 +1037,39 @@
   }
 }
 
+.page-decoration {
+  position: absolute;
+  z-index: -1;
+  max-width: 100px;
+  &.page-decoration--is-full {
+    right: 0;
+    left: 0;
+    max-width: none;
+  }
+  &.page-decoration--is-right {
+    right: 0;
+  }
+  &.page-decoration--is-left {
+    left: 0;
+  }
+}
+
+.iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+  }
+}
+
 @include for-sm-up {
   .header {
     .header__logo {
@@ -1022,12 +1086,15 @@
       font-size: 64px;
     }
   }
+  .page-decoration {
+    max-width: 200px;
+  }
 }
 
 @include for-md-up {
   .timeline {
     .timeline__nav {
-      overflow: hidden;
+      overflow: visible;
       justify-content: center;
       .timeline__nav-item {
         margin: 12px 0;
@@ -1054,38 +1121,17 @@
       margin-bottom: 160px;
     }
   }
-}
-
-.page-decoration {
-  position: absolute;
-  z-index: -1;
-  &.page-decoration--is-full {
-    right: 0;
-    left: 0;
+  .page-decoration {
+    max-width: 200px;
   }
-  &.page-decoration--is-right {
-    right: 0;
-  }
-  &.page-decoration--is-left {
-    left: 0;
+  .interview {
+    .btn {
+      position: absolute;
+      margin-bottom: 0;
+    }
   }
 }
 
-.iframe-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-
-  iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    overflow: hidden;
-  }
-}
 @include for-lg-up {
   .cover-section {
     .cover-section__title {
@@ -1117,6 +1163,16 @@
     .player-focus__animation-container {
       .player-focus__animation {
         right: 70px;
+      }
+    }
+  }
+  .page-decoration {
+    max-width: none;
+  }
+  .intro {
+    .cover-section {
+      &.cover-section--intro-first {
+        height: 1200px;
       }
     }
   }
