@@ -53,7 +53,7 @@ const Timeline = () => {
 
   const handleNavItemClick = useCallback((index) => {
     setActive(index)
-  }, [])
+  }, []);
 
   return (
     <div className="timeline cover-section" style={{height: "920px"}}>

@@ -5,6 +5,7 @@ import ChapterTitle from '../components/ChapterTitle';
 import Spacer from '../components/Spacer';
 import Iframe from '../components/Iframe';
 import FloatingImages from '../components/FloatingImages';
+import Stats from '../components/Stats';
 import ChapterThreeTitleBg1 from '../assets/chapter-3-title-bg-1.png';
 import ChapterThreeTitleBg2 from '../assets/chapter-3-title-bg-2.png';
 import ChapterThreeImg1 from '../assets/chapter-3-img-1.png';
@@ -15,6 +16,8 @@ import ChapterThreeImg5 from '../assets/chapter-3-img-5.png';
 import ChapterThreeImg6 from '../assets/chapter-3-img-6.png';
 import ChapterThreeImg7 from '../assets/chapter-3-img-7.png';
 import ChapterThreeBg1 from '../assets/chapter-3-bg-1.png';
+import ChapterThreeBg2 from '../assets/chapter-3-bg-2.png';
+import ChapterThreeCircle1 from '../assets/chapter-3-circle-1.png';
 
 const ChapterThree = () => {
   return (
@@ -138,13 +141,19 @@ const ChapterThree = () => {
             </Parallax>
           </div>
           <div className="col-12 col-md-6 pl-lg-5">
-            <p>
-              Le Marseille Bike Polo est l’un de ces clubs sans terrain fixe. Faute d’un lieu approprié, les joueurs se retrouvaient un temps dans un parc municipal partagé avec les enfants du coin. En attendant une réponse de la mairie, ils ont tenté une approche à l’amiable avec un club de roller de la ville pour avoir accès à leur terrain de jeu. Sans succès. Gabriel, responsable du club, et ses coéquipiers y jouent malgré tout, sautant la grille pour s'y entraîner. “Le gros handicap, c’est de ne pas être légitime à venir occuper le terrain. A chaque fois, on risque de se faire virer, et on sera dans l'obligation de partir.”
-            </p>
-            <Spacer size="medium"/>
-            <p>
-              Sans infrastructures adaptées, difficile de faire grandir le nombre d’adhérents. Si la discipline a connu une forte croissance durant ses premières années d’existence, elle rencontre aujourd’hui des difficultés de visibilité. Le nombre de joueurs inscrits en club stagne. En cinq ans, il n’a augmenté que de 40 personnes.
-            </p>
+            <div className="decorated-content" style={{height: "932px"}}>
+              <LazyLoad once offset={500}>
+                <img src={ChapterThreeBg2} alt="Chapitre 3" className="img-fluid" />
+              </LazyLoad>
+              <div className="decorated-content__content">
+                <p>
+                  Le Marseille Bike Polo est l’un de ces clubs sans terrain fixe. Faute d’un lieu approprié, les joueurs se retrouvaient un temps dans un parc municipal partagé avec les enfants du coin. En attendant une réponse de la mairie, ils ont tenté une approche à l’amiable avec un club de roller de la ville pour avoir accès à leur terrain de jeu. Sans succès. Gabriel, responsable du club, et ses coéquipiers y jouent malgré tout, sautant la grille pour s'y entraîner. “Le gros handicap, c’est de ne pas être légitime à venir occuper le terrain. A chaque fois, on risque de se faire virer, et on sera dans l'obligation de partir.”
+                </p>
+                <p className="mt-5">
+                  Sans infrastructures adaptées, difficile de faire grandir le nombre d’adhérents. Si la discipline a connu une forte croissance durant ses premières années d’existence, elle rencontre aujourd’hui des difficultés de visibilité. Le nombre de joueurs inscrits en club stagne. En cinq ans, il n’a augmenté que de 40 personnes.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -153,6 +162,7 @@ const ChapterThree = () => {
         <div className="row">
           <div className="col-12">
             <h3>Le profil des joueurs de Hardcourt Bike Polo en France</h3>
+            <Stats/>
           </div>
         </div>
       </div>
@@ -161,15 +171,27 @@ const ChapterThree = () => {
         <div className="row">
           <div className="col-12 col-md-6 pr-lg-5">
             <h3>L’ombre de la fédération</h3>
-            <p>
-              Pour y remédier, la possibilité d’institutionnaliser ce sport, en intégrant la prestigieuse Fédération Française de Cyclisme (FFC), a été soulevée. Durant ses études en management du sport, Paul Vergnaud, de l’équipe CallMeDaddy, a fait un stage de six mois à la FFC en 2010. Il prend alors ce débat à bras le corps en réalisant un audit auprès de toutes les associations de Bike Polo de France pour une potentielle affiliation à l’instance. “La Fédé’ était très intéressée de nous recruter. On était en plein développement et on véhiculait une image plutôt sympathique et décalée de la pratique du vélo.”
-            </p>
-            <Spacer size="medium" />
-            <p>
-              Pourtant, le verdict est sans appel.”Ce n'était pas la volonté des joueurs et des clubs de s’engager vers une telle intégration, analyse Paul. On préférait vivre en toute indépendance grâce aux passionnés qui s’investissent sans compter au quotidien.” Selon lui, l'avenir du sport ne se trouve pas dans une affiliation avec la FFC. 
-            </p>
+            <div className="decorated-content" style={{height: "932px"}}>
+              <LazyLoad once offset={500}>
+                <img src={ChapterThreeBg2} alt="Chapitre 3" className="img-fluid" />
+              </LazyLoad>
+              <div className="decorated-content__content">
+                <p>
+                  Pour y remédier, la possibilité d’institutionnaliser ce sport, en intégrant la prestigieuse Fédération Française de Cyclisme (FFC), a été soulevée. Durant ses études en management du sport, Paul Vergnaud, de l’équipe CallMeDaddy, a fait un stage de six mois à la FFC en 2010. Il prend alors ce débat à bras le corps en réalisant un audit auprès de toutes les associations de Bike Polo de France pour une potentielle affiliation à l’instance. “La Fédé’ était très intéressée de nous recruter. On était en plein développement et on véhiculait une image plutôt sympathique et décalée de la pratique du vélo.”
+                </p>
+                <p className="mt-5">
+                  Pourtant, le verdict est sans appel.”Ce n'était pas la volonté des joueurs et des clubs de s’engager vers une telle intégration, analyse Paul. On préférait vivre en toute indépendance grâce aux passionnés qui s’investissent sans compter au quotidien.” Selon lui, l'avenir du sport ne se trouve pas dans une affiliation avec la FFC. 
+                </p>
+              </div>
+            </div>
+           
           </div>
-          <div className="col-12 col-md-6 pl-lg-5">
+          <div className="col-12 col-md-6 pl-lg-5 position-relative">
+            <Parallax className="position-absolute parallax-item--first" y={["100px", "-100px"]} tagOuter="figure">
+              <LazyLoad once offset={500}>
+                <img src={ChapterThreeCircle1} alt="" className="img-fluid" />
+              </LazyLoad>
+            </Parallax>
             <Parallax y={["200px", "-200px"]} tagOuter="figure">
               <LazyLoad once offset={500}>
                 <img src={ChapterThreeImg6} alt="Chapitre 3" className="img-fluid pl-lg-5" />

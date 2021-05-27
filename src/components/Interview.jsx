@@ -64,6 +64,7 @@ const Interview = () => {
           </p>
         </button>
       ))}
+      <div className="interview__bg"></div>
     </div>
   );
 };

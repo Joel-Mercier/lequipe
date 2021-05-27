@@ -15,6 +15,7 @@ import chapterOneBg5 from '../assets/chapter-1-bg-5.png';
 import chapterOneBg6 from '../assets/chapter-1-bg-6.png';
 import chapterOneBg7 from '../assets/chapter-1-bg-7.png';
 import chapterOneBg8 from '../assets/chapter-1-bg-8.png';
+import chapterOneBg9 from '../assets/chapter-1-bg-9.png';
 import chapterOneCircle1 from '../assets/intro-circle-1.png';
 import chapterOneImg1 from '../assets/chapter-1-img-1.png';
 import chapterOneImg2 from '../assets/chapter-1-img-2.png';
@@ -56,7 +57,7 @@ const ChapterOne = () => {
       </div>
       <Spacer size="medium" />
       <PlayerFocus/>
-      <Spacer size="medium" />
+      <Spacer size="large" />
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6 pr-lg-5 order-last order-md-first">
@@ -68,9 +69,9 @@ const ChapterOne = () => {
               </blockquote>
             </Parallax>
             <Parallax y={["200px", "-200px"]} tagOuter="figure">
-              <div className="decorated-content" style={{height: "437px"}}>
+              <div className="decorated-content decorated-content--first" style={{height: "437px"}}>
                 <LazyLoad once offset={500}>
-                  <img src={chapterOneBg4} alt="Chapitre 1" className="img-fluid" />
+                  <img src={chapterOneBg4} alt="Chapitre 1" />
                 </LazyLoad>
                 <div className="decorated-content__content">
                   <p>
@@ -171,6 +172,8 @@ const ChapterOne = () => {
             <p>
               Autre membre du club phocéen, Enrico est tantôt joueur, tantôt mécano. Il se charge parfois de la réparation des engins de ses partenaires. “Si une pièce se casse, on ne se rend pas de suite dans un magasin, explique le jeune marseillais, on cherche d’abord à réparer par nous-même”. Il a récemment lancé un atelier d’auto-réparation de vélo engagé Plan B, partenaire de Marseille Bike Polo.   
             </p>
+            <Spacer size="medium" />
+            <Iframe src="https://www.dailymotion.com/embed/video/x81h1p6" title="Vidéo chapitre 1" containerClass="mt-5"/>
           </div>
           <div className="col-12 col-md-6 pl-lg-5">
             <Parallax y={["200px", "-200px"]} tagOuter="figure">
@@ -200,9 +203,9 @@ const ChapterOne = () => {
           <div className="row">
             <div className="col-12 col-md-6">
               <Parallax y={["200px", "-200px"]} tagOuter="figure">
-                <div className="decorated-content" style={{height: "450px"}}>
+                <div className="decorated-content decorated-content--second" style={{height: "450px"}}>
                   <LazyLoad once offset={500}>
-                    <img src={chapterOneBg6} alt="Chapitre 1" className="img-fluid" />
+                    <img src={chapterOneBg6} alt="Chapitre 1" />
                   </LazyLoad>
                   <div className="decorated-content__content">
                     <p>
@@ -214,9 +217,9 @@ const ChapterOne = () => {
             </div>
             <div className="col-12 col-md-6">
               <Parallax y={["200px", "-200px"]} tagOuter="figure">
-                <div className="decorated-content" style={{height: "661px"}}>
+                <div className="decorated-content decorated-content--third" style={{height: "661px"}}>
                   <LazyLoad once offset={500}>
-                    <img src={chapterOneBg7} alt="Chapitre 1" className="img-fluid" />
+                    <img src={chapterOneBg7} alt="Chapitre 1" />
                   </LazyLoad>
                   <div className="decorated-content__content">
                     <p>
@@ -276,7 +279,11 @@ const ChapterOne = () => {
       </div>
       <Spacer size="large"/>
       <div className="cover-section" style={{height: '1098px', backgroundImage: `url(${chapterOneBg8})`}}>
-        
+        <Parallax y={["200px", "-200px"]} tagOuter="figure">
+          <LazyLoad once offset={500}>
+            <img src={chapterOneBg9} alt="Chapitre 1" className="img-fluid" />
+          </LazyLoad>
+        </Parallax>
       </div>
     </div>
   );

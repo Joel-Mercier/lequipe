@@ -219,7 +219,7 @@ const ChapterTwo = () => {
           </div>
         </div>
       </div>
-      <Spacer size="large"/>
+      <Spacer size="medium"/>
       <div className="cover-section cover-section--chapter-2-second">
         <div className="container">
           <div className="content-container">

@@ -388,6 +388,21 @@
       color: $text-color;
     }
   }
+  .decorated-content {
+    &.decorated-content--first {
+    }
+    &.decorated-content--second {
+      .decorated-content__content {
+        padding-left: 62px;
+      }
+    }
+    &.decorated-content--third {
+      .decorated-content__content {
+        padding-left: 100px;
+        padding-top: 0;
+      }
+    }
+  }
   .parallax-item--first {
     top: 0;
     left: -150px;
@@ -438,6 +453,9 @@
       color: $green;
       text-shadow: 4px 4px 0px $green-light;
     }
+  }
+  .decorated-content {
+    color: $text-color;
   }
 }
 
@@ -596,12 +614,14 @@
     text-shadow: 4px 4px 0px $intro-bg;
     text-align: center;
     margin: 0;
+    margin-top: 60px;
   }
 }
 
 .decorated-content {
   position: relative;
   color: #ffffff;
+  overflow: hidden;
   .decorated-content__content {
     position: absolute;
     top: 0;
@@ -615,18 +635,24 @@
 }
 
 .player-focus {
-  height: 1183px;
+  height: 1583px;
   background-image: url(../assets/player-focus-bg.png);
   justify-content: flex-start;
+  .col-12 {
+    &:nth-child(2) {
+      height: 450px;
+    }
+  }
   .player-focus__nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 120px;
     max-width: 100%;
     justify-content: space-between;
     .player-focus__nav-item {
+      margin-bottom: 12px;
       font-family: $heading-font;
       color: $green-dark;
       font-style: italic;
@@ -637,6 +663,9 @@
       transition: opacity 0.3s $easing;
       &:hover {
         opacity: 1;
+      }
+      &:last-child {
+        margin-bottom: 0;
       }
       &.player-focus__nav-item--is-active {
         opacity: 1;
@@ -662,7 +691,7 @@
         visibility: visible;
       }
       li {
-        margin-bottom: 22px;
+        margin-bottom: 12px;
       }
     }
   }
@@ -684,7 +713,7 @@
   }
   .player-focus__animation-container {
     position: relative;
-    min-height: 450px;
+    min-height: 300px;
     background-image: url(../assets/player-focus-bg-2.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -692,7 +721,9 @@
     .player-focus__animation {
       position: absolute;
       top: 0;
-      right: 0;
+      right: 50%;
+      transform: translateX(50%);
+      max-height: 300px;
       opacity: 0;
       visibility: hidden;
       transition: opacity 0.3s $easing;
@@ -706,7 +737,7 @@
     position: relative;
     .player-focus__picture {
       position: absolute;
-      top: 300px;
+      top: 230px;
       right: 0;
       opacity: 0;
       left: 100%;
@@ -726,6 +757,16 @@
   position: relative;
   background-image: url(./../assets/interview-bg.png);
   height: 1296px;
+  .interview__bg {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    background-image: url(./../assets/interview-bg-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 349px;
+  }
   .btn {
     position: static;
     margin-bottom: 1rem;
@@ -847,6 +888,58 @@
         font-weight: bold;
         margin-bottom: 0;
         text-align: center;
+      }
+    }
+  }
+}
+
+.stats-container {
+  height: 727px;
+  background-image: url(./../assets/stats-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .stats__nav {
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    margin-top: 100px;
+    overflow: scroll;
+    .stats__nav-item {
+      font-size: 34px;
+      color: $green-dark;
+      font-weight: bold;
+      text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
+      margin: 12px 24px;
+      will-change: transform;
+      transition: transform 0.3s $easing;
+      transform-origin: center;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.4);
+      }
+      &.stats__nav-item--is-active {
+        transform: scale(1.4);
+      }
+    }
+  }
+  .stats__content-container {
+    position: relative;
+    .stats__content {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s $easing;
+      iframe {
+        display: block;
+        margin: 0 auto;
+      }
+      &.stats__content--is-active {
+        opacity: 1;
+        visibility: visible;
       }
     }
   }
@@ -1070,6 +1163,16 @@
   }
 }
 
+@media (min-width: 450px) {
+  .player-focus {
+    .col-12 {
+      &:nth-child(2) {
+        height: 540px;
+      }
+    }
+  }
+}
+
 @include for-sm-up {
   .header {
     .header__logo {
@@ -1112,7 +1215,16 @@
       }
     }
   }
+  .page-decoration {
+    max-width: 200px;
+  }
   .player-focus {
+    height: 1183px;
+    .col-md-6 {
+      &:first-child {
+        height: auto;
+      }
+    }
     .player-focus__nav {
       flex-direction: row;
       align-items: flex-start;
@@ -1120,14 +1232,62 @@
       margin-top: 100px;
       margin-bottom: 160px;
     }
-  }
-  .page-decoration {
-    max-width: 200px;
+    .player-focus__infos-container {
+      .player-focus__infos {
+        position: absolute;
+        li {
+          margin-bottom: 22px;
+        }
+      }
+    }
+    .player-focus__description-container {
+      .player-focus__description {
+        position: absolute;
+      }
+    }
+    .player-focus__animation-container {
+      min-height: 450px;
+      .player-focus__animation {
+        position: absolute;
+        max-height: none;
+        right: 0;
+        transform: none;
+      }
+    }
+    .player-focus__picture-container {
+      .player-focus__picture {
+        position: absolute;
+        top: 300px;
+        right: 0;
+        opacity: 0;
+        left: 100%;
+      }
+    }
   }
   .interview {
     .btn {
       position: absolute;
       margin-bottom: 0;
+    }
+  }
+  .stats-container {
+    height: 587px;
+    background-size: contain;
+    .row {
+      height: 100%;
+    }
+    .stats__nav {
+      justify-content: center;
+      overflow: visible;
+      margin-top: 0;
+      .stats__nav-item {
+        margin: 12px 0;
+        transform-origin: left;
+      }
+    }
+    .stats__content-container {
+      .stats__content {
+      }
     }
   }
 }
