@@ -24,6 +24,7 @@ import ChapterTwoBg3 from '../assets/chapter-2-bg-3.png';
 import ChapterTwoBg4 from '../assets/chapter-2-bg-4.png';
 import ChapterTwoBg5 from '../assets/chapter-2-bg-5.png';
 import ChapterTwoBg7 from '../assets/chapter-2-bg-7.png';
+import ChapterTwoBg9 from '../assets/chapter-2-bg-9.png';
 import introCircle1 from '../assets/intro-circle-1.png';
 import ChapterThreeCirlce1 from '../assets/chapter-3-circle-1.png';
 
@@ -103,7 +104,7 @@ const ChapterTwo = () => {
               Du côté de Lyon Bike Polo, les entraînements sont une succession de matchs, pour le plus grand plaisir des joueurs expérimentés. “Le problème, c'est que ça ne nous permet pas d’inclure de nouveaux venus”, regrette Quentin Bouchard, membre lyonnais. Un aspect dont les clubs ont bien conscience : “ On essaie d’éviter que les forts soient toujours avec les forts et les faibles avec les faibles.” explique Paul Vergnaud. Avant le match, les clubs font souvent un “shuffle” : les maillets des joueurs sont lancés au hasard sur le terrain pour former les équipes, ce qui permet parfois de mélanger les niveaux. À Strasbourg, Elodie Martini a choisi d’organiser des exercices pratiques en début de session pour intégrer convenablement les débutants.
             </p>
             <Spacer size="medium"/>
-            <Iframe src="https://www.dailymotion.com/embed/video/k5HNpctdCkMyUCwTXel" title="Vidéo chapitre 2" containerClass="mt-5"/>
+            <Iframe src="https://www.dailymotion.com/embed/video/k5HNpctdCkMyUCwTXel?queue-enable=false" title="Vidéo chapitre 2" containerClass="mt-5"/>
             <Spacer size="medium"/>
             <figure className="team-logos">
               <div className="d-flex flex-row align-items-center justify-content-center">
@@ -165,6 +166,20 @@ const ChapterTwo = () => {
                   <img src={ChapterTwoImg11} alt="Chapitre 2" className="img-fluid" />
                 </LazyLoad>
                 <figcaption>Jean-François Jolfre est membre du bureau de Paris Bike Polo. C’est un ancien membre du comité Bike Polo France. Ici, il joue sur un terrain à la frontière entre Pantin et Paris.</figcaption>
+              </Parallax>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Spacer size="medium"/>
+      <div className="cover-section cover-section--chapter-2-third">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <Parallax y={["200px", "-200px"]} tagOuter="figure">
+                <LazyLoad once offset={500}>
+                  <img src={ChapterTwoBg9} alt="Chapitre 2" className="img-fluid" />
+                </LazyLoad>
               </Parallax>
             </div>
           </div>

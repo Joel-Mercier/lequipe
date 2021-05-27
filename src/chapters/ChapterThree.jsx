@@ -17,7 +17,9 @@ import ChapterThreeImg6 from '../assets/chapter-3-img-6.png';
 import ChapterThreeImg7 from '../assets/chapter-3-img-7.png';
 import ChapterThreeBg1 from '../assets/chapter-3-bg-1.png';
 import ChapterThreeBg2 from '../assets/chapter-3-bg-2.png';
+import ChapterThreeBg3 from '../assets/chapter-3-bg-3.png';
 import ChapterThreeCircle1 from '../assets/chapter-3-circle-1.png';
+import ChapterThreeCircle2 from '../assets/chapter-3-circle-2.png';
 
 const ChapterThree = () => {
   return (
@@ -46,7 +48,12 @@ const ChapterThree = () => {
               Pour Morgan Hidalgo, le sponsoring des joueurs par ces entreprises spécialisées est différent des autres sports : “Nous n’avons pas de contrats formels. Ce qu’ils nous demandent, c’est de la visibilité. Le Bike Polo est un sport trop petit pour bénéficier du sponsoring de marques plus connues. Pour elles, ce n’est pas un marché suffisamment intéressant. Mais on essaie quand même !” Preuve en est, certains joueurs ont collaboré ponctuellement avec des marques de luxe comme Louis Vuitton ou Louboutin ; loin des débuts sur les parkings et les friches. 
             </p>
           </div>
-          <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
+          <div className="col-12 col-md-6 d-flex flex-column justify-content-center position-relative">
+            <Parallax className="position-absolute parallax-item--first" y={["100px", "-100px"]} tagOuter="figure">
+              <LazyLoad once offset={500}>
+                <img src={ChapterThreeCircle2} alt="" className="img-fluid" />
+              </LazyLoad>
+            </Parallax>
             <Parallax y={["400px", "-100px"]} tagOuter="figure">
               <LazyLoad once offset={500}>
                 <img src={ChapterThreeImg1} alt="Chapitre 3" className="img-fluid" />
@@ -55,7 +62,7 @@ const ChapterThree = () => {
             <div className="row">
               <div className="col-12 col-sm-6">
                 <Parallax y={["200px", "-200px"]} tagOuter="figure">
-                  <figcaption className="pl-lg-5">
+                  <figcaption className="pl-lg-5 mt-5">
                     Des nombreuses structures et entreprises se sont créées dans le sillage du Bike Polo. En haut, un atelier de réparation qui auvrir avec Paul Vergnaud et ses amis rencontrés via le sport. En bas, un balle de HardcourtBikePolo de la marque montellieraine RogerBikePolo.
                   </figcaption>
                 </Parallax>
@@ -68,7 +75,7 @@ const ChapterThree = () => {
                 </Parallax>
               </div>
             </div>
-            <Iframe src="https://www.dailymotion.com/embed/video/x81h6ev" title="Vidéo chapitre 3" containerClass="mt-5"/>
+            <Iframe src="https://www.dailymotion.com/embed/video/x81h6ev?queue-enable=false" title="Vidéo chapitre 3" containerClass="mt-5"/>
           </div>
         </div>
       </div>
@@ -96,10 +103,17 @@ const ChapterThree = () => {
         </div>
       </div>
       <Spacer size="small"/>
+      <div className="position-relative">
+        <div className="page-decoration page-decoration--is-left">
+          <LazyLoad once offset={500}>
+            <img src={ChapterThreeBg3} alt="chapter three background" className="w-100"/>
+          </LazyLoad>
+        </div>
+      </div>
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6 pr-lg-5">
-            <p>
+            <p className="mt-5 mr-5">
               <strong>
                 En France, seuls quatre courts sont exclusivement dédiés à la pratique de cette
                 discipline. Six courts intérieurs permettent également aux équipes qui le
@@ -125,11 +139,11 @@ const ChapterThree = () => {
         <div className="row">
           <div className="col-12">
             <h3>Les terrains des clubs français</h3>
-            {/* <FloatingImages/> */}
+            <FloatingImages/>
           </div>
         </div>
       </div>
-      <Spacer size="small"/>
+      <Spacer size="large"/>
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6 pr-lg-5">
@@ -163,6 +177,7 @@ const ChapterThree = () => {
           <div className="col-12">
             <h3>Le profil des joueurs de Hardcourt Bike Polo en France</h3>
             <Stats/>
+            <p className="h3 ml-sm-5" style={{marginTop: "-40px"}}>Coût moyen de cotisation : 27€</p>
           </div>
         </div>
       </div>

@@ -51,7 +51,7 @@ const ChapterOne = () => {
             </p>
           </div>
           <div className="col-12 col-md-6 justify-content-center">
-            <Iframe src="https://www.dailymotion.com/embed/video/x81gh3o" title="Vidéo chapitre 1" containerClass="mt-5"/>
+            <Iframe src="https://www.dailymotion.com/embed/video/x81gh3o?queue-enable=false" title="Vidéo chapitre 1" containerClass="mt-5"/>
           </div>
         </div>
       </div>
@@ -141,7 +141,7 @@ const ChapterOne = () => {
         <div className="row">
           <div className="col-12 col-md-6">
             <Parallax y={["200px", "-200px"]} tagOuter="figure">
-              <blockquote>
+              <blockquote className="text-center">
                 « On fait tout nous-même. »
                 <br/>
                 <cite title="Gabriel, MarseilleBikePolo">- Gabriel, MarseilleBikePolo</cite>
@@ -173,7 +173,7 @@ const ChapterOne = () => {
               Autre membre du club phocéen, Enrico est tantôt joueur, tantôt mécano. Il se charge parfois de la réparation des engins de ses partenaires. “Si une pièce se casse, on ne se rend pas de suite dans un magasin, explique le jeune marseillais, on cherche d’abord à réparer par nous-même”. Il a récemment lancé un atelier d’auto-réparation de vélo engagé Plan B, partenaire de Marseille Bike Polo.   
             </p>
             <Spacer size="medium" />
-            <Iframe src="https://www.dailymotion.com/embed/video/x81h1p6" title="Vidéo chapitre 1" containerClass="mt-5"/>
+            <Iframe src="https://www.dailymotion.com/embed/video/x81h1p6?queue-enable=false" title="Vidéo chapitre 1" containerClass="mt-5"/>
           </div>
           <div className="col-12 col-md-6 pl-lg-5">
             <Parallax y={["200px", "-200px"]} tagOuter="figure">
@@ -278,7 +278,7 @@ const ChapterOne = () => {
         </div>
       </div>
       <Spacer size="large"/>
-      <div className="cover-section" style={{height: '1098px', backgroundImage: `url(${chapterOneBg8})`}}>
+      <div className="cover-section" style={{height: '1098px', background: `url(${chapterOneBg8}), linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 30%, rgba(243,235,231,1) 100%)`}}>
         <Parallax y={["200px", "-200px"]} tagOuter="figure">
           <LazyLoad once offset={500}>
             <img src={chapterOneBg9} alt="Chapitre 1" className="img-fluid" />

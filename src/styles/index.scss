@@ -52,19 +52,24 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.h1,
+.h2,
+.h3 {
   font-family: $heading-font;
   font-weight: bold;
   word-break: break-word;
 }
 
-h2 {
+h2,
+.h2 {
   font-size: 62px;
   color: $green;
 }
 
-h3 {
-  font-size: 34px;
+h3,
+.h3 {
+  font-size: 36px;
   color: $green-dark;
 }
 
@@ -110,7 +115,10 @@ figcaption {
   h3,
   h4,
   h5,
-  h6 {
+  h6,
+  .h1,
+  .h2,
+  .h3 {
     word-break: normal;
   }
 }
@@ -120,9 +128,9 @@ figcaption {
 
 @include for-lg-up {
   blockquote {
-    font-size: 64px;
+    font-size: 48px;
     cite {
-      font-size: 44px;
+      font-size: 36px;
     }
   }
 }

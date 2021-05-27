@@ -428,8 +428,18 @@
     }
     &.cover-section--chapter-2-second {
       height: 1322px;
-      background-image: url(../assets/chapter-2-bg-6.png);
+      background: url(../assets/chapter-2-bg-6.png),
+        linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(0, 0, 0, 0) 30%,
+          $intro-bg 100%
+        );
       color: $text-color;
+    }
+    &.cover-section--chapter-2-third {
+      height: 820px;
+      background-image: url(../assets/chapter-2-bg-8.png);
     }
   }
   .decorated-content {
@@ -456,6 +466,16 @@
   }
   .decorated-content {
     color: $text-color;
+  }
+  .parallax-item--first {
+    top: 0;
+    z-index: 1;
+    left: 0;
+  }
+  .page-decoration {
+    &.page-decoration--is-left {
+      max-width: 100%;
+    }
   }
 }
 
@@ -803,16 +823,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;
-  .floating-images__image {
+  .floating-images__column {
+    position: relative;
     margin: 0 12px;
-    will-change: transform;
-
     &:first-child {
       margin-left: 0;
     }
     &:last-child {
       margin-right: 0;
+    }
+    .floating-images__image {
+      will-change: transform;
+    }
+    .floating-images__title {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      color: $green-light;
+      font-size: 28px;
+      line-height: 40px;
+      font-weight: bold;
+      text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
   }
 }
@@ -916,10 +948,10 @@
       transform-origin: center;
       cursor: pointer;
       &:hover {
-        transform: scale(1.4);
+        transform: scale(1.3);
       }
       &.stats__nav-item--is-active {
-        transform: scale(1.4);
+        transform: scale(1.3);
       }
     }
   }
@@ -1195,6 +1227,13 @@
 }
 
 @include for-md-up {
+  .chapter-three {
+    .page-decoration {
+      &.page-decoration--is-left {
+        max-width: 50%;
+      }
+    }
+  }
   .timeline {
     .timeline__nav {
       overflow: visible;
@@ -1285,8 +1324,22 @@
         transform-origin: left;
       }
     }
-    .stats__content-container {
-      .stats__content {
+  }
+  .floating-images {
+    .floating-images__column {
+      &:nth-child(even) {
+        .floating-images__title {
+          bottom: 0;
+        }
+      }
+      &:nth-child(odd) {
+        .floating-images__title {
+          top: 0;
+        }
+      }
+      .floating-images__title {
+        font-size: 48px;
+        top: auto;
       }
     }
   }

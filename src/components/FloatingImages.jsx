@@ -6,10 +6,22 @@ import floatingImg3 from '../assets/floating-img-3.png';
 import floatingImg4 from '../assets/floating-img-4.png';
 
 const images = [
-  floatingImg1,
-  floatingImg2,
-  floatingImg3,
-  floatingImg4,
+  {
+    title: "4 terrains dédiés au Bike Polo",
+    src: floatingImg1,
+  },
+  {
+    title: "6 terrains en intérieur pour jouer l’hiver",
+    src: floatingImg2,
+  },
+  {
+    title: "10 clubs partagent leur terrain",
+    src: floatingImg3,
+  },
+  {
+    title: "4 squattent sans autorisation",
+    src: floatingImg4,
+  },
 ];
 
 const FloatingImages = () => {
@@ -25,7 +37,14 @@ const FloatingImages = () => {
   return (
     <div className="floating-images">
       {images.map((image, index) => {
-        return <animated.div className="floating-images__image" style={{ transform: animationProps.radians.to(interp(index)) }} key={index}><img src={image} alt="floating example" className="img-fluid" /></animated.div>
+        return (
+          <div className="floating-images__column">
+            <animated.div className="floating-images__image" style={{ transform: animationProps.radians.to(interp(index)) }} key={index}>
+              <img src={image.src} alt="floating example" className="img-fluid" />
+            </animated.div>
+            <p className="floating-images__title">{image.title}</p>
+          </div>
+        );
       })}
     </div>
   );
