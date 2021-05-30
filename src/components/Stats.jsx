@@ -47,7 +47,7 @@ const Stats = () => {
         <div className="col-12 col-md-6">
           <div className="stats__content-container">
             {stats.map((stat, i) => (
-              <div className={classNames("stats__content", {"stats__content--is-active": active === i})} key={i}>
+              <div className={classNames("stats__content", {"stats__content--is-active": active === i, "mt-md-5": i !== 0})} key={i}>
                 <LazyLoad once offset={500} key={i}>
                   <iframe title={stat.iFrameTitle} aria-label="chart" src={stat.src} scrolling="no" frameBorder="0" style={{minWidth: "100% !important", border: "none"}} height={stat.height}></iframe>
                 </LazyLoad>

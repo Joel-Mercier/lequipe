@@ -1,6 +1,5 @@
 import React from 'react';
-import { Parallax } from 'react-scroll-parallax';
-import LazyLoad from 'react-lazyload';
+import Image from '../components/Image';
 import Spacer from '../components/Spacer';
 import Timeline from '../components/Timeline';
 import introImg2 from '../assets/intro-2.png';
@@ -28,15 +27,7 @@ const Intro = () => {
         </div>
       </div>
       <Spacer size="small" />
-      <div className="cover-section cover-section--intro-first">
-        <div className="content-container">
-          <Parallax y={["200px", "-200px"]} tagOuter="figure">
-            <blockquote className="cover-section__quote">
-              « Cette discipline très récente  descend directement du vélo-polo sur gazon. »
-            </blockquote>
-          </Parallax>
-        </div>
-      </div>
+      <div className="cover-section cover-section--intro-first"/>
       <Spacer size="medium" />
       <div className="container">
         <div className="row">
@@ -63,17 +54,8 @@ const Intro = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6 pr-lg-5 d-flex align-items-center position-relative">
-            <Parallax className="position-absolute parallax-item--first" y={["100px", "-100px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={introCircle1} alt="" className="img-fluid" />
-              </LazyLoad>
-            </Parallax>
-            <Parallax y={["200px", "-100px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={introImg2} alt="Intro" className="img-fluid" />
-              </LazyLoad>
-              <figcaption>Le hardcourt bike polo se joue sur bitume avec une balle, un maillet et un vélo.</figcaption>
-            </Parallax>
+            <Image src={introCircle1} alt="" className="img-fluid" y={["100px", "-100px"]} parallaxContainerClassName="position-absolute parallax-item--first"/>
+            <Image src={introImg2} alt="Intro" className="img-fluid" y={["200px", "-100px"]} figcaption="Le hardcourt bike polo se joue sur bitume avec une balle, un maillet et un vélo."/>
           </div>
           <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
             <p className="ml-lg-5">
@@ -86,11 +68,7 @@ const Intro = () => {
         <div className="cover-section cover-section--is-intro">
           <div className="cover-section__inner-bg"></div>
           <div className="content-container">
-            <Parallax y={["200px", "-200px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={introImg3} className="img-fluid" alt="Intro" />
-              </LazyLoad>
-            </Parallax>
+            <Image src={introImg3} alt="Intro" className="img-fluid" y={["200px", "-200px"]}/>
           </div>
         </div>
       <Spacer size="medium" />

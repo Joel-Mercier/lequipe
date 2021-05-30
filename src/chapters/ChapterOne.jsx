@@ -1,8 +1,8 @@
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
-import LazyLoad from 'react-lazyload';
 import ChapterTitle from '../components/ChapterTitle';
 import Spacer from '../components/Spacer';
+import Image from '../components/Image';
 import PlayerFocus from '../components/PlayerFocus';
 import Interview from '../components/Interview';
 import Iframe from '../components/Iframe';
@@ -33,11 +33,7 @@ const ChapterOne = () => {
         secondaryBackground={ChapterOneTitleBg2}
       />
       <Spacer size="large"/>
-      <Parallax className="page-decoration page-decoration--is-right" y={["300px", "-300px"]} tagOuter="figure">
-        <LazyLoad once offset={500}>
-          <img src={chapterOneBg3} alt="chapter one background" className="img-fluid"/>
-        </LazyLoad>
-      </Parallax>
+      <Image src={chapterOneBg3} alt="" className="img-fluid" y={["300px", "-300px"]} parallaxContainerClassName="page-decoration page-decoration--is-right"/>
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6 pr-lg-5">
@@ -51,7 +47,7 @@ const ChapterOne = () => {
             </p>
           </div>
           <div className="col-12 col-md-6 justify-content-center">
-            <Iframe src="https://www.youtube.com/embed/eIwAAzkR3zM" title="Vidéo chapitre 1" containerClass="mt-5"/>
+            <Iframe src="https://www.youtube.com/embed/eIwAAzkR3zM?rel=0&modestbranding=1" title="Vidéo chapitre 1" containerClass="mt-5"/>
           </div>
         </div>
       </div>
@@ -70,9 +66,7 @@ const ChapterOne = () => {
             </Parallax>
             <Parallax y={["200px", "-200px"]} tagOuter="figure">
               <div className="decorated-content decorated-content--first" style={{height: "437px"}}>
-                <LazyLoad once offset={500}>
-                  <img src={chapterOneBg4} alt="Chapitre 1" />
-                </LazyLoad>
+                <Image src={chapterOneBg4} alt="" className="img-fluid"/>
                 <div className="decorated-content__content">
                   <p>
                     <strong>Pignon Fixe vs Roue Libre :</strong> Un pignon fixe reste solidaire d’une roue en mouvement. Celle-ci s’arrête avec le pédalier. Sur un vélo dit à “roue libre”, comme sur un vélo de ville ou un VTT, un mécanisme désolidarise le pignon de la roue. Ceci permet au cycliste l’arrêt du pédalage, alors que la roue, elle, continue de tourner.
@@ -98,7 +92,7 @@ const ChapterOne = () => {
               Pour lui, le pignon fixe fait perdre de l’énergie et de la concentration sur la gestion du pédalage. Cela empêcherait de conserver son entière attention sur le terrain et la balle. “J’ai souvent dit que je ne passerais jamais en roue libre [...] Disons le, j’ai menti ! », s’amuse le coursier. 
             </p>
             <Spacer size="medium" />
-            <Iframe src="https://www.youtube.com/embed/kI1Gb-E-sMQ" title="Vidéo chapitre 1" containerClass="mt-5" />
+            <Iframe src="https://www.youtube.com/embed/kI1Gb-E-sMQ?rel=0&modestbranding=1" title="Vidéo chapitre 1" containerClass="mt-5" />
           </div>
         </div>
       </div>
@@ -106,17 +100,8 @@ const ChapterOne = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6 pr-lg-5">
-            <Parallax className="position-absolute parallax-item--first" y={["100px", "-100px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={chapterOneCircle1} alt="" className="img-fluid" />
-              </LazyLoad>
-            </Parallax>
-            <Parallax y={["200px", "-200px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={chapterOneImg1} alt="Chapitre 1" className="img-fluid" />
-              </LazyLoad>
-              <figcaption>Morgan Hidalgo est un des meilleurs joueurs du monde de Hardcourt BikePolo. Ce lyonnais recouvert de tatouages a gagné les derniers championnats du monde avec son équipe les Mongrels.</figcaption>
-            </Parallax>
+            <Image src={chapterOneCircle1} alt="" className="img-fluid" y={["100px", "-100px"]} parallaxContainerClassName="position-absolute parallax-item--first"/>
+            <Image src={chapterOneImg1} alt="Chapitre 1" className="img-fluid" y={["200px", "-200px"]} figcaption="Morgan Hidalgo est un des meilleurs joueurs du monde de Hardcourt BikePolo. Ce lyonnais recouvert de tatouages a gagné les derniers championnats du monde avec son équipe les Mongrels."/>
           </div>
           <div className="col-12 col-md-6 pl-lg-5">
             <Spacer size="large" />
@@ -160,9 +145,7 @@ const ChapterOne = () => {
       </div>
       <Spacer size="medium"/>
       <div className="page-decoration page-decoration--is-right">
-        <LazyLoad once offset={500}>
-          <img src={chapterOneBg5} alt="chapter one background" className="img-fluid"/>
-        </LazyLoad>
+        <Image src={chapterOneBg5} alt="" className="img-fluid"/>
       </div>
       <div className="container">
         <div className="row">
@@ -176,27 +159,12 @@ const ChapterOne = () => {
               Autre membre du club phocéen, Enrico est tantôt joueur, tantôt mécano. Il se charge parfois de la réparation des engins de ses partenaires. “Si une pièce se casse, on ne se rend pas de suite dans un magasin, explique le jeune marseillais, on cherche d’abord à réparer par nous-même”. Il a récemment lancé un atelier d’auto-réparation de vélo engagé Plan B, partenaire de Marseille Bike Polo.   
             </p>
             <Spacer size="medium" />
-            <Iframe src="https://www.youtube.com/embed/ROwnGmtBvkQ" title="Vidéo chapitre 1" containerClass="mt-5"/>
+            <Iframe src="https://www.youtube.com/embed/ROwnGmtBvkQ?rel=0&modestbranding=1" title="Vidéo chapitre 1" containerClass="mt-5"/>
           </div>
           <div className="col-12 col-md-6 pl-lg-5">
-            <Parallax y={["200px", "-200px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={chapterOneImg2} alt="Chapitre 1" className="img-fluid" />
-              </LazyLoad>
-              <figcaption>A Marseille, les joueurs squattent un terrain de roller. Parfois la situation oblige quelques improvisations pour le matériel : ici des pierres et des gourdes pour situer les buts.</figcaption>
-            </Parallax>
-            <Parallax y={["200px", "-200px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={chapterOneImg3} alt="Chapitre 1" className="img-fluid" />
-              </LazyLoad>
-              <figcaption>Le logo de Marseille Bike Polo est fait par un membre graphiste. Gabriel le fondateur du club, l’a ensuite sérigraphié lui même sur des Tshirts pour son équipe.</figcaption>
-            </Parallax>
-            <Parallax y={["200px", "-200px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={chapterOneImg4} alt="Chapitre 1" className="img-fluid" />
-              </LazyLoad>
-              <figcaption>Gabriel (à droite) et Enrico (à gauche), deux membres fondateurs de Marseille Bike Polo se reposent en attendant le prochain match.</figcaption>
-            </Parallax>
+            <Image src={chapterOneImg2} alt="Chapitre 1" className="img-fluid" y={["200px", "-200px"]} figcaption="À Marseille, les joueurs squattent un terrain de roller. Parfois la situation oblige quelques improvisations pour le matériel : ici des pierres et des gourdes pour situer les buts."/>
+            <Image src={chapterOneImg3} alt="Chapitre 1" className="img-fluid" y={["200px", "-200px"]} figcaption="Le logo de Marseille Bike Polo est fait par un membre graphiste. Gabriel le fondateur du club, l’a ensuite sérigraphié lui même sur des Tshirts pour son équipe"/>
+            <Image src={chapterOneImg4} alt="Chapitre 1" className="img-fluid" y={["200px", "-200px"]} figcaption="Gabriel (à droite) et Enrico (à gauche), deux membres fondateurs de Marseille Bike Polo se reposent en attendant le prochain match."/>
           </div>
         </div>
       </div>
@@ -207,9 +175,7 @@ const ChapterOne = () => {
             <div className="col-12 col-md-6">
               <Parallax y={["200px", "-200px"]} tagOuter="figure">
                 <div className="decorated-content decorated-content--second" style={{height: "450px"}}>
-                  <LazyLoad once offset={500}>
-                    <img src={chapterOneBg6} alt="Chapitre 1" />
-                  </LazyLoad>
+                  <Image src={chapterOneBg6} alt="" className="img-fluid"/>
                   <div className="decorated-content__content">
                     <p>
                       <strong>DIY :</strong> L’émergence de la scène punk dans les années 1970 amène un nouveau mode de production : le Do It Yourself (DIY), littéralement « fais-le par toi-même ». Construit autour de trois grands piliers (refus du consumérisme, refus d’un ordre établi et volonté d’émancipation personnelle et collective), le DIY se comprend comme un régime d’engagement soutenu par des pratiques culturelles, des modes organisationnels et des revendications sociales et politiques.
@@ -221,9 +187,7 @@ const ChapterOne = () => {
             <div className="col-12 col-md-6">
               <Parallax y={["200px", "-200px"]} tagOuter="figure">
                 <div className="decorated-content decorated-content--third" style={{height: "661px"}}>
-                  <LazyLoad once offset={500}>
-                    <img src={chapterOneBg7} alt="Chapitre 1" />
-                  </LazyLoad>
+                  <Image src={chapterOneBg7} alt="" className="img-fluid"/>
                   <div className="decorated-content__content">
                     <p>
                       <strong>Engagement :</strong> le Bike Polo peut également être une démarche politique. Au-delà de l’esprit de récup’ et d’auto-réparation, les luttes contre les discriminations sont aussi très importantes pour certains clubs. A Marseille, cette démarche est inscrite dans une charte publiée sur; leur page Facebook. Plusieurs membres du club participent régulièrement aux Vélorutions féministes de la ville et considèrent le vélo aussi comme un outil politique. Le sport est essentiellement mixte avec des compétitions féminines comme les tournois Lady's Army.
@@ -239,12 +203,7 @@ const ChapterOne = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6">
-            <Parallax y={["200px", "-200px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={chapterOneImg5} alt="Chapitre 1" className="img-fluid" />
-              </LazyLoad>
-              <figcaption>À Strasbourg, le terrain de basket est transformé en terrain de Bike Polo grâce au bricolage des membres du club. Des planches de bois achetées et retapées font office de délimitation.</figcaption>
-            </Parallax>
+            <Image src={chapterOneImg5} alt="Chapitre 1" className="img-fluid" y={["200px", "-200px"]} figcaption="À Strasbourg, le terrain de basket est transformé en terrain de Bike Polo grâce au bricolage des membres du club. Des planches de bois achetées et retapées font office de délimitation."/>
           </div>
           <div className="col-12 col-md-6">
             <Parallax y={["200px", "-200px"]} tagOuter="figure">
@@ -260,12 +219,7 @@ const ChapterOne = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6">
-            <Parallax y={["200px", "-200px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={chapterOneImg6} alt="Chapitre 1" className="img-fluid" />
-              </LazyLoad>
-              <figcaption>Paul Vergnaud, double champion du monde, montre des trophés qu’il a remporté, fabriqués par des joueurs. A gauche, une affiche des championnats de France, également réalisée par un joueur.</figcaption>
-            </Parallax>
+            <Image src={chapterOneImg6} alt="Chapitre 1" className="img-fluid" y={["200px", "-200px"]} figcaption="Paul Vergnaud, double champion du monde, montre des trophés qu’il a remporté, fabriqués par des joueurs. A gauche, une affiche des championnats de France, également réalisée par un joueur."/>
           </div>
           <div className="col-12 col-md-6">
            <p>
@@ -285,11 +239,7 @@ const ChapterOne = () => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <Parallax y={["200px", "-200px"]} tagOuter="figure">
-                <LazyLoad once offset={500}>
-                  <img src={chapterOneBg9} alt="Chapitre 1" className="img-fluid" />
-                </LazyLoad>
-              </Parallax>
+              <Image src={chapterOneBg9} alt="Chapitre 1" className="img-fluid" y={["200px", "-200px"]}/>
             </div>
           </div>
         </div>

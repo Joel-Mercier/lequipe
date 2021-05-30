@@ -1,6 +1,5 @@
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
-import LazyLoad from 'react-lazyload';
 import ChapterTitle from '../components/ChapterTitle';
 import Spacer from '../components/Spacer';
 import Image from '../components/Image';
@@ -67,16 +66,9 @@ const ChapterThree = () => {
             </p>
           </div>
           <div className="col-12 col-md-6 d-flex flex-column justify-content-center position-relative">
-            <Parallax className="position-absolute parallax-item--first" y={["100px", "-100px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={ChapterThreeCircle2} alt="" className="img-fluid" />
-              </LazyLoad>
-            </Parallax>
-            <Parallax y={["400px", "-100px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={ChapterThreeImg1} alt="Chapitre 3" className="img-fluid" />
-              </LazyLoad>
-            </Parallax>
+            <Image src={ChapterThreeCircle2} alt="" className="img-fluid" y={["100px", "-100px"]} parallaxContainerClassName="position-absolute parallax-item--first"/>
+            <Image src={ChapterThreeImg1} alt="Chapitre 3" className="img-fluid" y={["400px", "-100px"]} />
+
             <div className="row">
               <div className="col-12 col-sm-6">
                 <Parallax y={["200px", "-200px"]} tagOuter="figure">
@@ -86,14 +78,10 @@ const ChapterThree = () => {
                 </Parallax>
               </div>
               <div className="col-12 col-sm-6">
-                <Parallax y={["200px", "-200px"]} tagOuter="figure">
-                  <LazyLoad once offset={500}>
-                    <img src={ChapterThreeImg2} alt="Chapitre 3" className="img-fluid" />
-                  </LazyLoad>
-                </Parallax>
+                <Image src={ChapterThreeImg2} alt="Chapitre 3" className="img-fluid" y={["200px", "-200px"]} />
               </div>
             </div>
-            <Iframe src="https://www.youtube.com/embed/oidW0pSVM9w" title="Vidéo chapitre 3" containerClass="mt-5"/>
+            <Iframe src="https://www.youtube.com/embed/oidW0pSVM9w?rel=0&modestbranding=1" title="Vidéo chapitre 3" containerClass="mt-5"/>
           </div>
         </div>
       </div>
@@ -101,12 +89,7 @@ const ChapterThree = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6 pr-lg-5">
-            <Parallax y={["200px", "-200px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={ChapterThreeImg3} alt="Chapitre 3" className="img-fluid" />
-              </LazyLoad>
-              <figcaption>Lyon Bike Polo joue sur un ancien terrain de hockey. Ils ont la chance de ne pas avoir à partager leur terrain avec d’autres disciplines.</figcaption>
-            </Parallax>
+            <Image src={ChapterThreeImg3} alt="Chapitre 3" className="img-fluid" y={["200px", "-200px"]} figcaption="Lyon Bike Polo joue sur un ancien terrain de hockey. Ils ont la chance de ne pas avoir à partager leur terrain avec d’autres disciplines."/>
           </div>
           <div className="col-12 col-md-6 pl-lg-5">
             <h3>La guerre des terrains</h3>
@@ -123,9 +106,7 @@ const ChapterThree = () => {
       <Spacer size="small"/>
       <div className="position-relative">
         <div className="page-decoration page-decoration--is-left">
-          <LazyLoad once offset={500}>
-            <img src={ChapterThreeBg3} alt="chapter three background" className="w-100"/>
-          </LazyLoad>
+          <Image src={ChapterThreeBg3} alt="Chapitre 3" className="w-100" />
         </div>
       </div>
       <div className="container">
@@ -142,16 +123,10 @@ const ChapterThree = () => {
             </p>
           </div>
           <div className="col-12 col-md-6 pl-lg-5">
-            <Parallax y={["200px", "-200px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={ChapterThreeImg4} alt="Chapitre 3" className="img-fluid" />
-              </LazyLoad>
-              <figcaption>À Strasbourg, le club joue sur un terrain de basket auprès du Parlement Européen. Ils le délimitent eux-mêmes avec des planches de bois, rencontrant souvent quelques réticences auprès des joueurs de basketball.</figcaption>
-            </Parallax>
+            <Image src={ChapterThreeImg4} alt="Chapitre 3" className="img-fluid" y={["200px", "-200px"]} figcaption="À Strasbourg, le club joue sur un terrain de basket auprès du Parlement Européen. Ils le délimitent eux-mêmes avec des planches de bois, rencontrant souvent quelques réticences auprès des joueurs de basketball."/>
           </div>
         </div>
       </div>
-      
       <Spacer size="large"/>
       <div className="container">
         <div className="row">
@@ -165,18 +140,11 @@ const ChapterThree = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6 pr-lg-5">
-            <Parallax y={["200px", "-200px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={ChapterThreeImg5} alt="Chapitre 3" className="img-fluid" />
-              </LazyLoad>
-              <figcaption>Les joueurs de Marseille sont obligés de passer au dessus des grilles pour pouvoir jouer sur un terrain convenable.</figcaption>
-            </Parallax>
+            <Image src={ChapterThreeImg5} alt="Chapitre 3" className="img-fluid" y={["200px", "-200px"]} figcaption="Les joueurs de Marseille sont obligés de passer au dessus des grilles pour pouvoir jouer sur un terrain convenable."/>
           </div>
           <div className="col-12 col-md-6 pl-lg-5">
             <div className="decorated-content" style={{height: "932px"}}>
-              <LazyLoad once offset={500}>
-                <img src={ChapterThreeBg2} alt="Chapitre 3" className="img-fluid" />
-              </LazyLoad>
+              <Image src={ChapterThreeBg2} alt="Chapitre 3" className="img-fluid" />
               <div className="decorated-content__content">
                 <p>
                   Le Marseille Bike Polo est l’un de ces clubs sans terrain fixe. Faute d’un lieu approprié, les joueurs se retrouvaient un temps dans un parc municipal partagé avec les enfants du coin. En attendant une réponse de la mairie, ils ont tenté une approche à l’amiable avec un club de roller de la ville pour avoir accès à leur terrain de jeu. Sans succès. Gabriel, responsable du club, et ses coéquipiers y jouent malgré tout, sautant la grille pour s'y entraîner. “Le gros handicap, c’est de ne pas être légitime à venir occuper le terrain. A chaque fois, on risque de se faire virer, et on sera dans l'obligation de partir.”
@@ -205,9 +173,7 @@ const ChapterThree = () => {
           <div className="col-12 col-md-6 pr-lg-5">
             <h3>L’ombre de la fédération</h3>
             <div className="decorated-content" style={{height: "932px"}}>
-              <LazyLoad once offset={500}>
-                <img src={ChapterThreeBg2} alt="Chapitre 3" className="img-fluid" />
-              </LazyLoad>
+              <Image src={ChapterThreeBg2} alt="Chapitre 3" className="img-fluid" />
               <div className="decorated-content__content">
                 <p>
                   Pour y remédier, la possibilité d’institutionnaliser ce sport, en intégrant la prestigieuse Fédération Française de Cyclisme (FFC), a été soulevée. Durant ses études en management du sport, Paul Vergnaud, de l’équipe CallMeDaddy, a fait un stage de six mois à la FFC en 2010. Il prend alors ce débat à bras le corps en réalisant un audit auprès de toutes les associations de Bike Polo de France pour une potentielle affiliation à l’instance. “La Fédé’ était très intéressée de nous recruter. On était en plein développement et on véhiculait une image plutôt sympathique et décalée de la pratique du vélo.”
@@ -220,17 +186,8 @@ const ChapterThree = () => {
            
           </div>
           <div className="col-12 col-md-6 pl-lg-5 position-relative">
-            <Parallax className="position-absolute parallax-item--first" y={["100px", "-100px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={ChapterThreeCircle1} alt="" className="img-fluid" />
-              </LazyLoad>
-            </Parallax>
-            <Parallax y={["200px", "-200px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={ChapterThreeImg6} alt="Chapitre 3" className="img-fluid pl-lg-5" />
-              </LazyLoad>
-              <figcaption className="pl-lg-5">Paul Vergnaud est un des plus grands champions français avec son équipe Call Me Daddy. Le joueur parisien, récemment papa, pose ici chez lui avec un de ses trophés : celui du Polorama. Pour lui l’avenir du sport ne passe pas par la Fédération Française de Cyclisme.</figcaption>
-            </Parallax>
+            <Image src={ChapterThreeCircle1} alt="Chapitre 3" className="img-fluid" y={["100px", "-100px"]} parallaxContainerClassName="position-absolute parallax-item--first"/>
+            <Image src={ChapterThreeImg6} alt="Chapitre 3" className="img-fluid" y={["200px", "-200px"]} figcaption="Paul Vergnaud est un des plus grands champions français avec son équipe Call Me Daddy. Le joueur parisien, récemment papa, pose ici chez lui avec un de ses trophés : celui du Polorama. Pour lui l’avenir du sport ne passe pas par la Fédération Française de Cyclisme."/>
           </div>
         </div>
       </div>
@@ -238,12 +195,7 @@ const ChapterThree = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6">
-            <Parallax y={["200px", "-200px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={ChapterThreeImg7} alt="Chapitre 3" className="img-fluid" />
-              </LazyLoad>
-              <figcaption className="pl-lg-5">À Strasbourg, un spectateur regarde le match assis sur une chaise de camping. Pour Elodie Martini, le Bike Polo est coincé entre une envie de développement et son âme de “sport entre copains”</figcaption>
-            </Parallax>
+            <Image src={ChapterThreeImg7} alt="Chapitre 3" className="img-fluid" y={["200px", "-200px"]} figcaption='À Strasbourg, un spectateur regarde le match assis sur une chaise de camping. Pour Elodie Martini, le Bike Polo est coincé entre une envie de développement et son âme de “sport entre copains”' figcaptionClassName="pl-lg-5"/>
           </div>
           <div className="col-12 col-md-6 pl-lg-5">
             <p>
@@ -273,15 +225,9 @@ const ChapterThree = () => {
             </p>
           </div>
           <div className="col-12 col-md-6 position-relative">
-            <Parallax className="position-absolute parallax-item--first" y={["100px", "-100px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={ChapterThreeCircle1} alt="" className="img-fluid" />
-              </LazyLoad>
-            </Parallax>
+            <Image src={ChapterThreeCircle1} alt="" className="img-fluid" y={["100px", "-100px"]} parallaxContainerClassName="position-absolute parallax-item--first"/>
             <div className="decorated-content" style={{height: "932px"}}>
-              <LazyLoad once offset={500}>
-                <img src={ChapterThreeBg2} alt="Chapitre 3" className="img-fluid" />
-              </LazyLoad>
+              <Image src={ChapterThreeBg2} alt="Chapitre 3" className="img-fluid" />
               <div className="decorated-content__content">
                 <Parallax y={["200px", "-200px"]} tagOuter="figure">
                   <blockquote>
@@ -290,37 +236,18 @@ const ChapterThree = () => {
                     <cite title="Morgan Hidalgo">- Jean-François Jolfre</cite>
                   </blockquote>
                 </Parallax>
-                <Parallax y={["200px", "-200px"]} tagOuter="figure">
-                  <LazyLoad once offset={500}>
-                    <img src={ChapterThreeImg10} alt="Chapitre 3" className="img-fluid" />
-                  </LazyLoad>
-                </Parallax>
+                <Image src={ChapterThreeImg10} alt="Chapitre 3" className="img-fluid" y={["200px", "-200px"]}/>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* <HitAnimation/> */}
       <Spacer size="large"/>
-      {/* <Carousel/> */}
-      <Spacer size="large"/>
-      {/* <SkewSection>
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente dolor commodi molestiae ab ipsam vero! Maiores a perspiciatis, sit voluptatibus nihil, quasi esse eaque cumque possimus, reprehenderit sed eveniet optio?</p>
-            </div>
-          </div>
-        </div>
-      </SkewSection> */}
       <div className="position-relative chapter-three-transition">
         <div className="page-decoration page-decoration--is-full" >
-          <LazyLoad once offset={500}>
-            <img src={ChapterThreeBg1} alt="chapter two background" className="w-100"/>
-          </LazyLoad>
+          <Image src={ChapterThreeBg1} alt="Chapitre 3" className="w-100" />
         </div>
       </div>
-     
     </div>
   );
 };
