@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
+import LazyLoad from 'react-lazyload';
 import floatingImg1 from '../assets/floating-img-1.png';
 import floatingImg2 from '../assets/floating-img-2.png';
 import floatingImg3 from '../assets/floating-img-3.png';
@@ -38,9 +39,11 @@ const FloatingImages = () => {
     <div className="floating-images">
       {images.map((image, index) => {
         return (
-          <div className="floating-images__column">
-            <animated.div className="floating-images__image" style={{ transform: animationProps.radians.to(interp(index)) }} key={index}>
-              <img src={image.src} alt="floating example" className="img-fluid" />
+          <div className="floating-images__column" key={index}>
+            <animated.div className="floating-images__image" style={{ transform: animationProps.radians.to(interp(index)) }}>
+              <LazyLoad once offset={500}>
+                <img src={image.src} alt={image.title} className="img-fluid" />
+              </LazyLoad>
             </animated.div>
             <p className="floating-images__title">{image.title}</p>
           </div>

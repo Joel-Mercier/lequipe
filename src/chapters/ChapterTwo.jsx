@@ -5,7 +5,6 @@ import ChapterTitle from '../components/ChapterTitle';
 import Spacer from '../components/Spacer';
 import Iframe from '../components/Iframe';
 import QuoteStack from '../components/QuoteStack';
-import ChapterTwoTitleBg1 from '../assets/chapter-2-title-bg-1.png';
 import ChapterTwoTitleBg2 from '../assets/chapter-2-title-bg-2.png';
 import ChapterTwoImg1 from '../assets/chapter-2-img-1.png';
 import ChapterTwoImg2 from '../assets/chapter-2-img-2.png';
@@ -25,6 +24,7 @@ import ChapterTwoBg4 from '../assets/chapter-2-bg-4.png';
 import ChapterTwoBg5 from '../assets/chapter-2-bg-5.png';
 import ChapterTwoBg7 from '../assets/chapter-2-bg-7.png';
 import ChapterTwoBg9 from '../assets/chapter-2-bg-9.png';
+import ChapterTwoBg10 from '../assets/chapter-2-bg-10.png';
 import introCircle1 from '../assets/intro-circle-1.png';
 import ChapterThreeCirlce1 from '../assets/chapter-3-circle-1.png';
 
@@ -33,7 +33,6 @@ const ChapterTwo = () => {
     <div className="chapter-two">
       <ChapterTitle
         title="Définir le cadre"
-        mainBackground={ChapterTwoTitleBg1}
         secondaryBackground={ChapterTwoTitleBg2}
       />
       <Spacer size="medium"/>
@@ -104,7 +103,7 @@ const ChapterTwo = () => {
               Du côté de Lyon Bike Polo, les entraînements sont une succession de matchs, pour le plus grand plaisir des joueurs expérimentés. “Le problème, c'est que ça ne nous permet pas d’inclure de nouveaux venus”, regrette Quentin Bouchard, membre lyonnais. Un aspect dont les clubs ont bien conscience : “ On essaie d’éviter que les forts soient toujours avec les forts et les faibles avec les faibles.” explique Paul Vergnaud. Avant le match, les clubs font souvent un “shuffle” : les maillets des joueurs sont lancés au hasard sur le terrain pour former les équipes, ce qui permet parfois de mélanger les niveaux. À Strasbourg, Elodie Martini a choisi d’organiser des exercices pratiques en début de session pour intégrer convenablement les débutants.
             </p>
             <Spacer size="medium"/>
-            <Iframe src="https://www.dailymotion.com/embed/video/k5HNpctdCkMyUCwTXel?queue-enable=false" title="Vidéo chapitre 2" containerClass="mt-5"/>
+            <Iframe src="https://www.youtube.com/embed/29t1qVLSG04" title="Vidéo chapitre 2" containerClass="mt-5"/>
             <Spacer size="medium"/>
             <figure className="team-logos">
               <div className="d-flex flex-row align-items-center justify-content-center">
@@ -124,6 +123,14 @@ const ChapterTwo = () => {
               <figcaption>De gauche à droite (Lyon, Marseille, Paris, Strasbourg), les logos faits par les joueurs des clubs.</figcaption>
             </figure>
           </div>
+        </div>
+      </div>
+      <Spacer size="large"/>
+      <div className="position-relative chapter-two-transition">
+        <div className="page-decoration page-decoration--is-full">
+          <LazyLoad once offset={500}>
+            <img src={ChapterTwoBg10} alt="chapter two background" className="w-100"/>
+          </LazyLoad>
         </div>
       </div>
       <Spacer size="medium"/>

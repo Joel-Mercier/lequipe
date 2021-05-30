@@ -1,6 +1,8 @@
 import React, { useContext, useCallback } from 'react';
 import classNames from 'classnames';
 import { StateContext } from '../App';
+import { ReactComponent as PlayIcon } from '../assets/play.svg';
+import { ReactComponent as PauseIcon } from '../assets/pause.svg';
 
 const interviews = [
   {
@@ -60,7 +62,23 @@ const Interview = () => {
           <p>
             <span className="bg"/>
             <span className="base"/>
-            <span className="text">{audioPlaying && audioSrc && audioSrc.id === interview.id ? "En cours" : interview.display}</span>
+            <span className="text">
+              {audioPlaying && audioSrc && audioSrc.id === interview.id ? (
+                <>
+                  <span className="icon">
+                    <PauseIcon/>
+                  </span>
+                  {"En cours"}
+                </>
+              ) : (
+                <>
+                  <span className="icon">
+                    <PlayIcon/>
+                  </span>
+                  {interview.display}
+                </>
+              )}
+            </span>
           </p>
         </button>
       ))}

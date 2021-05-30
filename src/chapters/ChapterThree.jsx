@@ -6,7 +6,6 @@ import Spacer from '../components/Spacer';
 import Iframe from '../components/Iframe';
 import FloatingImages from '../components/FloatingImages';
 import Stats from '../components/Stats';
-import ChapterThreeTitleBg1 from '../assets/chapter-3-title-bg-1.png';
 import ChapterThreeTitleBg2 from '../assets/chapter-3-title-bg-2.png';
 import ChapterThreeImg1 from '../assets/chapter-3-img-1.png';
 import ChapterThreeImg2 from '../assets/chapter-3-img-2.png';
@@ -15,6 +14,10 @@ import ChapterThreeImg4 from '../assets/chapter-3-img-4.png';
 import ChapterThreeImg5 from '../assets/chapter-3-img-5.png';
 import ChapterThreeImg6 from '../assets/chapter-3-img-6.png';
 import ChapterThreeImg7 from '../assets/chapter-3-img-7.png';
+import ChapterThreeImg8 from '../assets/chapter-3-img-8.png';
+import ChapterThreeImg9 from '../assets/chapter-3-img-9.png';
+import ChapterThreeImg10 from '../assets/chapter-3-img-10.png';
+import ChapterThreeImg11 from '../assets/chapter-3-img-11.png';
 import ChapterThreeBg1 from '../assets/chapter-3-bg-1.png';
 import ChapterThreeBg2 from '../assets/chapter-3-bg-2.png';
 import ChapterThreeBg3 from '../assets/chapter-3-bg-3.png';
@@ -26,9 +29,39 @@ const ChapterThree = () => {
     <div className="chapter-three">
       <ChapterTitle
         title="Entre deux selles"
-        mainBackground={ChapterThreeTitleBg1}
         secondaryBackground={ChapterThreeTitleBg2}
       />
+      <div className="chapter-three-intro">
+        <div className="position-relative">
+          <div className="page-decoration page-decoration--is-left">
+            <LazyLoad once offset={500}>
+              <img src={ChapterThreeBg3} alt="" className="img-fluid" />
+            </LazyLoad>
+            <Parallax className="position-absolute parallax-item--first" y={["100px", "-100px"]} tagOuter="figure">
+              <LazyLoad once offset={500}>
+                <img src={ChapterThreeImg9} alt="" className="img-fluid" />
+              </LazyLoad>
+            </Parallax>
+          </div>
+        </div>
+        <div className="position-relative">
+          <div className="page-decoration page-decoration--is-right">
+            <LazyLoad once offset={500}>
+              <img src={ChapterThreeBg3} alt="" className="img-fluid" />
+            </LazyLoad>
+            <Parallax className="position-absolute parallax-item--first" y={["100px", "-100px"]} tagOuter="figure">
+              <LazyLoad once offset={500}>
+                <img src={ChapterThreeImg8} alt="" className="img-fluid" />
+              </LazyLoad>
+            </Parallax>
+            <Parallax className="position-absolute parallax-item--second" y={["100px", "-100px"]} tagOuter="figure">
+              <LazyLoad once offset={500}>
+                <img src={ChapterThreeImg11} alt="" className="img-fluid" />
+              </LazyLoad>
+            </Parallax>
+          </div>
+        </div>
+      </div>
       <Spacer size="medium"/>
       <div className="container">
         <div className="row">
@@ -75,7 +108,7 @@ const ChapterThree = () => {
                 </Parallax>
               </div>
             </div>
-            <Iframe src="https://www.dailymotion.com/embed/video/x81h6ev?queue-enable=false" title="Vidéo chapitre 3" containerClass="mt-5"/>
+            <Iframe src="https://www.youtube.com/embed/oidW0pSVM9w" title="Vidéo chapitre 3" containerClass="mt-5"/>
           </div>
         </div>
       </div>
@@ -114,7 +147,7 @@ const ChapterThree = () => {
         <div className="row">
           <div className="col-12 col-md-6 pr-lg-5">
             <p className="mt-5 mr-5">
-              <strong>
+              <strong className="mt-md-5">
                 En France, seuls quatre courts sont exclusivement dédiés à la pratique de cette
                 discipline. Six courts intérieurs permettent également aux équipes qui le
                 peuvent de s'entraîner l'hiver dans l’Hexagone. À l’inverse, dix associations
@@ -240,16 +273,44 @@ const ChapterThree = () => {
       </div>
       <Spacer size="medium" />
       <div className="container">
-        <div className="content-container">
-          <div className="row">
-            <div className="col-12">
-              <p>
-                Pour autant, il semble aujourd'hui impossible pour le Hardcourt Bike Polo d’évoluer en ce sens. Une telle affiliation pourrait rendre le sport inaccessible à de nombreux adhérents, par une augmentation des coûts, ou l’instauration de normes contraignantes. "Pour l'instant, ça marche bien comme ça", conclut Jean-François Jolfre.
-              </p>
-              <Spacer size="medium" />
-              <p>
-                Le hardcourt bike polo semble assis entre deux selles : celle de la professionnalisation d’une part, et de la spontanéité alternative de ses débuts d’autre part.“Le côté DIY et underground est la force et la faiblesse de notre sport”, analyse Elodie Martini. “On ne grandit plus beaucoup, mais on ne veut pas non plus perdre notre liberté. C’est paradoxal. On est trop petit pour être reconnu et trop gros pour n’être qu’un sport entre copains !” Le sport peut donner l’impression d’avoir du mal à passer à la vitesse supérieure, mais l’institutionnalisation de la pratique n’arrivera pas de sitôt. L’autogestion et l’indépendance restent des piliers de la maison Bike Polo en France. Cependant, les joueurs et joueuses mettent toujours autant les mains dans le cambouis pour éviter que la rouille s’accumule. En attendant, le sport continue de rouler sa bosse, en toute liberté.
-              </p>
+        <div className="row">
+          <div className="col-12 col-md-6 pr-lg-5">
+            <p>
+              Pour autant, il semble aujourd'hui impossible pour le Hardcourt Bike Polo d’évoluer en ce sens. Une telle affiliation pourrait rendre le sport inaccessible à de nombreux adhérents, par une augmentation des coûts, ou l’instauration de normes contraignantes. "Pour l'instant, ça marche bien comme ça", conclut Jean-François Jolfre.
+            </p>
+            <Spacer size="medium" />
+            <p>
+              Le hardcourt bike polo semble assis entre deux selles : celle de la professionnalisation d’une part, et de la spontanéité alternative de ses débuts d’autre part.“Le côté DIY et underground est la force et la faiblesse de notre sport”, analyse Elodie Martini. “On ne grandit plus beaucoup, mais on ne veut pas non plus perdre notre liberté. C’est paradoxal. On est trop petit pour être reconnu et trop gros pour n’être qu’un sport entre copains !”
+            </p>
+            <Spacer size="medium" />
+            <p>
+              Le sport peut donner l’impression d’avoir du mal à passer à la vitesse supérieure, mais l’institutionnalisation de la pratique n’arrivera pas de sitôt. L’autogestion et l’indépendance restent des piliers de la maison Bike Polo en France. Cependant, les joueurs et joueuses mettent toujours autant les mains dans le cambouis pour éviter que la rouille s’accumule. En attendant, le sport continue de rouler sa bosse, en toute liberté.
+            </p>
+          </div>
+          <div className="col-12 col-md-6 position-relative">
+            <Parallax className="position-absolute parallax-item--first" y={["100px", "-100px"]} tagOuter="figure">
+              <LazyLoad once offset={500}>
+                <img src={ChapterThreeCircle1} alt="" className="img-fluid" />
+              </LazyLoad>
+            </Parallax>
+            <div className="decorated-content" style={{height: "932px"}}>
+              <LazyLoad once offset={500}>
+                <img src={ChapterThreeBg2} alt="Chapitre 3" className="img-fluid" />
+              </LazyLoad>
+              <div className="decorated-content__content">
+                <Parallax y={["200px", "-200px"]} tagOuter="figure">
+                  <blockquote>
+                    « Pour l’instant, ça marche bien comme ça. »
+                    <br/>
+                    <cite title="Morgan Hidalgo">- Jean-François Jolfre</cite>
+                  </blockquote>
+                </Parallax>
+                <Parallax y={["200px", "-200px"]} tagOuter="figure">
+                  <LazyLoad once offset={500}>
+                    <img src={ChapterThreeImg10} alt="Chapitre 3" className="img-fluid" />
+                  </LazyLoad>
+                </Parallax>
+              </div>
             </div>
           </div>
         </div>
@@ -267,8 +328,8 @@ const ChapterThree = () => {
           </div>
         </div>
       </SkewSection> */}
-      <div className="position-relative" style={{height: "1376px"}}>
-        <div className="page-decoration page-decoration--is-full">
+      <div className="position-relative chapter-three-transition">
+        <div className="page-decoration page-decoration--is-full" >
           <LazyLoad once offset={500}>
             <img src={ChapterThreeBg1} alt="chapter two background" className="w-100"/>
           </LazyLoad>

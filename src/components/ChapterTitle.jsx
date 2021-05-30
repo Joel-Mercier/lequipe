@@ -2,7 +2,7 @@ import React from 'react';
 
 const ChapterTitle = ({title, mainBackground, secondaryBackground}) => {
   return (
-    <div className="chapter-title" style={{backgroundImage: `url(${mainBackground})`}}>
+    <div className="chapter-title" style={mainBackground ? {backgroundImage: `url(${mainBackground})`} : {}}>
       <div className="chapter-title__inner-bg" style={{backgroundImage: `url(${secondaryBackground})`}}></div>
       <div className="container">
         <div className="row">

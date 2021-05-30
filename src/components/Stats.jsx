@@ -14,13 +14,13 @@ const stats = [
     title: "Genre",
     iFrameTitle: "Profil des joueurs (en %)",
     height: "409",
-    src: "https://datawrapper.dwcdn.net/63Yvr/2/",
+    src: "https://datawrapper.dwcdn.net/fz4h2/2/",
   },
   {
     title: "Niveau",
     iFrameTitle: "Niveaux des joueurs de BP",
     height: "435",
-    src: "https://datawrapper.dwcdn.net/fz4h2/2/",
+    src: "https://datawrapper.dwcdn.net/63Yvr/2/",
   },
   {
     title: "Club",

@@ -1,6 +1,8 @@
 import React, { useCallback, useRef } from 'react';
+import { Parallax } from 'react-scroll-parallax';
 import { useMouseEvents } from 'beautiful-react-hooks';
 import { useSpring, animated, interpolate } from 'react-spring';
+import IntroVideo from './IntroVideo';
 
 const Cover = () => {
   const ref = useRef();
@@ -14,21 +16,28 @@ const Cover = () => {
   const onScroll = useCallback(e => set({ st: e.target.scrollTop / 30 }), [set])
 
   return (
-    <div className="cover-section cover-section--is-title" ref={ref} onScroll={onScroll}>
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <div className="d-flex flex-column align-items-center justify-content-center">
-              <animated.div style={{transform: interpBg}}>
-                <animated.div style={{transform: interpTitle}}>
-                  <h1 className="cover-section__title">En roue libre</h1>
+    <Parallax y={["1300px", "0px"]} className="cover-section cover-section--is-title" styleInner={{width: "100%"}}>
+      <div ref={ref} onScroll={onScroll}>
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <div className="d-flex flex-column align-items-center justify-content-center">
+                <animated.div style={{transform: interpBg}} className="w-100">
+                  <animated.div style={{transform: interpTitle}}>
+                    <h1 className="cover-section__title">
+                      <span>En</span>
+                      <span>roue</span>
+                      <span>libre</span>
+                    </h1>
+                  </animated.div>
                 </animated.div>
-              </animated.div>
+              </div>
             </div>
           </div>
+          <IntroVideo/>
         </div>
       </div>
-    </div>
+    </Parallax>
   )
 };
 

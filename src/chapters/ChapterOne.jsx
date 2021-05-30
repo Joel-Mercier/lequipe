@@ -51,7 +51,7 @@ const ChapterOne = () => {
             </p>
           </div>
           <div className="col-12 col-md-6 justify-content-center">
-            <Iframe src="https://www.dailymotion.com/embed/video/x81gh3o?queue-enable=false" title="Vidéo chapitre 1" containerClass="mt-5"/>
+            <Iframe src="https://www.youtube.com/embed/eIwAAzkR3zM" title="Vidéo chapitre 1" containerClass="mt-5"/>
           </div>
         </div>
       </div>
@@ -97,6 +97,8 @@ const ChapterOne = () => {
             <p>
               Pour lui, le pignon fixe fait perdre de l’énergie et de la concentration sur la gestion du pédalage. Cela empêcherait de conserver son entière attention sur le terrain et la balle. “J’ai souvent dit que je ne passerais jamais en roue libre [...] Disons le, j’ai menti ! », s’amuse le coursier. 
             </p>
+            <Spacer size="medium" />
+            <Iframe src="https://www.youtube.com/embed/kI1Gb-E-sMQ" title="Vidéo chapitre 1" containerClass="mt-5" />
           </div>
         </div>
       </div>
@@ -117,6 +119,7 @@ const ChapterOne = () => {
             </Parallax>
           </div>
           <div className="col-12 col-md-6 pl-lg-5">
+            <Spacer size="large" />
             <Parallax y={["200px", "-200px"]} tagOuter="figure">
               <blockquote>
                 « J’ai dit que je ne passerais jamais en roue libre... »
@@ -173,7 +176,7 @@ const ChapterOne = () => {
               Autre membre du club phocéen, Enrico est tantôt joueur, tantôt mécano. Il se charge parfois de la réparation des engins de ses partenaires. “Si une pièce se casse, on ne se rend pas de suite dans un magasin, explique le jeune marseillais, on cherche d’abord à réparer par nous-même”. Il a récemment lancé un atelier d’auto-réparation de vélo engagé Plan B, partenaire de Marseille Bike Polo.   
             </p>
             <Spacer size="medium" />
-            <Iframe src="https://www.dailymotion.com/embed/video/x81h1p6?queue-enable=false" title="Vidéo chapitre 1" containerClass="mt-5"/>
+            <Iframe src="https://www.youtube.com/embed/ROwnGmtBvkQ" title="Vidéo chapitre 1" containerClass="mt-5"/>
           </div>
           <div className="col-12 col-md-6 pl-lg-5">
             <Parallax y={["200px", "-200px"]} tagOuter="figure">
@@ -279,11 +282,17 @@ const ChapterOne = () => {
       </div>
       <Spacer size="large"/>
       <div className="cover-section" style={{height: '1098px', background: `url(${chapterOneBg8}), linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0) 30%, rgba(243,235,231,1) 100%)`}}>
-        <Parallax y={["200px", "-200px"]} tagOuter="figure">
-          <LazyLoad once offset={500}>
-            <img src={chapterOneBg9} alt="Chapitre 1" className="img-fluid" />
-          </LazyLoad>
-        </Parallax>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <Parallax y={["200px", "-200px"]} tagOuter="figure">
+                <LazyLoad once offset={500}>
+                  <img src={chapterOneBg9} alt="Chapitre 1" className="img-fluid" />
+                </LazyLoad>
+              </Parallax>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -2,13 +2,10 @@ import React, { useState, useEffect, useLayoutEffect, useMemo, useCallback, Susp
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import { useTimeout, useWindowScroll, useThrottledFn, useWindowResize } from 'beautiful-react-hooks';
 import { useController } from 'react-scroll-parallax';
-import 'bootstrap/dist/css/bootstrap-grid.css';
-import './styles/App.scss';
 import SplashScreen from './components/SplashScreen';
 import BackToTop from './components/BackToTop';
 import Cover from './components/Cover';
 import Header from './components/Header';
-import IntroVideo from './components/IntroVideo';
 import Intro from './chapters/Intro';
 import ChapterOne from './chapters/ChapterOne';
 import ChapterTwo from './chapters/ChapterTwo';
@@ -17,6 +14,8 @@ import Progress from './components/Progress';
 import Footer from './components/Footer';
 import Alert from './components/Alert';
 import { clamp } from './utils/clamp';
+import 'bootstrap/dist/css/bootstrap-grid.css';
+import './styles/App.scss';
 
 const AudioPlayer = React.lazy(() => import('./components/AudioPlayer/AudioPlayer'));
 
@@ -96,12 +95,13 @@ const App = () => {
         <SplashScreen />
         <Header/>
         <Cover/>
-        <IntroVideo/>
-        <Intro/>
-        <ChapterOne/>
-        <ChapterTwo/>
-        <ChapterThree/>
-        <Footer/>
+        <main>
+          <Intro/>
+          <ChapterOne/>
+          <ChapterTwo/>
+          <ChapterThree/>
+          <Footer/>
+        </main>        
         {audioSrc &&
           <Suspense
             fallback={<div></div>}
