@@ -535,7 +535,7 @@
     }
   }
   .chapter-three-transition {
-    height: 1176px;
+    height: 356px;
     z-index: 1;
     background: linear-gradient(
       180deg,
@@ -1320,6 +1320,11 @@
       height: 1000px;
     }
   }
+  .chapter-three {
+    .chapter-three-transition {
+      height: 476px;
+    }
+  }
 }
 
 @include for-md-up {
@@ -1331,6 +1336,9 @@
       &.page-decoration--is-left {
         max-width: 50%;
       }
+    }
+    .chapter-three-transition {
+      height: 596px;
     }
   }
   .timeline {
@@ -1517,6 +1525,9 @@
         }
       }
     }
+    .chapter-three-transition {
+      height: 776px;
+    }
   }
 }
 
@@ -1545,6 +1556,11 @@
   .chapter-two {
     .chapter-two-transition {
       height: 2550px;
+    }
+  }
+  .chapter-three {
+    .chapter-three-transition {
+      height: 1176px;
     }
   }
 }
