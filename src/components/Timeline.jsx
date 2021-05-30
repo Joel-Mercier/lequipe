@@ -30,6 +30,7 @@ const Timeline = () => {
       title: "Envol français",
       content: "Arrivé en 1900, le polo-vélo connaît un franc succès à Paris vingt ans plus tard. En 1928, un premier championnat est organisé entre huit équipes. Quelques années plus tard, la discipline s’exporte hors de la capitale et séduit à l’échelle nationale, jusqu’à avoir sa première définition dans l’édition de 1932 du dictionnaire Larousse.",
       background: timelineBg3,
+      source: "Source : BNF",
     },
     {
       year: "1999",
@@ -64,7 +65,7 @@ const Timeline = () => {
           <div className={classNames("timeline__bg", {"timeline__bg--is-active": active === i})} style={{backgroundImage: `url(${timeline.background})`}} />
         </LazyLoad>
       ))}
-      <div className="container">
+      <div className="container position-relative">
         <div className="row">
           <div className="col-12 col-md-6 d-flex align-items-center justify-content-between">
             <div className="timeline__nav flex-md-column">
@@ -99,7 +100,13 @@ const Timeline = () => {
             </div>
           </div>
         </div>
+        <div className="timeline__source-container">
+          {timeline.map((timeline, i) => (
+            timeline.source && <p className={classNames({'is--active': active === i})} key={i}>{timeline.source}</p>
+          ))}
+        </div>
       </div>
+      
     </div>
   );
 };

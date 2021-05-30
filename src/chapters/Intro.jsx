@@ -3,7 +3,6 @@ import { Parallax } from 'react-scroll-parallax';
 import LazyLoad from 'react-lazyload';
 import Spacer from '../components/Spacer';
 import Timeline from '../components/Timeline';
-import introImg1 from '../assets/intro-1.png';
 import introImg2 from '../assets/intro-2.png';
 import introImg3 from '../assets/intro-3.png';
 import introCircle1 from '../assets/intro-circle-1.png';

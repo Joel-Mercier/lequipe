@@ -107,16 +107,16 @@ const ChapterTwo = () => {
             <Spacer size="medium"/>
             <figure className="team-logos">
               <div className="d-flex flex-row align-items-center justify-content-center">
-                <LazyLoad once offset={500}>
+                <LazyLoad once offset={500} className="mx-3">
                   <img src={ChapterTwoImg4} alt="Chapitre 2" className="img-fluid" />
                 </LazyLoad>
-                <LazyLoad once offset={500}>
+                <LazyLoad once offset={500} className="mx-3">
                   <img src={ChapterTwoImg5} alt="Chapitre 2" className="img-fluid" />
                 </LazyLoad>
-                <LazyLoad once offset={500}>
+                <LazyLoad once offset={500} className="mx-3">
                   <img src={ChapterTwoImg6} alt="Chapitre 2" className="img-fluid" />
                 </LazyLoad>
-                <LazyLoad once offset={500}>
+                <LazyLoad once offset={500} className="mx-3">
                   <img src={ChapterTwoImg7} alt="Chapitre 2" className="img-fluid" />
                 </LazyLoad>
               </div>

@@ -117,6 +117,14 @@ const App = () => {
           cta="Mettre à jour"
           onClick={handleUpdateServiceWorkerClick}
         />
+        {/* <Alert
+          open={true}
+          content="Update parallax controller"
+          cta="Update"
+          onClick={() => {
+            parallaxController.update();
+          }}
+        /> */}
         <Progress progress={scrollPercentage}/>
         <BackToTop offset={window.innerHeight}/>
       </StateContext.Provider>

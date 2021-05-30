@@ -1,7 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import classNames from 'classnames';
 import LazyLoad from 'react-lazyload';
-import Iframe from './Iframe';
 
 const stats = [
   {

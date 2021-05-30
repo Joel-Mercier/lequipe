@@ -3,6 +3,7 @@ import { Parallax } from 'react-scroll-parallax';
 import LazyLoad from 'react-lazyload';
 import ChapterTitle from '../components/ChapterTitle';
 import Spacer from '../components/Spacer';
+import Image from '../components/Image';
 import Iframe from '../components/Iframe';
 import FloatingImages from '../components/FloatingImages';
 import Stats from '../components/Stats';
@@ -34,31 +35,15 @@ const ChapterThree = () => {
       <div className="chapter-three-intro">
         <div className="position-relative">
           <div className="page-decoration page-decoration--is-left">
-            <LazyLoad once offset={500}>
-              <img src={ChapterThreeBg3} alt="" className="img-fluid" />
-            </LazyLoad>
-            <Parallax className="position-absolute parallax-item--first" y={["100px", "-100px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={ChapterThreeImg9} alt="" className="img-fluid" />
-              </LazyLoad>
-            </Parallax>
+            <Image src={ChapterThreeBg3} alt="" className="img-fluid"/>
+            <Image src={ChapterThreeImg9} alt="" className="img-fluid" y={["100px", "-100px"]} parallaxContainerClassName="position-absolute parallax-item--first"/>
           </div>
         </div>
         <div className="position-relative">
           <div className="page-decoration page-decoration--is-right">
-            <LazyLoad once offset={500}>
-              <img src={ChapterThreeBg3} alt="" className="img-fluid" />
-            </LazyLoad>
-            <Parallax className="position-absolute parallax-item--first" y={["100px", "-100px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={ChapterThreeImg8} alt="" className="img-fluid" />
-              </LazyLoad>
-            </Parallax>
-            <Parallax className="position-absolute parallax-item--second" y={["100px", "-100px"]} tagOuter="figure">
-              <LazyLoad once offset={500}>
-                <img src={ChapterThreeImg11} alt="" className="img-fluid" />
-              </LazyLoad>
-            </Parallax>
+            <Image src={ChapterThreeBg3} alt="" className="img-fluid"/>
+            <Image src={ChapterThreeImg8} alt="" className="img-fluid" y={["100px", "-100px"]} parallaxContainerClassName="position-absolute parallax-item--first"/>
+            <Image src={ChapterThreeImg11} alt="" className="img-fluid" y={["100px", "-100px"]} parallaxContainerClassName="position-absolute parallax-item--second"/>
           </div>
         </div>
       </div>
