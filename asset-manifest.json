@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lequipe/static/css/main.08c15a1a.chunk.css",
+    "main.css": "/lequipe/static/css/main.8fff8625.chunk.css",
     "main.js": "/lequipe/static/js/main.4f54f442.chunk.js",
     "main.js.map": "/lequipe/static/js/main.4f54f442.chunk.js.map",
     "runtime-main.js": "/lequipe/static/js/runtime-main.d96f642b.js",
@@ -18,7 +18,7 @@
     "service-worker.js": "/lequipe/service-worker.js",
     "service-worker.js.map": "/lequipe/service-worker.js.map",
     "static/css/2.10b7ce49.chunk.css.map": "/lequipe/static/css/2.10b7ce49.chunk.css.map",
-    "static/css/main.08c15a1a.chunk.css.map": "/lequipe/static/css/main.08c15a1a.chunk.css.map",
+    "static/css/main.8fff8625.chunk.css.map": "/lequipe/static/css/main.8fff8625.chunk.css.map",
     "static/js/2.532a61e7.chunk.js.LICENSE.txt": "/lequipe/static/js/2.532a61e7.chunk.js.LICENSE.txt",
     "static/media/arrow-top.3e1f0b0a.svg": "/lequipe/static/media/arrow-top.3e1f0b0a.svg",
     "static/media/bullhorn.808dd5e8.svg": "/lequipe/static/media/bullhorn.808dd5e8.svg",
@@ -98,7 +98,7 @@
     "static/js/runtime-main.d96f642b.js",
     "static/css/2.10b7ce49.chunk.css",
     "static/js/2.532a61e7.chunk.js",
-    "static/css/main.08c15a1a.chunk.css",
+    "static/css/main.8fff8625.chunk.css",
     "static/js/main.4f54f442.chunk.js"
   ]
 }
