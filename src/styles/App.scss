@@ -1023,7 +1023,7 @@
         color: #ffffff;
       }
       p {
-        font-size: 18px;
+        font-size: 14px;
         font-weight: bold;
         margin-bottom: 0;
         text-align: center;
@@ -1325,6 +1325,11 @@
       .quote-stack__card {
         width: 45vh;
         height: 85vh;
+        .quote-stack__card-inner {
+          p {
+            font-size: 16px;
+          }
+        }
       }
     }
   }
@@ -1351,6 +1356,17 @@
       background-repeat: no-repeat;
       background-position: center, top;
       background-size: cover;
+    }
+  }
+  .quote-stack {
+    .quote-stack__card-container {
+      .quote-stack__card {
+        .quote-stack__card-inner {
+          p {
+            font-size: 18px;
+          }
+        }
+      }
     }
   }
 }
