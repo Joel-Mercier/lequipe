@@ -99,7 +99,7 @@ const ChapterOne = () => {
         <div className="row">
           <div className="col-12 col-md-6 pr-lg-5">
             <Image src={chapterOneCircle1} alt="" className="img-fluid" y={["100px", "-100px"]} parallaxContainerClassName="position-absolute parallax-item--first"/>
-            <Image src={chapterOneImg1} alt="Chapitre 1" className="img-fluid" y={["200px", "-200px"]} figcaption="Morgan Hidalgo est un des meilleurs joueurs du monde de Hardcourt BikePolo. Ce lyonnais recouvert de tatouages a gagné les derniers championnats du monde avec son équipe les Mongrels."/>
+            <Image src={chapterOneImg1} alt="Chapitre 1" className="img-fluid" y={["200px", "-200px"]} figcaption="Morgan Hidalgo est l’un des meilleurs joueurs du monde de Hardcourt BikePolo. Ce lyonnais recouvert de tatouages a gagné les derniers championnats du monde avec son équipe, les Mongrels."/>
           </div>
           <div className="col-12 col-md-6 pl-lg-5">
             <Spacer size="large" />
@@ -130,7 +130,7 @@ const ChapterOne = () => {
               <blockquote className="text-center">
                 « On fait tout nous-même. »
                 <br/>
-                <cite title="Gabriel, MarseilleBikePolo">- Gabriel Bercolano, MarseilleBikePolo</cite>
+                <cite title="Gabriel Bercolano, MarseilleBikePolo">- Gabriel Bercolano, MarseilleBikePolo</cite>
               </blockquote>
             </Parallax>
           </div>
@@ -161,8 +161,8 @@ const ChapterOne = () => {
           </div>
           <div className="col-12 col-md-6 pl-lg-5">
             <Image src={chapterOneImg2} alt="Chapitre 1" className="img-fluid" y={["200px", "-200px"]} figcaption="À Marseille, les joueurs squattent un terrain de roller. Parfois la situation oblige quelques improvisations pour le matériel : ici des pierres et des gourdes pour situer les buts."/>
-            <Image src={chapterOneImg3} alt="Chapitre 1" className="img-fluid" y={["200px", "-200px"]} figcaption="Le logo de Marseille Bike Polo est fait par un membre graphiste. Gabriel le fondateur du club, l’a ensuite sérigraphié lui même sur des Tshirts pour son équipe"/>
-            <Image src={chapterOneImg4} alt="Chapitre 1" className="img-fluid" y={["200px", "-200px"]} figcaption="Gabriel (à droite) et Enrico (à gauche), deux membres fondateurs de Marseille Bike Polo se reposent en attendant le prochain match."/>
+            <Image src={chapterOneImg3} alt="Chapitre 1" className="img-fluid" y={["200px", "-200px"]} figcaption="Le logo de Marseille Bike Polo est fait par un membre graphiste. Gabriel,fondateur du club, l’a ensuite sérigraphié lui même sur des Tshirts pour son équipe."/>
+            <Image src={chapterOneImg4} alt="Chapitre 1" className="img-fluid" y={["200px", "-200px"]} figcaption="Enrico (à gauche) et Gabriel (à droite), deux membres fondateurs de Marseille Bike Polo se reposent en attendant le prochain match."/>
           </div>
         </div>
       </div>
@@ -201,14 +201,14 @@ const ChapterOne = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6">
-            <Image src={chapterOneImg5} alt="Chapitre 1" className="img-fluid" y={["200px", "-200px"]} figcaption="À Strasbourg, le terrain de basket est transformé en terrain de Bike Polo grâce au bricolage des membres du club. Des planches de bois achetées et retapées font office de délimitation."/>
+            <Image src={chapterOneImg5} alt="Chapitre 1" className="img-fluid" y={["200px", "-200px"]} figcaption="À Strasbourg, le terrain de basket est transformé en terrain de Bike Polo grâce au bricolage des membres du club. Des planches de bois achetées et retapées font office de délimitations."/>
           </div>
           <div className="col-12 col-md-6">
             <Parallax y={["200px", "-200px"]} tagOuter="figure">
               <blockquote>
                 « On a fait des tournois à même les parkings ou une place goudronnée »
                 <br/>
-                <cite title="Quentin, LyonBikePolo">- Quentin Bouchard, LyonBikePolo</cite>
+                <cite title="Quentin Bouchard, LyonBikePolo">- Quentin Bouchard, LyonBikePolo</cite>
               </blockquote>
             </Parallax>
           </div>
@@ -217,7 +217,7 @@ const ChapterOne = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6">
-            <Image src={chapterOneImg6} alt="Chapitre 1" className="img-fluid" y={["200px", "-200px"]} figcaption="Paul Vergnaud, double champion du monde, montre des trophés qu’il a remporté, fabriqués par des joueurs. A gauche, une affiche des championnats de France, également réalisée par un joueur."/>
+            <Image src={chapterOneImg6} alt="Chapitre 1" className="img-fluid" y={["200px", "-200px"]} figcaption="Paul Vergnaud, double champion du monde, montre des trophées qu’il a remporté, fabriqués par des joueurs. A gauche, une affiche des championnats de France, également réalisée par un joueur."/>
           </div>
           <div className="col-12 col-md-6">
             <p>

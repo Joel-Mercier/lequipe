@@ -54,15 +54,15 @@ const ChapterThree = () => {
               Ecosystème BikePolo
             </h3>
             <p>
-              Souvent, les joueurs n’attendent pas l’aval d’un comité pour développer leur passion. À l’image de l’esprit DIY, différents joueurs décident de créer leur propre société. Le but : concevoir une nouvelle offre de matériel ou améliorer certains produits. C’est le cas de RogerBikePolo, l’un des rares fabricants français de pièces spécifiques au sport. « L’inconvénient quand on joue avec du matériel de récupération, c’est qu’il s’use vite », affirme Laurent, créateur de la marque.
+              Souvent, les sportifs n’attendent pas l’aval d’un comité pour développer leur passion. À l’image de l’esprit DIY, différents joueurs décident de créer leur propre société. Le but : concevoir une nouvelle offre de matériel ou améliorer certains produits. C’est le cas de RogerBikePolo, l’un des rares fabricants français de pièces spécifiques au sport. « L’inconvénient quand on joue avec du matériel de récupération, c’est qu’il s’use vite », affirme Laurent Trichereau, créateur de la marque.
             </p>
             <Spacer size="medium"/>
             <p>
-              Technicien d’usinage de métier, Laurent a notamment développé une tête de maillet plus légère et plus résistante. Il vend aussi des protèges-valves ou disques, contrecarrant les nombreux impacts du sport sur les vélos. Chaque année, ce Montpelliérain enregistre plusieurs commandes en France et à l'étranger, dont celles d'équipes entières. Avec MILK, une entreprise suisse de fabrication de maillets, ils sponsorisent de grands champions français, tels que Paul ou Morgan, ainsi que des compétitions.
+              Technicien d’usinage de métier, Laurent a notamment développé une tête de maillet plus légère et plus résistante. Il vend également des protèges-valves ou disques, contrecarrant les nombreux impacts du sport sur les vélos. Chaque année, ce Montpelliérain enregistre plusieurs commandes en France et à l'étranger, dont celles d'équipes entières. Avec MILK, une entreprise suisse de fabrication de maillets, ils sponsorisent de grands champions français, tels que Paul ou Morgan, ainsi que des compétitions.
             </p>
             <Spacer size="medium"/>
             <p>
-              Pour Morgan Hidalgo, le sponsoring des joueurs par ces entreprises spécialisées est différent des autres sports : “Nous n’avons pas de contrats formels. Ce qu’ils nous demandent, c’est de la visibilité. Le Bike Polo est un sport trop petit pour bénéficier du sponsoring de marques plus connues. Pour elles, ce n’est pas un marché suffisamment intéressant. Mais on essaie quand même !” Preuve en est, certains joueurs ont collaboré ponctuellement avec des marques de luxe comme Louis Vuitton ou Louboutin ; loin des débuts sur les parkings et les friches. 
+              Pour Morgan Hidalgo, le sponsoring des joueurs par ces entreprises spécialisées est différent des autres sports : « Nous n’avons pas de contrats formels. Ce qu’ils nous demandent, c’est de la visibilité. Le Bike Polo est un sport trop petit pour bénéficier du sponsoring de marques plus connues. Pour elles, ce n’est pas un marché suffisamment intéressant. Mais on essaie quand même ! » Preuve en est, certains joueurs ont collaboré ponctuellement avec des marques de luxe comme Louis Vuitton ou Louboutin ; loin des débuts sur les parkings et les friches.
             </p>
           </div>
           <div className="col-12 col-md-6 d-flex flex-column justify-content-center position-relative">
@@ -73,7 +73,7 @@ const ChapterThree = () => {
               <div className="col-12 col-sm-6">
                 <Parallax y={["200px", "-200px"]} tagOuter="figure">
                   <figcaption className="pl-lg-5 mt-5">
-                    Des nombreuses structures et entreprises se sont créées dans le sillage du Bike Polo. En haut, un atelier de réparation qui auvrir avec Paul Vergnaud et ses amis rencontrés via le sport. En bas, un balle de HardcourtBikePolo de la marque montellieraine RogerBikePolo.
+                    Des nombreuses structures et entreprises se sont créées dans le sillage du Bike Polo. En haut, l'atelier de réparation fondé par Paul Vergnaud et ses amis rencontrés grâce à cette pratique sportive. En bas, une balle de Hardcourt Bike Polo de la marque montpelliéraine Roger Bike Polo.
                   </figcaption>
                 </Parallax>
               </div>
@@ -89,12 +89,12 @@ const ChapterThree = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6 pr-lg-5">
-            <Image src={ChapterThreeImg3} alt="Chapitre 3" className="img-fluid" y={["200px", "-200px"]} figcaption="Lyon Bike Polo joue sur un ancien terrain de hockey. Ils ont la chance de ne pas avoir à partager leur terrain avec d’autres disciplines."/>
+            <Image src={ChapterThreeImg3} alt="Chapitre 3" className="img-fluid" y={["200px", "-200px"]} figcaption="Lyon Bike Polo joue sur un ancien terrain de hockey. Ils ont la chance de ne pas avoir à partager leur emplacement avec d’autres disciplines."/>
           </div>
           <div className="col-12 col-md-6 pl-lg-5">
             <h3>La guerre des terrains</h3>
             <p>
-              A force de communication et de négociations, certaines équipes obtiennent des terrains auprès de leurs mairies respectives.  “Maintenant on joue à la Croix Rousse, sur un ancien terrain de street hockey qui a - presque - les bonnes dimensions pour jouer au polo “, explique Morgan, fier de ce qu’il décrit comme le “meilleur terrain de France”. 
+              A force de communication et de négociations, certaines équipes obtiennent des terrains auprès de leurs mairies respectives.  « Maintenant on joue à la Croix Rousse, sur un ancien terrain de street hockey qui a - presque - les bonnes dimensions pour jouer au polo », explique Morgan, fier de ce qu’il décrit comme le « meilleur terrain de France. »
             </p>
             <Spacer size="medium" />
             <p>
@@ -114,11 +114,7 @@ const ChapterThree = () => {
           <div className="col-12 col-md-6 pr-lg-5">
             <p className="mt-5 mr-5">
               <strong className="mt-md-5">
-                En France, seuls quatre courts sont exclusivement dédiés à la pratique de cette
-                discipline. Six courts intérieurs permettent également aux équipes qui le
-                peuvent de s'entraîner l'hiver dans l’Hexagone. À l’inverse, dix associations
-                doivent partager leur terrain avec un autre sport et quatre autres doivent
-                toujours squatter leurs terrains sans autorisation.
+                En France, seuls quatre courts sont exclusivement dédiés à la pratique de cette discipline. Six courts intérieurs permettent également aux équipes qui le peuvent de s'entraîner l'hiver dans l’Hexagone. À l’inverse, dix associations doivent partager leur terrain avec un autre sport et quatre autres doivent toujours squatter leurs terrains sans autorisation.
               </strong>
             </p>
           </div>
@@ -147,7 +143,7 @@ const ChapterThree = () => {
               <Image src={ChapterThreeBg2} alt="Chapitre 3" className="img-fluid" />
               <div className="decorated-content__content">
                 <p>
-                  Le Marseille Bike Polo est l’un de ces clubs sans terrain fixe. Faute d’un lieu approprié, les joueurs se retrouvaient un temps dans un parc municipal partagé avec les enfants du coin. En attendant une réponse de la mairie, ils ont tenté une approche à l’amiable avec un club de roller de la ville pour avoir accès à leur terrain de jeu. Sans succès. Gabriel, responsable du club, et ses coéquipiers y jouent malgré tout, sautant la grille pour s'y entraîner. “Le gros handicap, c’est de ne pas être légitime à venir occuper le terrain. A chaque fois, on risque de se faire virer, et on sera dans l'obligation de partir.”
+                  Le Marseille Bike Polo est l’un de ces clubs sans terrain fixe. Faute d’un lieu approprié, les joueurs se retrouvaient un temps dans un parc municipal partagé avec les enfants du coin. En attendant une réponse de la mairie, ils ont tenté une approche à l’amiable avec un club de roller de la ville pour avoir accès à leur terrain de jeu. Sans succès. Gabriel, responsable du club, et ses coéquipiers y jouent malgré tout, sautant la grille pour s'y entraîner. « Le gros handicap, c’est de ne pas être légitime à venir occuper le terrain. A chaque fois, on risque de se faire virer, et on sera dans l'obligation de partir. »
                 </p>
                 <p className="mt-5">
                   Sans infrastructures adaptées, difficile de faire grandir le nombre d’adhérents. Si la discipline a connu une forte croissance durant ses premières années d’existence, elle rencontre aujourd’hui des difficultés de visibilité. Le nombre de joueurs inscrits en club stagne. En cinq ans, il n’a augmenté que de 40 personnes.
@@ -176,18 +172,25 @@ const ChapterThree = () => {
               <Image src={ChapterThreeBg2} alt="Chapitre 3" className="img-fluid" />
               <div className="decorated-content__content">
                 <p>
-                  Pour y remédier, la possibilité d’institutionnaliser ce sport, en intégrant la prestigieuse Fédération Française de Cyclisme (FFC), a été soulevée. Durant ses études en management du sport, Paul Vergnaud, de l’équipe CallMeDaddy, a fait un stage de six mois à la FFC en 2010. Il prend alors ce débat à bras le corps en réalisant un audit auprès de toutes les associations de Bike Polo de France pour une potentielle affiliation à l’instance. “La Fédé’ était très intéressée de nous recruter. On était en plein développement et on véhiculait une image plutôt sympathique et décalée de la pratique du vélo.”
+                  Pour y remédier, la possibilité d’institutionnaliser ce sport, en intégrant la prestigieuse Fédération Française de Cyclisme (FFC), a été soulevée. Durant ses études en management du sport, Paul Vergnaud, de l’équipe CallMeDaddy, a fait un stage de six mois à la FFC en 2010. Il prend alors ce débat à bras le corps en réalisant un audit auprès de toutes les associations de Bike Polo de France pour une potentielle affiliation à l’instance. « La Fédé’ était très intéressée de nous recruter. On était en plein développement et on véhiculait une image plutôt sympathique et décalée de la pratique du vélo. »
                 </p>
                 <p className="mt-5">
-                  Pourtant, le verdict est sans appel.”Ce n'était pas la volonté des joueurs et des clubs de s’engager vers une telle intégration, analyse Paul. On préférait vivre en toute indépendance grâce aux passionnés qui s’investissent sans compter au quotidien.” Selon lui, l'avenir du sport ne se trouve pas dans une affiliation avec la FFC. 
+                  Pourtant, le verdict est sans appel. « Ce n'était pas la volonté des joueurs et des clubs de s’engager vers une telle intégration, analyse Paul. On préfére vivre en toute indépendance grâce aux passionnés qui s’investissent sans compter au quotidien. » Selon lui, l'avenir du sport ne se trouve pas dans une affiliation avec la FFC.
                 </p>
               </div>
             </div>
            
           </div>
           <div className="col-12 col-md-6 pl-lg-5 position-relative">
+            <Parallax y={["600px", "-200px"]} tagOuter="figure">
+              <blockquote>
+                « On préférait vivre en toute indépendance. »
+                <br/>
+                <cite title="Paul Vergnaud">- Paul Vergnaud</cite>
+              </blockquote>
+            </Parallax>
             <Image src={ChapterThreeCircle1} alt="Chapitre 3" className="img-fluid" y={["100px", "-100px"]} parallaxContainerClassName="position-absolute parallax-item--first"/>
-            <Image src={ChapterThreeImg6} alt="Chapitre 3" className="img-fluid" y={["200px", "-200px"]} figcaption="Paul Vergnaud est un des plus grands champions français avec son équipe Call Me Daddy. Le joueur parisien, récemment papa, pose ici chez lui avec un de ses trophés : celui du Polorama. Pour lui l’avenir du sport ne passe pas par la Fédération Française de Cyclisme."/>
+            <Image src={ChapterThreeImg6} alt="Paul Vergnaud est l’un des plus grands champions français avec son équipe Call Me Daddy. Le joueur parisien, récemment papa, pose ici, chez lui, avec l'un de ses trophées (Polorama). Pour lui, l'avenir du sport ne passe pas par la Fédération Française de Cyclisme." className="img-fluid" y={["200px", "-200px"]} figcaption="Paul Vergnaud est l’un des plus grands champions français avec son équipe Call Me Daddy. Le joueur parisien, récemment papa, pose ici, chez lui, avec l'un de ses trophées (Polorama). Pour lui, l'avenir du sport ne passe pas par la Fédération Française de Cyclisme."/>
           </div>
         </div>
       </div>
@@ -199,11 +202,11 @@ const ChapterThree = () => {
           </div>
           <div className="col-12 col-md-6 pl-lg-5">
             <p>
-              Son coéquipier Luca n’est pourtant pas de cet avis. “Je ne comprends pas pourquoi on refuserait de s’affilier à la fédération.” L’Anglais estime que son sport pourrait franchir un palier grâce à l’instance. “Cela nous permettrait d’avoir de meilleures infrastructures, d’être aidés financièrement et, surtout, d’être reconnu comme un sport à part entière.” 
+              Son coéquipier Luca n’est pourtant pas de cet avis. « Je ne comprends pas pourquoi on refuserait de s’affilier à la fédération. » L’Anglais estime que son sport pourrait franchir un palier grâce à l’instance. « Cela nous permettrait d’avoir de meilleures infrastructures, d’être aidés financièrement et, surtout, d’être reconnu comme un sport à part entière. »
             </p>
             <Spacer size="medium" />
             <p>
-              Par ce biais, Luca espère que le bike-polo soit traité comme d’autres disciplines cyclistes. “Si nous faisions partie intégrante de la FFC, je serais sûr d’avoir un rendez-vous avec la mairie dans le mois”, renchérit Jean-François Jolfre, ancien membre parisien du Comité Bike Polo France.
+              Par ce biais, Luca espère que le bike-polo soit traité comme d’autres disciplines cyclistes. « Si nous faisions partie intégrante de la FFC, je serais sûr d’avoir un rendez-vous avec la mairie dans le mois », renchérit Jean-François Jolfre, ancien membre parisien du Comité Bike Polo France.
             </p>
           </div>
         </div>
@@ -213,11 +216,11 @@ const ChapterThree = () => {
         <div className="row">
           <div className="col-12 col-md-6 pr-lg-5">
             <p>
-              Pour autant, il semble aujourd'hui impossible pour le Hardcourt Bike Polo d’évoluer en ce sens. Une telle affiliation pourrait rendre le sport inaccessible à de nombreux adhérents, par une augmentation des coûts, ou l’instauration de normes contraignantes. "Pour l'instant, ça marche bien comme ça", conclut Jean-François Jolfre.
+              Pour autant, il semble aujourd'hui impossible pour le Hardcourt Bike Polo d’évoluer en ce sens. Une telle affiliation pourrait rendre le sport inaccessible à de nombreux adhérents, par une augmentation des coûts, ou l’instauration de normes contraignantes. « Pour l'instant, ça marche bien comme ça », conclut Jean-François Jolfre.
             </p>
             <Spacer size="medium" />
             <p>
-              Le hardcourt bike polo semble assis entre deux selles : celle de la professionnalisation d’une part, et de la spontanéité alternative de ses débuts d’autre part.“Le côté DIY et underground est la force et la faiblesse de notre sport”, analyse Elodie Martini. “On ne grandit plus beaucoup, mais on ne veut pas non plus perdre notre liberté. C’est paradoxal. On est trop petit pour être reconnu et trop gros pour n’être qu’un sport entre copains !”
+              Le hardcourt bike polo semble assis entre deux selles : celle de la professionnalisation d’une part, et de la spontanéité alternative de ses débuts d’autre part. « Le côté DIY et underground est la force et la faiblesse de notre sport », analyse Elodie Martini. « On ne grandit plus beaucoup, mais on ne veut pas non plus perdre notre liberté. C’est paradoxal. On est trop petit pour être reconnu et trop gros pour n’être qu’un sport entre copains ! »
             </p>
             <Spacer size="medium" />
             <p>
@@ -233,7 +236,7 @@ const ChapterThree = () => {
                   <blockquote>
                     « Pour l’instant, ça marche bien comme ça. »
                     <br/>
-                    <cite title="Morgan Hidalgo">- Jean-François Jolfre</cite>
+                    <cite title="Jean-François Jolfre">- Jean-François Jolfre</cite>
                   </blockquote>
                 </Parallax>
                 <Image src={ChapterThreeImg10} alt="Chapitre 3" className="img-fluid" y={["200px", "-200px"]}/>
