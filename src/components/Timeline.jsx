@@ -18,19 +18,21 @@ const Timeline = () => {
       content: "L’ancêtre du Bike Polo, le Vélo Polo, voit le jour en 1891, grâce à Richard J. Mercredy. Ce cycliste irlandais décide de remplacer le cheval par un vélo, afin de démocratiser la pratique de la discipline. Comme pour son aîné, les matchs se jouent sur gazon. Le premier, auquel participe l’équipe de Mercredy, a lieu la même année.",
       background: timelineBg1,
       focus: timelineFocus1,
+      source: "Source : polo-velo.net",
     },
     {
       year: "1908",
       title: "Apparition aux Jeux Olympiques",
       content: "Très vite, l’Angleterre se retrouve également piquée par cette jeune discipline. En 1897, la première fédération de Bike-Polo y est créée. Quelques années plus tard, la capitale britannique accueille les Jeux Olympiques de 1908. À cette occasion, une rencontre de démonstration a lieu devant le roi d’Angleterre Edouard VII. L’Irlande bat l’Allemagne 3 buts à 1.",
       background: timelineBg2,
+      source: "Source : Getty images",
     },
     {
       year: "1920",
       title: "Envol français",
       content: "Arrivé en 1900, le polo-vélo connaît un franc succès à Paris vingt ans plus tard. En 1928, un premier championnat est organisé entre huit équipes. Quelques années plus tard, la discipline s’exporte hors de la capitale et séduit à l’échelle nationale, jusqu’à avoir sa première définition dans l’édition de 1932 du dictionnaire Larousse.",
       background: timelineBg3,
-      source: "Source : BNF",
+      source: "Source : BNF / gallica.bnf.fr",
     },
     {
       year: "1999",
@@ -51,6 +53,7 @@ const Timeline = () => {
       title: "Premier championnat du monde",
       content: "Le Hardcourt Bike Polo prend une dimension internationale à partir de 2008 et l’organisation de son premier championnat du monde. Le tournoi se déroule à Toronto et réunit des équipes nord-américaines et européennes. Le premier championnat du Vieux Continent se déroule l’année suivante à Londres.",
       background: timelineBg6,
+      source: "Source : MessMedia - Cycle Messenger World Championships 2008",
     },
   ];
 

@@ -20,7 +20,7 @@ const Intro = () => {
               </p>
               <Spacer size="medium" />
               <p>
-                Au bord du terrain, bières, cafés et croissants passent de mains en mains. Les vannes s’enchaînent et les éclats de rire fusent, l’ambiance est détendue et bon enfant. Et si certains de ces joueurs font partie des meilleurs mondiaux, tous et toutes partagent ce même plaisir ; celui de pratiquer un sport récent qui crie toujours son désir de liberté.
+                Au bord du terrain, bières, cafés et croissants passent de mains en mains. Les blagues s’enchaînent et les éclats de rire fusent, l’ambiance est détendue et bon enfant. Et si certains de ces joueurs font partie des meilleurs mondiaux, tous et toutes partagent ce même plaisir ; celui de pratiquer un sport récent qui crie toujours son désir de liberté.
               </p>
             </div>
           </div>
@@ -34,7 +34,7 @@ const Intro = () => {
           <div className="col-12 col-md-12">
             <div className="content-container">
               <p className="mr-lg-5">
-                Alternatif et sans crottins, le hardcourt bike-polo se joue par équipe de trois. Cette jeune discipline descend directement du polo-vélo qui se pratique, lui, sur gazon, comme le polo traditionnel à cheval. Bien qu’en marge du milieu cycliste professionnel, cette pratique sportive s’est développée assez rapidement.
+                Alternatif et sans crottin, le hardcourt bike-polo se joue par équipe de trois. Cette jeune discipline descend directement du polo-vélo qui se pratique, lui, sur gazon, comme le polo traditionnel à cheval. Bien qu’en marge du milieu cycliste professionnel, cette pratique sportive s’est développée assez rapidement.
               </p>
             </div>
           </div>
@@ -59,7 +59,7 @@ const Intro = () => {
           </div>
           <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
             <p className="ml-lg-5">
-              La légende raconte que ce seraient des coursiers à vélo de Seattle qui, en 1999, par ennui, se prennent au jeu du polo-vélo, et l’adaptent à leur environnement urbain. A partir de 2007, la pratique arrive en France, alimentée par un carburant singulier : le caractère alternatif du hardcourt bike-polo. Le sport se construit autour d’un esprit d’indépendance, mélangeant “Do-It-Yourself” (faire soi-même) et débrouillardise.
+              La pratique du Hardcourt Bike Polo est issue des coursiers de Seattle qui en 1999, sur leur temps libre, se prennent au jeu du polo-vélo, et l’adaptent à leur environnement urbain. Très vite, la pratique prend et se répand à travers le pays, puis le monde. Elle arrive en France en 2007, alimentée par un carburant singulier : son caractère alternatif. Le sport se construit autour d’un esprit d’indépendance, mélangeant “Do-It-Yourself” (fait le par toi-même) et débrouillardise.
             </p>
           </div>
         </div>

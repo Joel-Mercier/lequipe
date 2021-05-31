@@ -26,7 +26,7 @@ const players = [
     city: "Strasbourg",
     age: "*",
     team: "Ruckus",
-    title: "*à vérifier* Vice-championne du monde, championne d’Europe (2018) et de France",
+    title: "Vice-championne du monde (2016), championne d’Europe (2018) et de France",
     description: "Elodie estime s’être trouvée grâce au Bike Polo. Comme pour beaucoup d’autres joueurs, sa série de voyages pour les compétitions lui ont permis de vivre aventures, rencontres et amours. Initiée au Bike Polo via le monde du fixie, elle s’est lancé dans la création du club strasbourgeois. Après de belles victoires, elle a un peu levé le pied des compétitions pour se concentrer sur l’accueil des nouveaux et le développement du club de la capitale européenne.",
     portrait: playerFocusElodie,
     animation: playerFocusElodieGif,

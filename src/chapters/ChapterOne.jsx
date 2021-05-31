@@ -35,9 +35,9 @@ const ChapterOne = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6 pr-lg-5">
-            <h3>Décembre 2008, Lyon.</h3>
+            <h3>Lyon, Décembre 2008.</h3>
             <p>
-              Décembre 2008, Lyon. Voilà dix ans que l’immense usine Renault du troisième arrondissement de la ville a été cédée par l’industriel français. Depuis sa fermeture, le site s’est reconverti en un espace culturel alternatif, la Friche RVI, où s’installe un atelier de réparation de vélos. 
+              Lyon, Décembre 2008. Voilà dix ans que l’immense usine Renault du troisième arrondissement de la ville a été close par l’industriel français. Depuis sa fermeture, le site s’est reconverti en un espace culturel alternatif, la Friche RVI, où s’installe un atelier de réparation de vélos.
             </p>
             <Spacer size="medium" />
             <p>
@@ -83,11 +83,11 @@ const ChapterOne = () => {
             </p>
             <Spacer size="medium" />
             <p>
-              Dès lors, les pionniers ne jurent que par le pignon fixe.  “J’étais un très grand défenseur du fixie”, se souvient Morgan Hidalgo, triple champion du monde et membre de l’association Lyon Bike Polo. 
+              Dès lors, les pionniers ne jurent que par le pignon fixe.  “J’étais un très grand défenseur du fixie”, se souvient Morgan Hidalgo, triple champion du monde et membre de l’association Lyon Bike Polo.
             </p>
             <Spacer size="medium" />
             <p>
-              Pour lui, le pignon fixe fait perdre de l’énergie et de la concentration sur la gestion du pédalage. Cela empêcherait de conserver son entière attention sur le terrain et la balle. “J’ai souvent dit que je ne passerais jamais en roue libre [...] Disons le, j’ai menti ! », s’amuse le coursier. 
+              Pour lui, le pignon fixe fait perdre de l’énergie et de la concentration sur la gestion du pédalage. Cela empêcherait de conserver son entière attention sur le terrain et la balle. «J’ai souvent dit que je ne passerais jamais en roue libre [...] Disons le, j’ai menti ! », s’amuse le coursier.
             </p>
             <Spacer size="medium" />
             <Iframe src="https://www.youtube.com/embed/kI1Gb-E-sMQ?rel=0&modestbranding=1" title="Vidéo chapitre 1" containerClass="mt-5" />
@@ -130,7 +130,7 @@ const ChapterOne = () => {
               <blockquote className="text-center">
                 « On fait tout nous-même. »
                 <br/>
-                <cite title="Gabriel, MarseilleBikePolo">- Gabriel, MarseilleBikePolo</cite>
+                <cite title="Gabriel, MarseilleBikePolo">- Gabriel Bercolano, MarseilleBikePolo</cite>
               </blockquote>
             </Parallax>
           </div>
@@ -154,7 +154,7 @@ const ChapterOne = () => {
             </p>
             <Spacer size="medium" />
             <p>
-              Autre membre du club phocéen, Enrico est tantôt joueur, tantôt mécano. Il se charge parfois de la réparation des engins de ses partenaires. “Si une pièce se casse, on ne se rend pas de suite dans un magasin, explique le jeune marseillais, on cherche d’abord à réparer par nous-même”. Il a récemment lancé un atelier d’auto-réparation de vélo engagé Plan B, partenaire de Marseille Bike Polo.   
+              Autre membre du club phocéen, Enrico est tantôt joueur, tantôt mécano. Il se charge parfois de la réparation des engins de ses partenaires. “Si une pièce se casse, on ne se rend pas de suite dans un magasin explique le jeune marseillais, on cherche d’abord à réparer par nous-même”. Il a récemment lancé un atelier d’auto-réparation de vélo engagé Plan B, partenaire de Marseille Bike Polo.
             </p>
             <Spacer size="medium" />
             <Iframe src="https://www.youtube.com/embed/ROwnGmtBvkQ?rel=0&modestbranding=1" title="Vidéo chapitre 1" containerClass="mt-5"/>
@@ -188,7 +188,7 @@ const ChapterOne = () => {
                   <Image src={chapterOneBg7} alt="" className="img-fluid"/>
                   <div className="decorated-content__content">
                     <p>
-                      <strong>Engagement :</strong> le Bike Polo peut également être une démarche politique. Au-delà de l’esprit de récup’ et d’auto-réparation, les luttes contre les discriminations sont aussi très importantes pour certains clubs. A Marseille, cette démarche est inscrite dans une charte publiée sur; leur page Facebook. Plusieurs membres du club participent régulièrement aux Vélorutions féministes de la ville et considèrent le vélo aussi comme un outil politique. Le sport est essentiellement mixte avec des compétitions féminines comme les tournois Lady's Army.
+                      <strong>Engagement :</strong> il peut arriver que le Bike Polo soit également être l’objet d’une démarche politique. Au-delà de l’esprit de récup’ et d’auto-réparation, les luttes contre les discriminations sont aussi très importantes pour certains clubs. A Marseille, cette démarche est inscrite dans une charte publiée sur leur page Facebook. Plusieurs membres du club participent régulièrement aux Vélorutions féministes de la ville et considèrent le vélo comme un outil politique. Le sport est essentiellement mixte avec des compétitions féminines comme les tournois Lady's Army.
                     </p>
                   </div>
                 </div>
@@ -208,7 +208,7 @@ const ChapterOne = () => {
               <blockquote>
                 « On a fait des tournois à même les parkings ou une place goudronnée »
                 <br/>
-                <cite title="Quentin, LyonBikePolo">- Quentin, LyonBikePolo</cite>
+                <cite title="Quentin, LyonBikePolo">- Quentin Bouchard, LyonBikePolo</cite>
               </blockquote>
             </Parallax>
           </div>
@@ -220,15 +220,13 @@ const ChapterOne = () => {
             <Image src={chapterOneImg6} alt="Chapitre 1" className="img-fluid" y={["200px", "-200px"]} figcaption="Paul Vergnaud, double champion du monde, montre des trophés qu’il a remporté, fabriqués par des joueurs. A gauche, une affiche des championnats de France, également réalisée par un joueur."/>
           </div>
           <div className="col-12 col-md-6">
-           <p>
-            Les tournois sont, eux aussi, mis en place avec les moyens du bord. Lorsque des
-            compétitions internationales sont prévues, les clubs participants s’arrangent
-            entre eux pour l’organisation.
-          </p>
-          <Spacer size="medium"/>
-          <p>
-            Certains de ces rendez-vous compétitifs se font “à même les parkings ou sur une place vide goudronnée” détaille Quentin Bouchard, de Lyon Bike Polo. Des flyers aux trophées, beaucoup d’éléments du hardcourt bike polo sont le fruit de la créativité de ses joueurs et de ses joueuses.
-           </p>
+            <p>
+              Les tournois sont, eux aussi, mis en place avec les moyens du bord. Lorsque des compétitions internationales sont prévues, les clubs participants s’arrangent entre eux pour l’organisation. 
+            </p>
+            <Spacer size="medium"/>
+            <p>
+              Certains de ces rendez-vous compétitifs se font “à même les parkings ou sur une place vide goudronnée” détaille Quentin Bouchard, de Lyon Bike Polo. Des flyers aux trophées, beaucoup d’éléments du hardcourt bike polo sont le fruit de la créativité de ses joueurs et de ses joueuses.
+            </p>
           </div>
         </div>
       </div>

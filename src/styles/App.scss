@@ -431,6 +431,7 @@
   }
   .decorated-content {
     &.decorated-content--first {
+      color: $text-color;
       .decorated-content__content {
         padding-top: 62px;
       }
@@ -1368,6 +1369,13 @@
   .chapter-title {
     .chapter-title__title {
       font-size: 64px;
+    }
+  }
+  .chapter-one {
+    .decorated-content {
+      &.decorated-content--first {
+        color: #ffffff;
+      }
     }
   }
   .page-decoration {
