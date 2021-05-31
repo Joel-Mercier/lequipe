@@ -8,7 +8,6 @@ const ConditionalWrapper = ({ condition, wrapper, children }) =>
 const Image = ({x = undefined, y = undefined, src, alt, style, className, tagOuter = "figure", figcaption, parallaxContainerClassName, figcaptionClassName, lazyLoadWrapperClassName}) => {
   const { parallaxController } = useController();
   const handleLoad = useCallback(() => {
-    console.log('handleLoad')
     parallaxController.update();
   }, [parallaxController]);
   return (

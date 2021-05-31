@@ -55,6 +55,7 @@
   // height: 100vh;
   width: 100%;
   background-color: #000000;
+  margin-top: 300px;
 }
 
 .cover-section {
@@ -69,6 +70,7 @@
   justify-content: center;
   color: #ffffff;
   &.cover-section--is-title {
+    height: 800px;
     background-color: $intro-bg;
   }
   &.cover-section--is-intro {
@@ -88,7 +90,7 @@
     }
   }
   .cover-section__title {
-    font-size: 64px;
+    font-size: 44px;
     text-transform: uppercase;
     color: $green;
     font-weight: bold;
@@ -96,10 +98,10 @@
     span {
       display: block;
       &:nth-child(2) {
-        margin-left: 64px;
+        margin-left: 44px;
       }
       &:nth-child(3) {
-        margin-left: 128px;
+        margin-left: 88px;
       }
     }
   }
@@ -388,7 +390,7 @@
 
 .intro {
   background-color: $intro-bg;
-  padding-top: 400px;
+  padding-top: 200px;
   .parallax-item--first {
     top: -100px;
     left: -150px;
@@ -1281,6 +1283,22 @@
   }
 }
 
+@media (min-width: 340px) {
+  .cover-section {
+    .cover-section__title {
+      font-size: 64px;
+      span {
+        &:nth-child(2) {
+          margin-left: 64px;
+        }
+        &:nth-child(3) {
+          margin-left: 128px;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 450px) {
   .player-focus {
     .col-12 {
@@ -1328,6 +1346,11 @@
 }
 
 @include for-md-up {
+  .cover-section {
+    &.cover-section--is-title {
+      height: 1200px;
+    }
+  }
   .chapter-title {
     height: 720px;
   }
@@ -1470,14 +1493,12 @@
       margin: 0;
     }
   }
-
   .chapter-title {
     height: 1080px;
     .chapter-title__title {
       font-size: 124px;
     }
   }
-
   .player-focus {
     .player-focus__nav {
       .player-focus__nav-item {
@@ -1499,6 +1520,7 @@
     max-width: none;
   }
   .intro {
+    padding-top: 400px;
     .cover-section {
       &.cover-section--intro-first {
         height: 877px;
