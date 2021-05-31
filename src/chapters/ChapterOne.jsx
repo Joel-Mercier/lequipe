@@ -6,7 +6,6 @@ import Image from '../components/Image';
 import PlayerFocus from '../components/PlayerFocus';
 import Interview from '../components/Interview';
 import Iframe from '../components/Iframe';
-import ChapterOneTitleBg1 from '../assets/chapter-1-title-bg-1.png';
 import ChapterOneTitleBg2 from '../assets/chapter-1-title-bg-2.png';
 import chapterOneBg2 from '../assets/chapter-1-bg-2.png';
 import chapterOneBg3 from '../assets/chapter-1-bg-3.png';
@@ -29,7 +28,6 @@ const ChapterOne = () => {
     <div className="chapter-one">
       <ChapterTitle
         title="Défricher la route"
-        mainBackground={ChapterOneTitleBg1}
         secondaryBackground={ChapterOneTitleBg2}
       />
       <Spacer size="large"/>

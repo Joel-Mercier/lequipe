@@ -404,6 +404,19 @@
 }
 
 .chapter-one {
+  .chapter-title {
+    background: url(../assets/chapter-1-title-bg-1.png),
+      linear-gradient(
+        180deg,
+        $intro-bg 0%,
+        $intro-bg 60%,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    background-repeat: no-repeat;
+    background-position: center, top;
+    background-size: cover;
+  }
   h2 {
     color: $green-dark;
   }
@@ -673,13 +686,19 @@
   }
   .timeline__source-container {
     position: absolute;
-    bottom: -220px;
+    bottom: -120px;
     right: 0;
+    left: 0;
     color: $text-color;
     p {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      text-align: right;
       opacity: 0;
       visibility: hidden;
-      transition: opacity 0.3s $easing;
+      transition: opacity 0.4s $easing;
       &.is--active {
         opacity: 1;
         visibility: visible;
@@ -1307,6 +1326,21 @@
       }
     }
   }
+  .chapter-one {
+    .chapter-title {
+      background: url(../assets/chapter-1-title-bg-1.png),
+        linear-gradient(
+          180deg,
+          $intro-bg 0%,
+          $intro-bg 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      background-repeat: no-repeat;
+      background-position: center, top;
+      background-size: cover;
+    }
+  }
 }
 
 @include for-sm-up {
@@ -1354,6 +1388,21 @@
   .chapter-title {
     height: 720px;
   }
+  .chapter-one {
+    .chapter-title {
+      background: url(../assets/chapter-1-title-bg-1.png),
+        linear-gradient(
+          180deg,
+          $intro-bg 0%,
+          $intro-bg 23%,
+          rgba(0, 0, 0, 0) 23%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      background-repeat: no-repeat;
+      background-position: center, top;
+      background-size: cover;
+    }
+  }
   .chapter-three {
     .page-decoration {
       &.page-decoration--is-left {
@@ -1382,6 +1431,9 @@
           transform: translateX(0);
         }
       }
+    }
+    .timeline__source-container {
+      bottom: -150px;
     }
   }
   .page-decoration {
@@ -1497,6 +1549,21 @@
     height: 1080px;
     .chapter-title__title {
       font-size: 124px;
+    }
+  }
+  .chapter-one {
+    .chapter-title {
+      background: url(../assets/chapter-1-title-bg-1.png),
+        linear-gradient(
+          180deg,
+          $intro-bg 0%,
+          $intro-bg 12%,
+          rgba(0, 0, 0, 0) 12%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      background-repeat: no-repeat;
+      background-position: center, top;
+      background-size: cover;
     }
   }
   .player-focus {

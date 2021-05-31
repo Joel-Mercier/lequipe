@@ -37,12 +37,14 @@ const Timeline = () => {
       title: "Naissance du hardcourt bike polo",
       content: "C’est à Seattle que le bike-polo passe du gazon au bitume. Profitant du développement des fixies, les livreurs et coursiers de la ville vont adapter le jeu à leur environnement en créant un cadre unique à cette pratique. C’est cette formule qui est aujourd’hui une des plus pratiquée dans le monde.",
       background: timelineBg4,
+      source: 'Source : The Riding Reporter / "The Riding Reporter: An evening with bike polo guru Matt Messenger"',
     },
     {
       year: "2001",
       title: "Le premier club de Bike Polo naît ",
       content: "Il s’agit des Axles of Evil, basé à Portland, une ville de l’Oregon, aux Etats-Unis. Ce sont eux qui vont commencer à cadrer la pratique du sport en imposant les premières règles comme la taille de la surface de jeu, la balle à utiliser ou les conditions pour marquer un but.",
       background: timelineBg5,
+      source: "Source : Flickr / @jehvicvbc",
     },
     {
       year: "2008",

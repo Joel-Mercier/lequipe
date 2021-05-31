@@ -65,15 +65,12 @@ const Intro = () => {
         </div>
       </div>
       <Spacer size="medium" />
-        <div className="cover-section cover-section--is-intro">
-          <div className="cover-section__inner-bg"></div>
-          <div className="content-container">
-            <Image src={introImg3} alt="Intro" className="img-fluid" y={["200px", "-200px"]}/>
-          </div>
+      <div className="cover-section cover-section--is-intro">
+        <div className="cover-section__inner-bg"></div>
+        <div className="content-container">
+          <Image src={introImg3} alt="Intro" className="img-fluid" y={["200px", "-200px"]}/>
         </div>
-      <Spacer size="medium" />
-      
-      <Spacer size="large" />
+      </div>
     </div>
   )
 };
