@@ -983,11 +983,11 @@
 
 .quote-stack {
   position: relative;
-  width: 100vw;
+  width: calc(100vw - 30px);
   height: 100vh;
   .quote-stack__card-container {
     position: absolute;
-    width: 100vw;
+    width: calc(100vw - 30px);
     height: 100vh;
     will-change: transform;
     display: flex;

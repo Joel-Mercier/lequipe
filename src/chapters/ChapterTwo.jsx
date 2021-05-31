@@ -150,7 +150,9 @@ const ChapterTwo = () => {
         <Image src={ChapterTwoBg7} alt="Chapitre 2" className="w-100" />
       </div>
       <Spacer size="large"/>
-      <QuoteStack/>
+      <div className="container">
+        <QuoteStack/>
+      </div>
       <Spacer size="large"/>
       <div className="container">
         <div className="row">
