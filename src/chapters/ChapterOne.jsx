@@ -79,15 +79,15 @@ const ChapterOne = () => {
               Du pignon fixe à la roue libre
             </h3>
             <p>
-              Rapidement, les joueurs comprennent que leur vélo n’est pas adapté au bike-polo. Les guidons de course et les garde-boues gênent les mouvements saccadés et brusques du sport. À force de casse et de bricolage, les joueurs inventent de nouvelles montures plus adaptées. “Au début, c'était un peu Frankenstein. On a fait des tests et on a fini par développer de bons vélos”, se souvient Elodie Martini, strasbourgeoise vice-championne du monde.
+              Rapidement, les joueurs comprennent que leur vélo n’est pas adapté au bike-polo. Les guidons de course et les garde-boues gênent les mouvements saccadés et brusques du sport. À force de casse et de bricolage, les joueurs inventent de nouvelles montures plus adaptées. « Au début, c'était un peu Frankenstein. On a fait des tests et on a fini par développer de bons vélos », se souvient Elodie Martini, strasbourgeoise vice-championne du monde.
             </p>
             <Spacer size="medium" />
             <p>
-              Dès lors, les pionniers ne jurent que par le pignon fixe.  “J’étais un très grand défenseur du fixie”, se souvient Morgan Hidalgo, triple champion du monde et membre de l’association Lyon Bike Polo.
+              Parmi ces expérimentations, la question du pignon fixe fait débat. « J'étais un très grand défenseur du fixie », se souvient Morgan Hildalgo, triple champion du monde et mebre de l'association Lyon Bike Polo. Avant de se raviser. 
             </p>
             <Spacer size="medium" />
             <p>
-              Pour lui, le pignon fixe fait perdre de l’énergie et de la concentration sur la gestion du pédalage. Cela empêcherait de conserver son entière attention sur le terrain et la balle. «J’ai souvent dit que je ne passerais jamais en roue libre [...] Disons le, j’ai menti ! », s’amuse le coursier.
+              Pour lui, le pignon fixe fait perdre de l’énergie et de la concentration sur la gestion du pédalage. Cela empêcherait de conserver son entière attention sur le terrain et la balle. « J’ai souvent dit que je ne passerais jamais en roue libre [...] Disons le, j’ai menti ! », s’amuse le coursier.
             </p>
             <Spacer size="medium" />
             <Iframe src="https://www.youtube.com/embed/kI1Gb-E-sMQ?rel=0&modestbranding=1" title="Vidéo chapitre 1" containerClass="mt-5" />
@@ -154,7 +154,7 @@ const ChapterOne = () => {
             </p>
             <Spacer size="medium" />
             <p>
-              Autre membre du club phocéen, Enrico est tantôt joueur, tantôt mécano. Il se charge parfois de la réparation des engins de ses partenaires. “Si une pièce se casse, on ne se rend pas de suite dans un magasin explique le jeune marseillais, on cherche d’abord à réparer par nous-même”. Il a récemment lancé un atelier d’auto-réparation de vélo engagé Plan B, partenaire de Marseille Bike Polo.
+              Autre membre du club phocéen, Enrico est tantôt joueur, tantôt mécano. Il se charge parfois de la réparation des engins de ses partenaires. « Si une pièce se casse, on ne se rend pas de suite dans un magasin explique le jeune marseillais, on cherche d’abord à réparer par nous-même ». Il a récemment lancé un atelier d’auto-réparation de vélo engagé Plan B, partenaire de Marseille Bike Polo.
             </p>
             <Spacer size="medium" />
             <Iframe src="https://www.youtube.com/embed/ROwnGmtBvkQ?rel=0&modestbranding=1" title="Vidéo chapitre 1" containerClass="mt-5"/>

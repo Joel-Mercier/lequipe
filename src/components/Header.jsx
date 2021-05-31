@@ -38,9 +38,9 @@ const Header = () => {
       <div className="header">
         <img src={logo} className="header__logo" alt="logo" />
         <div className="header__menu">
-          <button className="header__menu-button" onClick={handleMenuClick}>
+          {/* <button className="header__menu-button" onClick={handleMenuClick}>
             <MenuIcon />
-          </button>
+          </button> */}
         </div>
       </div>
       <Menu show={menuIsOpen} close={handleMenuClick} />
