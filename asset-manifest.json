@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/lequipe/static/css/main.568cabfd.chunk.css",
-    "main.js": "/lequipe/static/js/main.20d6df13.chunk.js",
-    "main.js.map": "/lequipe/static/js/main.20d6df13.chunk.js.map",
+    "main.css": "/lequipe/static/css/main.8046345e.chunk.css",
+    "main.js": "/lequipe/static/js/main.90012041.chunk.js",
+    "main.js.map": "/lequipe/static/js/main.90012041.chunk.js.map",
     "runtime-main.js": "/lequipe/static/js/runtime-main.2a1d7296.js",
     "runtime-main.js.map": "/lequipe/static/js/runtime-main.2a1d7296.js.map",
     "static/css/2.10b7ce49.chunk.css": "/lequipe/static/css/2.10b7ce49.chunk.css",
@@ -18,7 +18,7 @@
     "service-worker.js": "/lequipe/service-worker.js",
     "service-worker.js.map": "/lequipe/service-worker.js.map",
     "static/css/2.10b7ce49.chunk.css.map": "/lequipe/static/css/2.10b7ce49.chunk.css.map",
-    "static/css/main.568cabfd.chunk.css.map": "/lequipe/static/css/main.568cabfd.chunk.css.map",
+    "static/css/main.8046345e.chunk.css.map": "/lequipe/static/css/main.8046345e.chunk.css.map",
     "static/js/2.c66a23f5.chunk.js.LICENSE.txt": "/lequipe/static/js/2.c66a23f5.chunk.js.LICENSE.txt",
     "static/media/arrow-top.3e1f0b0a.svg": "/lequipe/static/media/arrow-top.3e1f0b0a.svg",
     "static/media/bullhorn.808dd5e8.svg": "/lequipe/static/media/bullhorn.808dd5e8.svg",
@@ -97,7 +97,7 @@
     "static/js/runtime-main.2a1d7296.js",
     "static/css/2.10b7ce49.chunk.css",
     "static/js/2.c66a23f5.chunk.js",
-    "static/css/main.568cabfd.chunk.css",
-    "static/js/main.20d6df13.chunk.js"
+    "static/css/main.8046345e.chunk.css",
+    "static/js/main.90012041.chunk.js"
   ]
 }
