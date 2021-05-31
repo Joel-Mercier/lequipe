@@ -997,9 +997,9 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
-      width: 45vh;
+      width: 37vh;
+      height: 80vh;
       max-width: 800px;
-      height: 85vh;
       max-height: 570px;
       cursor: grab;
       will-change: transform;
@@ -1313,6 +1313,17 @@
         &:nth-child(3) {
           margin-left: 128px;
         }
+      }
+    }
+  }
+}
+
+@media (min-width: 370px) {
+  .quote-stack {
+    .quote-stack__card-container {
+      .quote-stack__card {
+        width: 45vh;
+        height: 85vh;
       }
     }
   }
