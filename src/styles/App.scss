@@ -1693,3 +1693,34 @@
     }
   }
 }
+
+@include for-xxl-up {
+  .cover-section {
+    &.cover-section--is-title {
+      height: 1600px;
+    }
+    &.cover-section--is-intro {
+      height: 1270px;
+    }
+  }
+  .intro {
+    .cover-section {
+      &.cover-section--intro-first {
+        height: 1177px;
+      }
+    }
+  }
+  .player-focus {
+    height: 1483px;
+  }
+  .chapter-two {
+    .chapter-two-transition {
+      height: 3050px;
+    }
+  }
+  .chapter-three {
+    .chapter-three-transition {
+      height: 1476px;
+    }
+  }
+}

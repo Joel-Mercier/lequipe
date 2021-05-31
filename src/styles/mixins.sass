@@ -6,6 +6,8 @@
   @media (min-width: 992px) { @content }
 @mixin for-xl-up
   @media (min-width: 1200px) { @content }
+@mixin for-xxl-up
+  @media ( min-width: 1800px ) { @content }
 @mixin for-sm-down
   @media (max-width: 575px) { @content }
 @mixin for-md-down
@@ -14,3 +16,6 @@
   @media (max-width: 991px) { @content }
 @mixin for-xl-down
   @media (max-width: 1199px) { @content }
+@mixin for-xxl-down
+  @media (max-width: 1799px) { @content }
+  
