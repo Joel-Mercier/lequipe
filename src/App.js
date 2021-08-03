@@ -2,6 +2,7 @@ import React, { useState, useEffect, useLayoutEffect, useMemo, useCallback, Susp
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import { useTimeout, useWindowScroll, useThrottledFn, useWindowResize } from 'beautiful-react-hooks';
 import { useController } from 'react-scroll-parallax';
+import ReactGA from 'react-ga';
 import SplashScreen from './components/SplashScreen';
 import BackToTop from './components/BackToTop';
 import Cover from './components/Cover';
@@ -37,8 +38,8 @@ const App = () => {
   const [audioSrc, setAudioSrc] = useState(null);
 
   // If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://cra.link/PWA
+  // unregister() to register() below. Note this comes with some pitfalls.
+  // Learn more about service workers: https://cra.link/PWA
   useEffect(() => {
     serviceWorkerRegistration.register({
       onSuccess: () => setServiceWorkerInitialized(true),
@@ -47,7 +48,9 @@ const App = () => {
         setServiceWorkerUpdated(true)
       },
     });
-  }, [])
+    ReactGA.initialize('G-C3QXEXHDLV');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   useTimeout(() => {
     document.body.classList.add('is-ready');
@@ -59,7 +62,7 @@ const App = () => {
 
   useWindowResize(useThrottledFn((e) => {
     setDocumentHeight(document.body.scrollHeight)
-  }, 250))
+  }, 250));
 
   const { parallaxController } = useController();
 
@@ -89,6 +92,7 @@ const App = () => {
       });
     }
   }, [serviceWorker]);
+
   return (
     <div className="app">
       <StateContext.Provider value={{ serviceWorkerInitialized, serviceWorkerUpdated, audioSrc, audioPlaying, setAudioSrc, setAudioPlaying }}>

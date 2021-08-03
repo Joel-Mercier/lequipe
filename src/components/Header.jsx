@@ -1,5 +1,4 @@
 import React, { useCallback, useState } from 'react';
-import logo from '../assets/logo-explore.png';
 import { ReactComponent as MenuIcon } from '../assets/menu.svg';
 import Menu from './Menu';
 
@@ -14,7 +13,6 @@ const Header = () => {
 
   const createRipple = (event) => {
     const button = document.body;
-
     const circle = document.createElement("span");
     const diameter = Math.max(button.clientWidth, button.clientHeight);
     const radius = diameter / 2;
@@ -36,7 +34,6 @@ const Header = () => {
   return (
     <>
       <div className="header">
-        <img src={logo} className="header__logo" alt="logo" />
         <div className="header__menu">
           {/* <button className="header__menu-button" onClick={handleMenuClick}>
             <MenuIcon />

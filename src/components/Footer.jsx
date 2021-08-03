@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../assets/logo-explore.png';
 
 const Footer = () => {
   return (
@@ -7,7 +6,6 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <img src={logo} className="footer__logo img-fluid" alt="L'Equipe Explore : En roue libre" />
             <h3 className="footer__section-title">Remerciements</h3>
           </div>
           <div className="col-12 col-md-6">
@@ -37,6 +35,11 @@ const Footer = () => {
             <p>
               <strong>Tournages :</strong> Mehdi Abirez, Martin Lelievre, Isabelle Hautefeuille, Julien Rieffel, Lucas Ruch, Adrien Bachy, Audrey Margerie, Charlène Dosio
             </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <p className="footer__mentions">Ce projet a été réalisé dans le cadre du concours l'Equipe Explore</p>
           </div>
         </div>
       </div>
